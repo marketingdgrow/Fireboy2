@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Products - Fire Boy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./product.css" />
+    <link rel="stylesheet" href="./quote.css" />
+  </head>
+  <body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+      <a href="./index.html"    onclick="closeMobileMenu()">Home</a>
+      <a href="./about.html"   onclick="closeMobileMenu()">About</a>
+      <a href="./products.html" onclick="closeMobileMenu()">Products</a>
+      <a href="./contact.html" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <a href="index.html" class="logo">
+        <img class="logo-icon" src="./img/fire-logo.png" alt="Fire Boy" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./products.html" class="active">Products</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <a href="#quote" class="nav-cta">Get Quote</a>
+      <button class="nav-hamburger" id="hamburger" onclick="openMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ══ HERO ══ -->
+    <section class="hero">
+      <div class="hero-bg-img"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-content">
+        
+        <h1 class="hero-title">
+          OUR <span class="accent">FIRE</span><br />
+          <span class="outline">ARSENAL</span>
+        </h1>
+        <p class="hero-sub">From extinguishers to hydrant systems — every certified product your site needs, backed by 20+ years of fire safety expertise.</p>
+        
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-inner">
+        <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div></div>
+        <div class="ticker-item">Pan India Delivery<div class="ticker-dot"></div></div>
+        <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div></div>
+        <div class="ticker-item">AMC Support<div class="ticker-dot"></div></div>
+        <div class="ticker-item">Site Assessment<div class="ticker-dot"></div></div>
+        <div class="ticker-item">25K+ Products Delivered<div class="ticker-dot"></div></div>
+        <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div></div>
+        <div class="ticker-item">Pan India Delivery<div class="ticker-dot"></div></div>
+        <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div></div>
+        <div class="ticker-item">AMC Support<div class="ticker-dot"></div></div>
+        <div class="ticker-item">Site Assessment<div class="ticker-dot"></div></div>
+        <div class="ticker-item">25K+ Products Delivered<div class="ticker-dot"></div></div>
+      </div>
+    </div>
+
+    <!-- ══ PRODUCTS CATALOG ══ -->
+    <section class="products-catalog-section" id="products">
+      <div class="container">
+        <div class="catalog-header">
+          <div>
+            <h2 class="section-title">FEATURED PRODUCTS</h2>
+          </div>
+          <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search fire safety products..." onkeyup="searchProducts()" />
+            <button class="search-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35" stroke="white" stroke-width="2"/></svg>
+              Search
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all"         onclick="filterProducts('all', this)">All Products</button>
+          <button class="filter-btn" data-filter="head"               onclick="filterProducts('head', this)">Head Protection</button>
+          <button class="filter-btn" data-filter="eye"                onclick="filterProducts('eye', this)">Eye Protection</button>
+          <button class="filter-btn" data-filter="face"               onclick="filterProducts('face', this)">Face Protection</button>
+          <button class="filter-btn" data-filter="mask"               onclick="filterProducts('mask', this)">Face Mask</button>
+          <button class="filter-btn" data-filter="respirator"         onclick="filterProducts('respirator', this)">Reusable Respirators</button>
+          <button class="filter-btn" data-filter="extinguisher"       onclick="filterProducts('extinguisher', this)">Extinguishers</button>
+          <button class="filter-btn" data-filter="hydrant"            onclick="filterProducts('hydrant', this)">Hydrant Systems</button>
+          <button class="filter-btn" data-filter="detection"          onclick="filterProducts('detection', this)">Detection</button>
+          <button class="filter-btn" data-filter="suppression"        onclick="filterProducts('suppression', this)">Suppression</button>
+          <button class="filter-btn" data-filter="ppe"                onclick="filterProducts('ppe', this)">PPE & Safety</button>
+          <button class="filter-btn" data-filter="signage"            onclick="filterProducts('signage', this)">Signage</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ══ -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="./index.html" class="logo">
+            <img class="logo-icon" src="./img/fire-logo.png" alt="Fire Boy" />
+          </a>
+          <p class="footer-desc">India's premier fire safety equipment supplier. BIS certified, expert-backed, always reliable. Protecting lives and properties since 1998.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">f</a>
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">tw</a>
+            <a href="#" class="social-btn">yt</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul class="footer-links">
+            <li><a href="#">Fire Extinguishers</a></li>
+            <li><a href="#">Hydrant Systems</a></li>
+            <li><a href="#">Fire Alarms</a></li>
+            <li><a href="#">Smoke Detectors</a></li>
+            <li><a href="#">Sprinkler Systems</a></li>
+            <li><a href="#">Safety Signage</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#">Annual Maintenance</a></li>
+            <li><a href="#">Site Assessment</a></li>
+            <li><a href="#">Refilling Services</a></li>
+            <li><a href="#">Installation</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">NOC Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="./about.html">About Fire Boy</a></li>
+            <li><a href="#">Certifications</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="#">Distributor Login</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2026 <span>Fire Boy</span> Fire Safety Solutions Pvt. Ltd. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./product.js"></script>
+    <script src="./quote.js"></script>
+    <link rel="stylesheet" href="./floating-widgets.css" />
+    <script src="./floating-widgets.js"></script>
+  </body>
+</html>

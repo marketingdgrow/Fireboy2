@@ -1,0 +1,580 @@
+/* ═══════════════════════════════════════════════════════════════
+   quote.css  —  Quote modal + Scroll-to-top + Share widget
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ══════════════════════════════════════════════
+   QUOTE MODAL
+══════════════════════════════════════════════ */
+.quote-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 120000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.quote-modal.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.quote-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.62);
+  backdrop-filter: blur(6px);
+}
+
+.quote-dialog {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: min(86vh, 760px);
+  overflow: auto;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  transform: translateY(18px) scale(0.98);
+  transition: transform 0.25s ease;
+}
+
+.quote-modal.open .quote-dialog {
+  transform: translateY(0) scale(1);
+}
+
+.quote-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #fff;
+  color: #111;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.quote-close:hover {
+  border-color: #ff6a00;
+  color: #ff6a00;
+}
+
+.quote-form-wrap {
+  padding: 44px;
+}
+
+.quote-kicker {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 106, 0, 0.25);
+  background: rgba(255, 106, 0, 0.07);
+  color: #ff6a00;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.quote-form-wrap h2 {
+  margin: 0 44px 12px 0;
+  color: #111;
+  font-family: "Oswald", "Bebas Neue", sans-serif;
+  font-size: clamp(32px, 5vw, 48px);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.quote-form-wrap p {
+  margin: 0 0 28px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.quote-form {
+  display: grid;
+  gap: 16px;
+}
+
+.quote-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.quote-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea {
+  width: 100%;
+  border: 1.5px solid rgba(0, 0, 0, 0.12);
+  background: #f8f8f6;
+  color: #111;
+  padding: 13px 16px;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus {
+  border-color: #ff6a00;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.1);
+}
+
+.quote-field textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.quote-submit {
+  margin-top: 8px;
+  border: none;
+  background: #ff6a00;
+  color: #fff;
+  padding: 15px 24px;
+  font-family: "Oswald", "Bebas Neue", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(255, 106, 0, 0.28);
+}
+
+.quote-submit:hover {
+  background: #ff8c2a;
+}
+
+.quote-success {
+  display: none;
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: rgba(255, 106, 0, 0.1);
+  color: #a74300;
+  border: 1px solid rgba(255, 106, 0, 0.25);
+  font-size: 14px;
+}
+
+.quote-success.show {
+  display: block;
+}
+
+body.quote-lock {
+  overflow: hidden;
+}
+
+/* ══════════════════════════════════════════════
+   FOOTER SOCIAL ICONS
+══════════════════════════════════════════════ */
+footer .footer-brand .logo-icon,
+footer .footer-logo-img {
+  width: 92px !important;
+  max-width: 92px;
+}
+
+footer .footer-brand .logo {
+  margin-bottom: 24px;
+}
+
+footer .social-btn svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;
+}
+
+/* ══════════════════════════════════════════════
+   SCROLL TO TOP  (existing — untouched)
+══════════════════════════════════════════════ */
+.scroll-top {
+  position: fixed;
+  right: 10px;
+  bottom: 32px;
+  z-index: 100000;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #ff6a00;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s ease;
+  cursor: pointer;
+  box-shadow: -4px 0 20px rgba(255, 106, 0, 0.35);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.scroll-top:hover {
+  background: #ff8c2a;
+}
+
+.scroll-top svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* ══════════════════════════════════════════════
+   SHARE WIDGET  — sits just above scroll-top
+   Stack:  [share-toggle]  ← always visible at bottom of group
+           [instagram]
+           [facebook]
+           [youtube]      ← slides up on open
+══════════════════════════════════════════════ */
+
+/* Outer wrapper — anchored same corner as scroll-top */
+.share-group {
+  position: fixed;
+  right: 10px;
+  bottom: calc(32px + 48px + 4px);
+  z-index: 100001;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 48px;
+}
+
+/* ── Share toggle button ── */
+.share-toggle {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #ff6708;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s ease;
+  order: 2;
+}
+
+.share-toggle:hover {
+  background: #ff6a00;
+}
+
+.share-toggle svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.share-group.open .share-toggle svg {
+  transform: rotate(180deg);
+}
+
+/* ── Social icon list ── */
+.share-social-list {
+  display: flex;
+  flex-direction: column;
+  /* instagram on top, youtube closest to toggle */
+  align-items: center;
+  gap: 6px;
+  overflow: hidden;
+  max-height: 0;
+  padding-bottom: 0;
+  transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    padding-bottom 0.3s ease;
+  order: 1;
+  /* renders before toggle → visually above it */
+}
+
+.share-group.open .share-social-list {
+  max-height: 220px;
+  /* 3 × 48px + 3 × 6px gap = 162px, give headroom */
+  padding-bottom: 6px;
+}
+
+/* ── Individual social button ── */
+.share-social-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.28s ease, transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+    filter 0.15s ease;
+}
+
+.share-group.open .share-social-btn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* stagger: youtube (child 3) appears first since list is column-reversed visually */
+.share-group.open .share-social-btn:nth-child(3) {
+  transition-delay: 0.04s;
+}
+
+.share-group.open .share-social-btn:nth-child(2) {
+  transition-delay: 0.09s;
+}
+
+.share-group.open .share-social-btn:nth-child(1) {
+  transition-delay: 0.14s;
+}
+
+.share-social-btn:hover {
+  filter: brightness(1.15);
+}
+
+.share-social-btn svg {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+/* brand colors */
+.share-social-btn[data-p="instagram"] {
+  background: radial-gradient(circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%);
+}
+
+.share-social-btn[data-p="facebook"] {
+  background: #1877f2;
+}
+
+.share-social-btn[data-p="youtube"] {
+  background: #ff0000;
+}
+
+/* tooltip */
+.share-social-btn::after {
+  content: attr(data-label);
+  position: absolute;
+  right: 54px;
+  background: #111;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 0.2s, transform 0.2s;
+  clip-path: polygon(5px 0%, 100% 0%, calc(100% - 5px) 100%, 0% 100%);
+  z-index: 9999;
+}
+
+.share-social-btn:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ripple */
+.share-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.38);
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  animation: shareRipple 0.5s linear forwards;
+  pointer-events: none;
+}
+
+@keyframes shareRipple {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE
+══════════════════════════════════════════════ */
+@media (max-width: 640px) {
+
+  /* Quote modal */
+  .quote-modal {
+    padding: 16px;
+  }
+
+  .quote-form-wrap {
+    padding: 32px 22px;
+  }
+
+  .quote-row {
+    grid-template-columns: 1fr;
+  }
+
+  .quote-close {
+    top: 12px;
+    right: 12px;
+  }
+
+  /* Scroll-top + Share — stay flush right edge on mobile */
+  .scroll-top {
+    right: 0;
+    bottom: 20px;
+  }
+
+  .share-group {
+    right: 0;
+    bottom: calc(20px + 48px + 4px);
+    width: 44px;
+  }
+
+  .share-toggle,
+  .share-social-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* hide tooltip on mobile */
+  .share-social-btn::after {
+    display: none;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   WHATSAPP + CALL BUTTONS  (left side — mirrors scroll-top/share)
+══════════════════════════════════════════════ */
+
+.contact-group {
+  position: fixed;
+  left: 10px;
+  bottom: 32px;
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 48px;
+}
+
+.contact-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: visible;
+  flex-shrink: 0;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.25);
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  filter: brightness(1.12);
+  transform: scale(1.06);
+}
+
+.contact-btn svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Brand colours */
+.contact-btn--wa {
+  background: #25d366;
+}
+
+.contact-btn--call {
+  background: #ff6a00;
+  box-shadow: 4px 0 16px rgba(255, 106, 0, 0.35);
+}
+
+/* Tooltip — appears to the RIGHT of the button */
+.contact-btn::after {
+  content: attr(data-label);
+  position: absolute;
+  left: 54px;
+  background: #111;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 5px 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  clip-path: polygon(0% 0%, calc(100% - 5px) 0%, 100% 100%, 5px 100%);
+  z-index: 9999;
+}
+
+.contact-btn:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — mobile
+══════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .contact-group {
+    left: 0;
+    bottom: 20px;
+    width: 44px;
+  }
+
+  .contact-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* hide tooltip on mobile */
+  .contact-btn::after {
+    display: none;
+  }
+}

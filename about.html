@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Fire Boy Fire Safety</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+  rel="stylesheet" />
+  <link rel="stylesheet" href="./about.css">
+  <link rel="stylesheet" href="./quote.css">
+ 
+</head>
+
+<body>
+
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="loader">
+    <div class="loader-logo"><img src="./img/fire-logo.png" alt="" style="height:60px;" /></div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+    <a href="./index.html" onclick="closeMobileMenu()">Home</a>
+    <a href="./about.html" onclick="closeMobileMenu()">About</a>
+    <a href="./products.html" onclick="closeMobileMenu()">Products</a>
+    <a href="./contact.html" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a href="./index.html" class="logo">
+      <img class="logo-icon" src="./img/fire-logo.png" alt="Fire Boy" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html" class="active">About</a></li>
+      <li><a href="./products.html">Products</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+    <a href="#quote" class="nav-cta">Get Quote</a>
+    <button class="nav-hamburger" id="hamburger" onclick="openMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content reveal">
+      
+      <h2 class="hero-title">
+        YOUR FIRE<br />
+        <span class="accent">SAFETY</span><br />
+        <span class="outline">PARTNER.</span>
+      </h2>
+      <p class="hero-sub">
+        Guided by experienced fire safety professionals with 20+ years of field expertise.
+        BIS certified products, expert consultation, and full lifecycle support — all under one roof.
+      </p>
+      <div class="hero-actions">
+        <a href="./products.html" class="btn-primary">
+          Explore Products
+          <!-- <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
+            stroke-linecap="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg> -->
+        </a>
+        <a href="./contact.html" class="btn-ghost">Book Assessment</a>
+      </div>
+    </div>
+
+    <!-- <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num"><span class="fire-num">20</span>+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num"><span class="fire-num">500</span>+</span>
+        <span class="stat-label">Projects Done</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num"><span class="fire-num">24</span>/7</span>
+        <span class="stat-label">Support Available</span>
+      </div>
+    </div> -->
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">Site-Fit Guidance<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">Maintenance Support<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">AMC Planning<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">NOC Support<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">25+ Years Experience<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">Site-Fit Guidance<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">Maintenance Support<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">AMC Planning<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">NOC Support<div class="ticker-dot"></div>
+      </div>
+      <div class="ticker-item">25+ Years Experience<div class="ticker-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPROACH SECTION -->
+  <section class="approach-section">
+    <div class="approach-header reveal">
+      <div>
+       
+        <h2 class="section-title">CLARITY <span>COMPLIANCE</span><br>FAST EXECUTION</h2>
+      </div>
+      <p class="section-sub">
+        We help customers move from confusion to a clear equipment plan that is practical for the site and easy to maintain.
+      </p>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card reveal">
+        <div class="approach-card-inner">
+          <div class="approach-num">01</div>
+          <div class="approach-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2Zm3.9 8.4-4.8 4.8-2.7-2.7 1.4-1.4 1.3 1.3 3.4-3.4 1.4 1.4Z" />
+            </svg>
+          </div>
+          <h3>Certified Supply</h3>
+          <p>BIS and quality-focused products sourced from trusted fire safety brands for guaranteed performance.</p>
+        </div>
+      </div>
+      <div class="approach-card reveal reveal-delay-1">
+        <div class="approach-card-inner">
+          <div class="approach-num">02</div>
+          <div class="approach-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm0 3.2 5 1.9V11c0 3.4-2.1 6.7-5 7.8-2.9-1.1-5-4.4-5-7.8V7.1l5-1.9Z" />
+            </svg>
+          </div>
+          <h3>Site-Fit Guidance</h3>
+          <p>Recommendations based on occupancy, hazard type, access, and fire class — real solutions for real
+            buildings.</p>
+        </div>
+      </div>
+      <div class="approach-card reveal reveal-delay-2">
+        <div class="approach-card-inner">
+          <div class="approach-num">03</div>
+          <div class="approach-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 1 3 5v6c0 5.6 3.8 10.7 9 12 5.2-1.3 9-6.4 9-12V5l-9-4Zm4 11h-3v3h-2v-3H8v-2h3V7h2v3h3v2Z" />
+            </svg>
+          </div>
+          <h3>Maintenance Support</h3>
+          <p>Refilling, inspections, AMC planning, and full product lifecycle support so you're always protected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT COMPANY -->
+  <section class="about-section">
+    <div class="about-panel reveal">
+      <div class="about-img">
+        <img src="./img/installation.jpg" alt="Fire safety professionals at work" />
+       
+      </div>
+      <div class="about-content">
+       
+        <h2>Guided By Experienced Fire Safety Professionals</h2>
+        <p>We are guided by a young and veteran group of directors having more than a decade of experience in this
+          field. Our team is abundantly acquainted with the fire and safety standards, rules and regulations imposed by
+          the Government of India and International standards.</p>
+        <p>Our company is geared, well equipped and collaborated with major multinational brands to provide a high
+          standard of skilled approach with modest services across India.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-section">
+    <div style="text-align:center;margin-bottom:0;" class="reveal">
+      <!-- <div class="section-tag" style="justify-content:center;">Why Choose Us</div> -->
+      <h2 class="featured-title" style="text-align:center;">RELIABLE <span>FIRE SAFETY,</span><br>DELIVERED WITH
+        PRECISION.</h2>
+      <p
+        style="font-family:var(--font-text);font-size:18px;color:var(--mist);line-height:1.75;margin:0 auto;max-width:520px;">
+        We combine field expertise, responsive service, and quality-focused execution for every safety requirement.
+      </p>
+    </div>
+    <div class="why-grid-cards reveal">
+      <div class="why-card">
+        <div class="why-icon-box purple">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 4a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm-6 8a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm12 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm-6 0c2.4 0 4.5 1.1 5.7 2.8-.7.5-1.2 1.2-1.5 2H7.8c-.3-.8-.8-1.5-1.5-2C7.5 13.1 9.6 12 12 12Z" />
+          </svg>
+        </div>
+        <h3>Experience</h3>
+        <p>20+ years of field expertise in fire safety installations, audits, and solutions across India.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box blue">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3a8 8 0 0 1 7.5 10.8l2.2 2.2-1.7 1.7-2-2A8 8 0 1 1 12 3Zm0 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z" />
+          </svg>
+        </div>
+        <h3>Client Focused</h3>
+        <p>Tailored solutions built around your specific requirements, site conditions, and budget constraints.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box orange">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm0 3.2 5 1.9V11c0 3.4-2.1 6.7-5 7.8-2.9-1.1-5-4.4-5-7.8V7.1l5-1.9Zm-1 8.6 5-5 1.4 1.4L11 16.6 7.6 13.2 9 11.8l2 2Z" />
+          </svg>
+        </div>
+        <h3>Comprehensive</h3>
+        <p>A one-stop solution — supply, installation, refilling, AMC, training, and NOC support under one roof.</p>
+      </div>
+      <div class="why-card" style="border-right:none;">
+        <div class="why-icon-box red">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2 9.8 4.1 6.9 3.4 6 6.3 3.1 7.2l.7 2.9L1.7 12l2.1 1.9-.7 2.9 2.9.9.9 2.9 2.9-.7L12 22l2.2-2.1 2.9.7.9-2.9 2.9-.9-.7-2.9 2.1-1.9-2.1-1.9.7-2.9-2.9-.9-.9-2.9-2.9.7L12 2Zm3.9 8.4-4.8 4.8-2.7-2.7 1.4-1.4 1.3 1.3 3.4-3.4 1.4 1.4Z" />
+          </svg>
+        </div>
+        <h3>Quality Assured</h3>
+        <p>BIS certified products, internationally compliant standards, and an unwavering commitment to results.</p>
+      </div>
+    </div>
+    <div class="stat-bar reveal">
+      <div class="stat-cell">
+        <div class="stat-n">20+</div>
+        <div class="stat-l">Years of Experience</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-n">500+</div>
+        <div class="stat-l">Projects Completed</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-n">50+</div>
+        <div class="stat-l">Certified Brands</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-n">24/7</div>
+        <div class="stat-l">Support Available</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <div class="brands">
+    <div class="brands-scroll">
+      <div class="brand-item">MINIMAX</div>
+      <div class="brand-item">CEASEFIRE</div>
+      <div class="brand-item">SAFEX</div>
+      <div class="brand-item">NEWAGE</div>
+      <div class="brand-item">KANEX</div>
+      <div class="brand-item">AMEREX</div>
+      <div class="brand-item">HOCHIKI</div>
+      <div class="brand-item">SIEMENS</div>
+      <div class="brand-item">MINIMAX</div>
+      <div class="brand-item">CEASEFIRE</div>
+      <div class="brand-item">SAFEX</div>
+      <div class="brand-item">NEWAGE</div>
+      <div class="brand-item">KANEX</div>
+      <div class="brand-item">AMEREX</div>
+      <div class="brand-item">HOCHIKI</div>
+      <div class="brand-item">SIEMENS</div>
+    </div>
+  </div>
+
+  <!-- MISSION VISION -->
+  <section class="mv-section">
+    
+    <div class="mv-panel reveal">
+      <div class="mv-img">
+        <img src="./img/consulting.jpg" alt="Fire safety consultation" />
+      </div>
+      <div class="mv-content">
+        <article class="mv-item">
+          <div class="mv-badge">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2a10 10 0 1 0 10 10h-2a8 8 0 1 1-8-8V2Zm8.7 2.3-8 8-.9 4.5 4.5-.9 8-8-3.6-3.6ZM12 8a4 4 0 1 0 4 4h-2a2 2 0 1 1-2-2V8Z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Our Mission</h3>
+            <p>Deliver safe, high-quality, cost-effective, and sustainable fire safety solutions — timely, every time,
+              to every client across India.</p>
+          </div>
+        </article>
+        <article class="mv-item">
+          <div class="mv-badge">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 5c5 0 9 5.2 10 7-1 1.8-5 7-10 7S3 13.8 2 12c1-1.8 5-7 10-7Zm0 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm0 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4Z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Our Vision</h3>
+            <p>To be the globally trusted partner in fire engineering and safety solutions — expanding across India and
+              beyond.</p>
+          </div>
+        </article>
+        <article class="mv-item">
+          <div class="mv-badge">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2a5 5 0 0 1 5 5c0 1.2-.4 2.3-1.1 3.2l2.7 2.7-1.4 1.4-2.8-2.8A5 5 0 1 1 12 2Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6ZM2 16h5.6c.8 0 1.5.3 2.1.9l1.1 1.1H16v2h-6l-1.7-1.7c-.2-.2-.4-.3-.7-.3H4v4H2v-6Z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Client Empowerment</h3>
+            <p>Enhance client success through engineering excellence, safety education, and long-term satisfaction.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div class="faq-header reveal">
+      
+      <h2 class="section-title" style="text-align:center;">COMMON FIRE SAFETY<br><span>QUESTIONS</span></h2>
+      <p
+        style="font-family:var(--font-text);font-size:17px;color:var(--mist);line-height:1.75;margin:14px auto 0;max-width:720px;">
+        Quick answers for customers planning new installations, upgrades, or maintenance.
+      </p>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item reveal" open>
+        <summary>Which fire extinguisher is suitable for my building?</summary>
+        <p>It depends on the risk type. Offices usually need ABC extinguishers, while kitchens, server rooms, and
+          industrial areas may need specialized units. Our experts can assess your site and recommend the right fit.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-1">
+        <summary>Do you provide installation and refilling services?</summary>
+        <p>Yes. We support product supply, installation guidance, extinguisher refilling, inspection, and annual
+          maintenance contracts across all major cities in India.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-2">
+        <summary>How often should fire safety equipment be checked?</summary>
+        <p>Basic visual checks should happen regularly, and professional inspection or maintenance should be scheduled
+          at least once a year to comply with BIS standards and local fire authority regulations.</p>
+      </details>
+      <details class="faq-item reveal reveal-delay-3">
+        <summary>Can you help with bulk orders for businesses?</summary>
+        <p>Yes. We can recommend product quantities, organize delivery schedules, and support commercial or industrial
+          fire safety requirements with dedicated account management.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="contact">
+    <div class="cta-line-top"></div>
+    <div class="cta-embers">
+      <div class="ember"></div>
+      <div class="ember"></div>
+      <div class="ember"></div>
+      <div class="ember"></div>
+      <div class="ember"></div>
+      <div class="ember"></div>
+    </div>
+    <div class="cta-glow-orb"></div>
+    <div class="cta-inner reveal">
+      <h2 class="cta-title">
+        READY TO
+        <span class="fire-line" data-text="STAY SAFE">STAY SAFE</span>
+        TODAY
+      </h2>
+      <div class="cta-divider">
+        <div class="cta-divider-line"></div>
+        <div class="cta-divider-icon">🔥</div>
+        <div class="cta-divider-line"></div>
+      </div>
+      <p class="cta-sub">Talk to our team for a site assessment, product recommendation, or maintenance plan built
+        around your space.</p>
+      <div class="cta-actions">
+        <a href="./contact.html" class="btn-dark">Request Assessment →</a>
+        <a href="./products.html" class="btn-outline-white">View Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+   <footer>
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="#" class="logo"><img class="logo-icon" src="./img/fire-logo.png" alt="" /></a>
+        <p class="footer-desc">India's premier fire safety equipment supplier. BIS certified, expert-backed, always
+          reliable. Protecting lives and properties since 1998.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn">f</a>
+          <a href="#" class="social-btn">in</a>
+          <a href="#" class="social-btn">tw</a>
+          <a href="#" class="social-btn">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="#">Fire Extinguishers</a></li>
+          <li><a href="#">Hydrant Systems</a></li>
+          <li><a href="#">Fire Alarms</a></li>
+          <li><a href="#">Smoke Detectors</a></li>
+          <li><a href="#">Sprinkler Systems</a></li>
+          <li><a href="#">Safety Signage</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">Annual Maintenance</a></li>
+          <li><a href="#">Site Assessment</a></li>
+          <li><a href="#">Refilling Services</a></li>
+          <li><a href="#">Installation</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">NOC Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="#">About IGNIS</a></li>
+          <li><a href="#">Certifications</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Distributor Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 IGNIS Fire Safety Solutions Pvt. Ltd. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 24 24">
+      <path d="M7 14l5-5 5 5z" />
+    </svg>
+  </button>
+
+  <script>
+    // PAGE LOADER
+    window.addEventListener('load', () => {
+      setTimeout(() => { document.getElementById('loader').classList.add('hidden'); }, 800);
+    });
+
+    // CURSOR
+    const cursor = document.getElementById('cursor');
+    const trail = document.getElementById('cursorTrail');
+    let tx = 0, ty = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', e => {
+      tx = e.clientX; ty = e.clientY;
+      cursor.style.left = tx + 'px'; cursor.style.top = ty + 'px';
+    });
+    setInterval(() => {
+      rx += (tx - rx) * 0.14; ry += (ty - ry) * 0.14;
+      trail.style.left = rx + 'px'; trail.style.top = ry + 'px';
+    }, 16);
+    document.addEventListener('mousedown', () => cursor.style.transform = 'scale(2.2)');
+    document.addEventListener('mouseup', () => cursor.style.transform = 'scale(1)');
+
+    // NAV SCROLL
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
+    });
+
+    // MOBILE MENU
+    function openMobileMenu() { document.getElementById('mobileMenu').classList.add('open'); }
+    function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+    // REVEAL ON SCROLL
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+  </script>
+  <script src="./script.js"></script>
+  <script src="./quote.js"></script>
+  <link rel="stylesheet" href="./floating-widgets.css" />
+  <script src="./floating-widgets.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,5808 @@
+[
+  {
+    "id": 1,
+    "category": "extinguisher",
+    "categoryLabel": "Fire Extinguisher",
+    "name": "ABC Dry Powder Extinguisher 4KG",
+    "title": [
+      "ABC DRY",
+      "POWDER",
+      "EXTINGUISHER",
+      "4KG"
+    ],
+    "desc": "India's most trusted multi-purpose fire extinguisher. ISI marked under IS:2171, this 4KG dry powder unit tackles Class A (solid), Class B (liquid), and Class C (gas) fires. Engineered for commercial establishments, warehouses, factories, and residential premises.",
+    "price": "1250",
+    "badge": "Best Seller",
+    "cert": true,
+    "img": "./img/DCP-SBC-PBC.webp",
+    "color": "#ffece0",
+    "bg": "linear-gradient(135deg,#ffece0,#f5f5f3)",
+    "specs": [
+      "4 KG",
+      "Class ABC",
+      "ISI Marked",
+      "5-Year Warranty"
+    ],
+    "specGrid": [
+      {
+        "key": "Capacity",
+        "val": "4 KG"
+      },
+      {
+        "key": "Fire Class",
+        "val": "A / B / C"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2171"
+      },
+      {
+        "key": "Warranty",
+        "val": "5 Years"
+      },
+      {
+        "key": "Discharge Time",
+        "val": "~13 sec"
+      },
+      {
+        "key": "Throw Range",
+        "val": "4-6 Meters"
+      }
+    ],
+    "features": [
+      "Multi-purpose ABC powder - effective against Class A (wood/paper/cloth), B (flammable liquids), and C (gas) fires",
+      "ISI marked under IS:2171, ensuring compliance with Indian fire safety standards",
+      "Pressurized with dry nitrogen for a consistent discharge without performance drop-off",
+      "Easy-to-use squeeze-grip valve with safety pin and tamper-evident seal",
+      "Powder discharge range of 4-6 meters for a safe standoff distance",
+      "Lightweight body with hang bracket included for wall mounting",
+      "Annual service due indicator and pressure gauge for quick visual check"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "DCP-4KG-ABC"
+      ],
+      [
+        "Capacity",
+        "4 KG"
+      ],
+      [
+        "Agent Type",
+        "Mono Ammonium Phosphate (ABC Powder)"
+      ],
+      [
+        "Propellant",
+        "Dry Nitrogen (N₂)"
+      ],
+      [
+        "Working Pressure",
+        "14.5 bar (kg/cm²)"
+      ],
+      [
+        "Test Pressure",
+        "25 bar"
+      ],
+      [
+        "Discharge Time",
+        "Approximately 13 seconds"
+      ],
+      [
+        "Throw Range",
+        "4-6 Meters"
+      ],
+      [
+        "Cylinder Material",
+        "MS Powder-Coated (Red RAL 3000)"
+      ],
+      [
+        "Operating Temperature",
+        "-20°C to +60°C"
+      ],
+      [
+        "Height × Diameter",
+        "430 mm × 150 mm (approx)"
+      ],
+      [
+        "Gross Weight",
+        "~6 kg (filled)"
+      ],
+      [
+        "IS Standard",
+        "IS:2171"
+      ],
+      [
+        "Refill Interval",
+        "Every 3 years or after use"
+      ],
+      [
+        "Hydrostatic Test",
+        "Every 5 years"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2171",
+      "BIS Certified",
+      "TAC Approved",
+      "NBC Compliant"
+    ],
+    "certNote": "This extinguisher carries the Bureau of Indian Standards (BIS) ISI mark under IS:2171 - the mandatory certification for portable fire extinguishers in India. Suitable for installations requiring TAC (Tariff Advisory Committee) approval and NBC (National Building Code of India) compliance.",
+    "related": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": 2,
+    "category": "extinguisher",
+    "categoryLabel": "Fire Extinguisher",
+    "name": "CO₂ Fire Extinguisher 4.5KG",
+    "title": [
+      "CO2",
+      "CARBON",
+      "DIOXIDE",
+      "4.5KG"
+    ],
+    "desc": "The go-to extinguisher for electrical hazards - carbon dioxide leaves zero residue, making it the safest choice for server rooms, data centers, electrical panels, laboratories, and precision equipment areas. Operates by smothering fires with CO₂, displacing oxygen without damaging sensitive electronics.",
+    "price": "3800",
+    "badge": "Premium",
+    "cert": true,
+    "img": "./img/CO2-TM-XX.webp",
+    "color": "#f0f4ff",
+    "bg": "linear-gradient(135deg, #f0f4ff, #f5f5f3)",
+    "specs": [
+      "4.5 KG",
+      "Class B/E",
+      "ISI Marked",
+      "BIS Certified"
+    ],
+    "specGrid": [
+      {
+        "key": "Capacity",
+        "val": "4.5 KG"
+      },
+      {
+        "key": "Fire Class",
+        "val": "B / E"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2878"
+      },
+      {
+        "key": "Agent",
+        "val": "CO₂ Gas"
+      },
+      {
+        "key": "Discharge Time",
+        "val": "~14 sec"
+      },
+      {
+        "key": "Throw Range",
+        "val": "2-3 Meters"
+      }
+    ],
+    "features": [
+      "Zero residue discharge - CO₂ evaporates completely, leaving no mess or corrosion on sensitive equipment",
+      "Safe on live electrical fires up to 1000V - the only recommended extinguisher for Class E (electrical) fires",
+      "ISI marked under IS:2878 - mandatory standard for CO₂ extinguishers in India",
+      "Black horn with anti-static discharge prevents static build-up near sensitive electronics",
+      "High-pressure steel cylinder with brass valve, pressure gauge, and safety burst disc",
+      "CO₂ acts by oxygen displacement - smothers fire without chemical contamination",
+      "Ideal for server rooms, UPS rooms, control rooms, laboratories, and switch rooms"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "CO2-4.5KG"
+      ],
+      [
+        "Capacity",
+        "4.5 KG"
+      ],
+      [
+        "Agent Type",
+        "Carbon Dioxide (CO₂)"
+      ],
+      [
+        "Cylinder Pressure",
+        "~55 bar (at 20°C)"
+      ],
+      [
+        "Test Pressure",
+        "250 bar (hydraulic)"
+      ],
+      [
+        "Discharge Time",
+        "Approximately 14 seconds"
+      ],
+      [
+        "Throw Range",
+        "2-3 Meters"
+      ],
+      [
+        "Cylinder Material",
+        "High-strength Alloy Steel"
+      ],
+      [
+        "Horn Material",
+        "Anti-static Black Polycarbonate"
+      ],
+      [
+        "Operating Temperature",
+        "-30°C to +60°C"
+      ],
+      [
+        "Height × Diameter",
+        "~630 mm × 140 mm"
+      ],
+      [
+        "Gross Weight",
+        "~12 kg (filled)"
+      ],
+      [
+        "IS Standard",
+        "IS:2878"
+      ],
+      [
+        "Refill Interval",
+        "When weight loss >10% or after use"
+      ],
+      [
+        "Hydrostatic Test",
+        "Every 5 years"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2878",
+      "BIS Certified",
+      "TAC Approved",
+      "Class E Safe"
+    ],
+    "certNote": "Certified under IS:2878 by the Bureau of Indian Standards. The CO₂ extinguisher is the recommended type for Class E (electrical) fires in India per NBC 2016 guidelines and is TAC approved for insurance purposes.",
+    "related": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "id": 3,
+    "category": "extinguisher",
+    "categoryLabel": "Fire Extinguisher",
+    "name": "Clean Agent (HFC-236fa) 4KG",
+    "title": [
+      "CLEAN",
+      "AGENT",
+      "HFC-236fa",
+      "4KG"
+    ],
+    "desc": "The most advanced portable fire suppression agent available. HFC-236fa (hexafluoropropane) extinguishes fires by chemically interrupting the combustion chain reaction - leaving absolutely zero residue. Designed for data centers, server rooms, telecom racks, and any environment where equipment survival after a fire event is non-negotiable.",
+    "price": "6500",
+    "badge": "New",
+    "cert": true,
+    "img": "./img/STP-CA-XX.webp",
+    "color": "#f0f8ff",
+    "bg": "linear-gradient(135deg, #f0f8ff, #f5f5f3)",
+    "specs": [
+      "4 KG",
+      "Class A/B/C/E",
+      "No Residue",
+      "Safe for Electronics"
+    ],
+    "specGrid": [
+      {
+        "key": "Capacity",
+        "val": "4 KG"
+      },
+      {
+        "key": "Fire Class",
+        "val": "A/B/C/E"
+      },
+      {
+        "key": "Agent",
+        "val": "HFC-236fa"
+      },
+      {
+        "key": "Residue",
+        "val": "ZERO"
+      },
+      {
+        "key": "Discharge Time",
+        "val": "~10 sec"
+      },
+      {
+        "key": "Electrical Safe",
+        "val": "35,000V"
+      }
+    ],
+    "features": [
+      "HFC-236fa extinguishes by chemically interrupting the combustion chain reaction - more effective per kilogram than CO₂",
+      "Leaves absolutely zero residue - equipment can be powered back on immediately after discharge",
+      "Safe for Class A, B, C, and E fires - the only portable extinguisher to cover all four classes",
+      "Electrically non-conductive and safe on live equipment up to 35,000V",
+      "Non-corrosive and non-abrasive - no secondary damage to sensitive electronics, optics, or instruments",
+      "NFPA 2001 and ISO 14520 compliant agent - the global standard for clean agent fire suppression",
+      "Stored as a liquid, discharged as a gas - no freeze risk, no residual liquid after use"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "STP-CA-4KG-236FA"
+      ],
+      [
+        "Capacity",
+        "4 KG"
+      ],
+      [
+        "Agent Type",
+        "HFC-236fa (Hexafluoropropane)"
+      ],
+      [
+        "NOAEL (Safe exposure)",
+        "10% v/v"
+      ],
+      [
+        "Working Pressure",
+        "25 bar (at 20°C)"
+      ],
+      [
+        "Test Pressure",
+        "37 bar (hydraulic)"
+      ],
+      [
+        "Discharge Time",
+        "~10 seconds"
+      ],
+      [
+        "Throw Range",
+        "3-5 Meters"
+      ],
+      [
+        "Electrical Safety",
+        "Non-conductive to 35,000V"
+      ],
+      [
+        "Residue",
+        "Zero - evaporates completely"
+      ],
+      [
+        "Cylinder Material",
+        "Seamless Stainless Steel"
+      ],
+      [
+        "Operating Temperature",
+        "-20°C to +55°C"
+      ],
+      [
+        "Height × Diameter",
+        "~580 mm × 130 mm"
+      ],
+      [
+        "Gross Weight",
+        "~8.5 kg (filled)"
+      ],
+      [
+        "Global Warming Potential",
+        "GWP 9400 (being phased - check regulations)"
+      ],
+      [
+        "Ozone Depletion",
+        "Zero ODP"
+      ],
+      [
+        "IS Standard",
+        "IS:15683"
+      ],
+      [
+        "Refill Interval",
+        "When weight loss >5% or after use"
+      ]
+    ],
+    "certs": [
+      "IS:15683 Compliant",
+      "NFPA 2001 Agent",
+      "ISO 14520 Compliant",
+      "Zero ODP",
+      "TAC Approved"
+    ],
+    "certNote": "HFC-236fa is certified under IS:15683 and complies with NFPA 2001 (Standard on Clean Agent Fire Extinguishing Systems) and ISO 14520. Zero ozone depletion potential. Note: Due to high GWP, regulations around HFCs are evolving - confirm compliance with local fire authority before procurement.",
+    "related": [
+      2,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 4,
+    "category": "hydrant",
+    "categoryLabel": "Hydrant System",
+    "name": "Fire Hydrant Valve (Gun Metal) 63mm",
+    "title": [
+      "FIRE HYDRANT",
+      "VALVE",
+      "GUN METAL",
+      "63MM"
+    ],
+    "desc": "Heavy-duty gunmetal landing valve - the critical connection point in every fire hydrant system. Engineered for high-pressure firefighting water supply, IS:5290 certified, with a smooth quarter-turn operation for rapid deployment. Used in buildings, factories, warehouses, and public infrastructure across India.",
+    "price": "2100",
+    "badge": "",
+    "cert": true,
+    "img": "./img/Double-Headed-Hydrant-Valve_pro.webp",
+    "color": "#fff8f0",
+    "bg": "linear-gradient(135deg, #fff8f0, #f5f5f3)",
+    "specs": [
+      "63mm",
+      "Gun Metal",
+      "IS:5290",
+      "High Pressure"
+    ],
+    "specGrid": [
+      {
+        "key": "Size",
+        "val": "63 mm"
+      },
+      {
+        "key": "Material",
+        "val": "Gun Metal"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:5290"
+      },
+      {
+        "key": "Pressure Rating",
+        "val": "16 Bar"
+      },
+      {
+        "key": "Operation",
+        "val": "Quarter Turn"
+      },
+      {
+        "key": "Inlet Thread",
+        "val": "BSP / IS"
+      }
+    ],
+    "features": [
+      "Cast from IS grade gunmetal (Cu-Sn-Zn alloy) - corrosion-resistant, high-strength, long service life in wet environments",
+      "IS:5290 certified - mandatory standard for all landing valves used in fire hydrant systems in India",
+      "63mm bore for high-flow firefighting water delivery - compatible with standard fire brigade hoses",
+      "Quarter-turn ball mechanism for instant open/close - critical for rapid response in emergencies",
+      "Integral pressure-test port for system commissioning and maintenance checks",
+      "Blanking cap included with chain to prevent debris entry when not in use",
+      "Available in single-headed and double-headed (Siamese) configurations"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "DHHV-GM-63"
+      ],
+      [
+        "Size (Bore)",
+        "63 mm (2.5 inch)"
+      ],
+      [
+        "Body Material",
+        "Gunmetal IS:318 Grade LTB-2"
+      ],
+      [
+        "Seat / Disc",
+        "Gunmetal"
+      ],
+      [
+        "Spindle",
+        "Stainless Steel 304"
+      ],
+      [
+        "Gland Packing",
+        "Compressed Asbestos / PTFE"
+      ],
+      [
+        "Working Pressure",
+        "16 Bar (1.6 MPa)"
+      ],
+      [
+        "Test Pressure",
+        "24 Bar"
+      ],
+      [
+        "Inlet Connection",
+        "BSP Parallel Thread (IS:554)"
+      ],
+      [
+        "Outlet Connection",
+        "Instantaneous Female Coupling (IS:904)"
+      ],
+      [
+        "Configuration",
+        "Single Headed / Double Headed (Siamese)"
+      ],
+      [
+        "IS Standard",
+        "IS:5290"
+      ],
+      [
+        "Weight (approx)",
+        "~4.5 kg (single head)"
+      ]
+    ],
+    "certs": [
+      "IS:5290 Certified",
+      "BIS Marked",
+      "TAC Approved",
+      "NBC Compliant"
+    ],
+    "certNote": "IS:5290 is the Bureau of Indian Standards specification for landing valves used in fire hydrant systems. Mandatory for all commercial and industrial buildings under NBC 2016. TAC approval required for fire insurance compliance.",
+    "related": [
+      5,
+      8,
+      9
+    ]
+  },
+  {
+    "id": 5,
+    "category": "hydrant",
+    "categoryLabel": "Hydrant System",
+    "name": "Fire Hose Reel - 30M × 25mm",
+    "title": [
+      "FIRE HOSE",
+      "REEL",
+      "30M × 25MM"
+    ],
+    "desc": "Wall-mounted fire hose reel with 30 metres of semi-rigid hose and full 180° swivel arm for maximum coverage. IS:884 compliant for use in all NBC-regulated buildings. Ideal for first-response firefighting in commercial complexes, schools, hospitals, and high-rise buildings.",
+    "price": "4200",
+    "badge": "Popular",
+    "cert": false,
+    "img": "./img/Short-Branch-Pipe-With-Nozzle_pro.webp",
+    "color": "#f5fff0",
+    "bg": "linear-gradient(135deg, #f5fff0, #f5f5f3)",
+    "specs": [
+      "30M Hose",
+      "25mm Bore",
+      "180° Swivel",
+      "IS:884"
+    ],
+    "specGrid": [
+      {
+        "key": "Hose Length",
+        "val": "30 Metres"
+      },
+      {
+        "key": "Bore Size",
+        "val": "25 mm"
+      },
+      {
+        "key": "Swivel",
+        "val": "180°"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:884"
+      },
+      {
+        "key": "Working Pressure",
+        "val": "8 Bar"
+      },
+      {
+        "key": "Mount Type",
+        "val": "Wall Bracket"
+      }
+    ],
+    "features": [
+      "30-metre semi-rigid hose provides excellent reach for large floor areas without kinking",
+      "180° full-swing swivel arm bracket allows complete coverage of corridor and rooms on both sides",
+      "IS:884 compliant - the mandatory Indian standard for fire hose reels",
+      "Pistol-grip nozzle with shut-off and jet/spray selector for versatile attack",
+      "Red powder-coated mild steel drum and mounting bracket for corrosion resistance",
+      "25mm bore hose provides higher flow rate compared to standard 19mm reels",
+      "Quick-connect 25mm BSP water inlet for easy installation to hydrant system",
+      "Suitable for first-aid firefighting without requiring fire brigade presence"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "HR-30M-25MM"
+      ],
+      [
+        "Hose Length",
+        "30 Metres"
+      ],
+      [
+        "Hose Bore",
+        "25 mm (1 inch)"
+      ],
+      [
+        "Hose Type",
+        "Semi-rigid polyethylene lined"
+      ],
+      [
+        "Working Pressure",
+        "8 bar"
+      ],
+      [
+        "Test Pressure",
+        "16 bar"
+      ],
+      [
+        "Swivel Arm",
+        "180° full rotation"
+      ],
+      [
+        "Drum Material",
+        "MS Red Powder-Coated"
+      ],
+      [
+        "Nozzle Type",
+        "Pistol Grip, Jet/Spray, Shutoff"
+      ],
+      [
+        "Water Inlet",
+        "25mm BSP (M)"
+      ],
+      [
+        "IS Standard",
+        "IS:884"
+      ],
+      [
+        "Flow Rate",
+        "~0.4 L/s at 2 bar nozzle pressure"
+      ],
+      [
+        "Installation",
+        "Wall-mounted with swivel bracket"
+      ],
+      [
+        "Mounting Height",
+        "900mm-1200mm (centre of reel)"
+      ]
+    ],
+    "certs": [
+      "IS:884 - BIS Compliant",
+      "NBC Compliant",
+      "TAC Approved"
+    ],
+    "certNote": "Manufactured to IS:884 as published by Bureau of Indian Standards, this hose reel is compliant with the National Building Code of India. Required in all buildings where hydrant systems are mandated under NBC Part 4 (Fire and Life Safety).",
+    "related": [
+      4,
+      1,
+      8
+    ]
+  },
+  {
+    "id": 6,
+    "category": "detection",
+    "categoryLabel": "Detection",
+    "name": "Photoelectric Smoke Detector",
+    "title": [
+      "PHOTO",
+      "ELECTRIC",
+      "SMOKE",
+      "DETECTOR"
+    ],
+    "desc": "Advanced optical smoke detector using photoelectric light-scatter technology. Provides 360° omnidirectional coverage with built-in drift compensation to eliminate nuisance alarms. IS:11360 certified and compatible with all conventional fire alarm control panels.",
+    "price": "850",
+    "badge": "",
+    "cert": true,
+    "img": "./img/Panel-Protection-Systems_pro.webp",
+    "color": "#f0f5ff",
+    "bg": "linear-gradient(135deg,#f0f5ff,#f5f5f3)",
+    "specs": [
+      "360° Coverage",
+      "9-35V DC",
+      "Low Power",
+      "IS:11360"
+    ],
+    "specGrid": [
+      {
+        "key": "Coverage",
+        "val": "360°"
+      },
+      {
+        "key": "Voltage",
+        "val": "9-35V DC"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:11360"
+      },
+      {
+        "key": "IP Rating",
+        "val": "IP44"
+      },
+      {
+        "key": "Response",
+        "val": "< 30 sec"
+      },
+      {
+        "key": "Height",
+        "val": "3-10 m"
+      }
+    ],
+    "features": [
+      "Photoelectric (optical scatter) sensing - detects slow smouldering fires earlier than ionisation type detectors",
+      "360° omnidirectional chamber allows smoke entry from any direction - eliminates blind spots",
+      "Built-in microprocessor drift compensation reduces nuisance alarms from dust accumulation",
+      "Wide 9-35V DC operating range - compatible with all conventional fire alarm panels without additional hardware",
+      "Bi-colour LED: slow green flash (normal), rapid red flash (alarm), steady amber (fault)",
+      "Universal 45mm twist-lock base - direct retrofit into existing detector base sockets",
+      "IS:11360 certified and IP44 rated for dust and splash protection"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "OSD-360-P"
+      ],
+      [
+        "Detection Type",
+        "Photoelectric (Optical Scatter)"
+      ],
+      [
+        "Operating Voltage",
+        "9-35V DC"
+      ],
+      [
+        "Standby Current",
+        "45 μA"
+      ],
+      [
+        "Alarm Current",
+        "35 mA"
+      ],
+      [
+        "Coverage Area",
+        "Up to 80 m²"
+      ],
+      [
+        "Mounting Height",
+        "3-10 metres"
+      ],
+      [
+        "Response Time",
+        "< 30 seconds"
+      ],
+      [
+        "Operating Temp",
+        "-10°C to +55°C"
+      ],
+      [
+        "Humidity",
+        "5-95% RH non-condensing"
+      ],
+      [
+        "IP Rating",
+        "IP44"
+      ],
+      [
+        "Standard",
+        "IS:11360"
+      ],
+      [
+        "Certification",
+        "BIS Marked"
+      ],
+      [
+        "Base",
+        "45mm Universal Twist-Lock"
+      ],
+      [
+        "LED",
+        "Bi-Colour Red/Amber"
+      ],
+      [
+        "Dimensions",
+        "Ø100 × 45mm"
+      ]
+    ],
+    "certs": [
+      "BIS Marked - IS:11360",
+      "IP44 Rated - Dust & Splash",
+      "NBC Compliant - Part 4",
+      "TAC Approved"
+    ],
+    "certNote": "Certified to IS:11360 under Bureau of Indian Standards. IP44 rated for dust and splash protection. Meets NBC Part 4 (Fire & Life Safety) requirements for smoke detection in commercial and residential occupancies.",
+    "related": [
+      7,
+      8,
+      11
+    ]
+  },
+  {
+    "id": 7,
+    "category": "detection",
+    "categoryLabel": "Detection",
+    "name": "Conventional Fire Alarm Panel 4-Zone",
+    "title": [
+      "FIRE ALARM",
+      "PANEL",
+      "4-ZONE"
+    ],
+    "desc": "4-zone conventional fire alarm control panel with backlit 16×2 LCD display and 100-event log memory. 230V AC powered with 24-hour sealed lead-acid battery backup. IS:2189 compliant. Central control hub for detector zones, sounders, and relay outputs.",
+    "price": "8500",
+    "badge": "New",
+    "cert": true,
+    "img": "./img/FB-1X2.webp",
+    "color": "#f5f5f5",
+    "bg": "linear-gradient(135deg,#f5f5f5,#f5f5f3)",
+    "specs": [
+      "4 Zones",
+      "LCD Display",
+      "Event Log",
+      "240V AC"
+    ],
+    "specGrid": [
+      {
+        "key": "Zones",
+        "val": "4"
+      },
+      {
+        "key": "Display",
+        "val": "16×2 LCD"
+      },
+      {
+        "key": "Battery",
+        "val": "24 Hr Backup"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2189"
+      },
+      {
+        "key": "Sounder",
+        "val": "1A @ 24V"
+      },
+      {
+        "key": "Event Log",
+        "val": "100 Events"
+      }
+    ],
+    "features": [
+      "4 fully independent detection zones with individual alarm, fault, and isolate controls per zone",
+      "Backlit 16×2 LCD displays zone status, time, date, and event messages in plain English - no cryptic codes",
+      "100-event log memory with full timestamp - essential for fire investigation and insurance documentation",
+      "IS:2189 compliant: 24-hour standby + 30-minute alarm battery backup built in",
+      "Built-in sounder circuit plus volt-free relay output for external devices and BMS integration",
+      "Automatic open-circuit and short-circuit fault detection on every zone",
+      "Isolate any faulty zone independently - system stays active while one zone is under service"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FB-CP-4Z"
+      ],
+      [
+        "Zones",
+        "4 Conventional"
+      ],
+      [
+        "Display",
+        "16×2 Backlit LCD"
+      ],
+      [
+        "Mains Supply",
+        "230V AC ±15%, 50Hz"
+      ],
+      [
+        "Battery",
+        "12V 7.2Ah Sealed Lead Acid"
+      ],
+      [
+        "Standby Duration",
+        "24 Hours (IS:2189)"
+      ],
+      [
+        "Alarm Duration",
+        "30 Minutes minimum"
+      ],
+      [
+        "Standby Current/Zone",
+        "2.5 mA"
+      ],
+      [
+        "Alarm Current/Zone",
+        "50 mA max"
+      ],
+      [
+        "Max Detectors/Zone",
+        "20"
+      ],
+      [
+        "Sounder Output",
+        "1A @ 24V DC"
+      ],
+      [
+        "Relay Output",
+        "Volt-free, 2A"
+      ],
+      [
+        "Operating Temp",
+        "0°C to +50°C"
+      ],
+      [
+        "Enclosure",
+        "IP30, Mild Steel"
+      ],
+      [
+        "Standard",
+        "IS:2189"
+      ],
+      [
+        "Certification",
+        "BIS Marked"
+      ]
+    ],
+    "certs": [
+      "BIS Marked - IS:2189",
+      "24Hr Battery - IS:2189 Compliant",
+      "NBC Compliant - Part 4",
+      "TAC Approved"
+    ],
+    "certNote": "Certified to IS:2189 (Code of Practice for Fire Detection and Alarm Systems) under Bureau of Indian Standards. Battery backup meets minimum IS:2189 standby duration requirements. Suitable for all commercial, industrial, and residential occupancies under NBC Part 4.",
+    "related": [
+      6,
+      8,
+      11
+    ]
+  },
+  {
+    "id": 8,
+    "category": "suppression",
+    "categoryLabel": "Suppression",
+    "name": "Automatic Water Sprinkler Head (68°C)",
+    "title": [
+      "AUTO WATER",
+      "SPRINKLER",
+      "HEAD 68°C"
+    ],
+    "desc": "Pendant-type fusible-link automatic sprinkler head that activates at precisely 68°C. IS:903 and EN:12259 compliant. K=80 flow factor for light and ordinary hazard occupancies. Factory hydrostatic tested at 35 bar. The essential backbone of every automatic sprinkler system.",
+    "price": "180",
+    "badge": "",
+    "cert": true,
+    "img": "./img/Fire-Hydrants-and-Sprinkler-Systems.webp",
+    "color": "#f0fff5",
+    "bg": "linear-gradient(135deg,#f0fff5,#f5f5f3)",
+    "specs": [
+      "Pendant Type",
+      "68°C Rating",
+      "K=80",
+      "IS:903"
+    ],
+    "specGrid": [
+      {
+        "key": "Type",
+        "val": "Pendant"
+      },
+      {
+        "key": "Activation",
+        "val": "68°C"
+      },
+      {
+        "key": "K-Factor",
+        "val": "K=80"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:903"
+      },
+      {
+        "key": "Test Pressure",
+        "val": "35 bar"
+      },
+      {
+        "key": "Thread",
+        "val": "½\" BSP"
+      }
+    ],
+    "features": [
+      "Fusible-link activates at exactly 68°C - only the heads directly above the fire discharge, not the whole system",
+      "Pendant deflector creates full cone spray pattern for complete floor coverage from ceiling mount",
+      "K=80 factor delivers correct flow-to-pressure balance for light and ordinary hazard occupancies per NBC",
+      "IS:903 and EN:12259 compliant - accepted by all fire departments, insurers, and NBC compliance auditors",
+      "Precision CNC-machined brass body and frame arms for consistent long-term corrosion resistance",
+      "Every unit factory hydrostatic tested at 3.5 MPa (35 bar) before packaging",
+      "Red bulb (68°C) - colour coded for immediate identification and correct replacement"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "AWS-P-68"
+      ],
+      [
+        "Type",
+        "Pendant"
+      ],
+      [
+        "Activation Temp",
+        "68°C"
+      ],
+      [
+        "Bulb Colour",
+        "Red"
+      ],
+      [
+        "K-Factor",
+        "K=80"
+      ],
+      [
+        "Pressure Range",
+        "0.5-12 bar"
+      ],
+      [
+        "Thread",
+        "½\" NPT / BSP"
+      ],
+      [
+        "Frame",
+        "Brass"
+      ],
+      [
+        "Coverage Area",
+        "9-12 m² per head"
+      ],
+      [
+        "Min Pressure",
+        "0.5 bar"
+      ],
+      [
+        "Factory Test",
+        "3.5 MPa (35 bar)"
+      ],
+      [
+        "Standard",
+        "IS:903 / EN:12259"
+      ],
+      [
+        "Certification",
+        "BIS Marked"
+      ],
+      [
+        "Weight",
+        "65 g"
+      ],
+      [
+        "Finish",
+        "Natural Brass"
+      ],
+      [
+        "Clearance Required",
+        "450mm below head"
+      ]
+    ],
+    "certs": [
+      "BIS Marked - IS:903",
+      "EN:12259 - European Standard",
+      "NBC Compliant - Part 4",
+      "Factory Tested - 3.5 MPa"
+    ],
+    "certNote": "Certified to IS:903 under Bureau of Indian Standards. Also meets European EN:12259 standard. Mandatory for all automatic sprinkler systems under NBC 2016 Part 4. Accepted by all Indian fire departments, insurance underwriters, and TAC for NOC compliance.",
+    "related": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "id": 9,
+    "category": "ppe",
+    "categoryLabel": "PPE & Safety",
+    "name": "Firefighter Proximity Suit",
+    "title": [
+      "FIREFIGHTER",
+      "PROXIMITY",
+      "SUIT"
+    ],
+    "desc": "Aluminized multi-layer proximity suit rated for radiant heat up to 1000°C. EN 1486 and IS:15652 certified. Full-coverage design with integrated aluminized hood, gold-coated polycarbonate visor, PTFE moisture barrier, and removable washable comfort liner. Required equipment for airport ARFF, refinery, and industrial brigade operations.",
+    "price": "18500",
+    "badge": "Premium",
+    "cert": true,
+    "img": "./img/DSPA-5-Fire-Suppression-Aerosol-Device_pro_pro.webp",
+    "color": "#fff5f0",
+    "bg": "linear-gradient(135deg,#fff5f0,#f5f5f3)",
+    "specs": [
+      "Aluminized",
+      "1000°C Rated",
+      "Full Coverage",
+      "EN 1486"
+    ],
+    "specGrid": [
+      {
+        "key": "Outer Layer",
+        "val": "Aluminized"
+      },
+      {
+        "key": "Radiant Heat",
+        "val": "1000°C"
+      },
+      {
+        "key": "Standard",
+        "val": "EN 1486"
+      },
+      {
+        "key": "Visor",
+        "val": "Gold Polycarbonate"
+      },
+      {
+        "key": "Moisture Barrier",
+        "val": "PTFE"
+      },
+      {
+        "key": "Sizes",
+        "val": "S-XXL"
+      }
+    ],
+    "features": [
+      "Multi-layer aluminized glass-fabric outer shell reflects up to 95% of incident radiant heat",
+      "EN 1486 certified - global benchmark for proximity firefighting suits, required at licensed airports",
+      "Integrated aluminized hood with gold-coated polycarbonate visor - no SCBA interface gaps",
+      "PTFE inner moisture barrier prevents steam burn injury when working near water spray operations",
+      "Removable aramid/viscose comfort liner - machine washable at 60°C, air dry only",
+      "Available in S/M/L/XL/XXL with pre-shaped knee and elbow panels for unrestricted movement",
+      "Includes aluminized gauntlet gloves and overboots as complete protective ensemble"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FPS-PROX-ALU"
+      ],
+      [
+        "Outer Layer",
+        "Aluminized Glass Fabric"
+      ],
+      [
+        "Moisture Barrier",
+        "PTFE Membrane"
+      ],
+      [
+        "Comfort Liner",
+        "Aramid/Viscose"
+      ],
+      [
+        "Radiant Heat",
+        "Up to 1000°C"
+      ],
+      [
+        "Convective Heat",
+        "Class 3 (EN 469)"
+      ],
+      [
+        "Visor",
+        "Gold-Coated Polycarbonate"
+      ],
+      [
+        "Visor Optics",
+        "Class 1"
+      ],
+      [
+        "Seams",
+        "Double-Stitched + Heat-Taped"
+      ],
+      [
+        "Sizes",
+        "S/M/L/XL/XXL"
+      ],
+      [
+        "Standard",
+        "EN 1486 / IS:15652"
+      ],
+      [
+        "Certification",
+        "CE Marked"
+      ],
+      [
+        "Weight",
+        "~4.5 KG complete"
+      ],
+      [
+        "Gloves Included",
+        "Yes - Aluminized"
+      ],
+      [
+        "Bootcovers",
+        "Yes - Aluminized"
+      ],
+      [
+        "Re-cert Interval",
+        "Every 3 years"
+      ]
+    ],
+    "certs": [
+      "CE Marked - EN 1486",
+      "IS:15652 - BIS Compliant",
+      "ARFF Approved - Airport Use",
+      "EN 469 Class 3 - Convective Heat"
+    ],
+    "certNote": "Certified to EN 1486 (European standard for proximity firefighting suits) and IS:15652. CE marked. Approved for aircraft rescue and firefighting (ARFF) operations at licensed airports. Meets DGCA requirements for airport emergency response teams in India.",
+    "related": [
+      10,
+      1,
+      11
+    ]
+  },
+  {
+    "id": 10,
+    "category": "ppe",
+    "categoryLabel": "PPE & Safety",
+    "name": "SCBA Self Contained Breathing Apparatus",
+    "title": [
+      "SCBA",
+      "BREATHING",
+      "APPARATUS"
+    ],
+    "desc": "Full-face positive-pressure SCBA with 6L carbon composite cylinder at 300 bar. Provides 30 minutes air at working rate. Lung-governed demand valve with bypass. Electronic HUD pressure display with audible low-pressure alarm. CE EN:137 certified. Prevents ingress of toxic gases even in the most extreme smoke and chemical environments.",
+    "price": "42000",
+    "badge": "Premium",
+    "cert": true,
+    "img": "./img/Battery-Energy-Storage-Systems-BESS_pro_pro.webp",
+    "color": "#f0f5ff",
+    "bg": "linear-gradient(135deg,#f0f5ff,#f5f5f3)",
+    "specs": [
+      "6L Cylinder",
+      "30-Min Air",
+      "Full Face",
+      "CE Certified"
+    ],
+    "specGrid": [
+      {
+        "key": "Cylinder",
+        "val": "6L / 300 bar"
+      },
+      {
+        "key": "Duration",
+        "val": "30 Minutes"
+      },
+      {
+        "key": "Mask",
+        "val": "Full Face"
+      },
+      {
+        "key": "Cert",
+        "val": "CE / EN:137"
+      },
+      {
+        "key": "Warning",
+        "val": "75 bar HUD"
+      },
+      {
+        "key": "Weight",
+        "val": "~12 KG"
+      }
+    ],
+    "features": [
+      "Positive pressure inside mask at all times - prevents toxic gas ingress even if facial seal is momentarily broken",
+      "6L carbon composite cylinder at 300 bar - ultra-lightweight versus steel alternative",
+      "Panoramic full-face mask with speech diaphragm for radio communication without mask removal",
+      "Lung-governed demand valve minimises air consumption - bypass valve for emergency continuous flow",
+      "Electronic heads-up display (HUD) shows pressure continuously; audible + visual alarm at 75 bar (25% reserve)",
+      "CE certified to EN:137 - the international standard for open-circuit firefighting SCBA",
+      "Adjustable aluminium frame harness with quick-release buckles for rapid donning under 60 seconds"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "SCBA-6L-CF"
+      ],
+      [
+        "Cylinder",
+        "6 Litres"
+      ],
+      [
+        "Working Pressure",
+        "300 bar"
+      ],
+      [
+        "Duration (working)",
+        "30 minutes"
+      ],
+      [
+        "Duration (light)",
+        "~45 minutes"
+      ],
+      [
+        "Mask",
+        "Full Face Panoramic"
+      ],
+      [
+        "Demand Valve",
+        "Positive Pressure, Lung Governed"
+      ],
+      [
+        "Bypass",
+        "Yes - Emergency Continuous"
+      ],
+      [
+        "HUD Display",
+        "Electronic + Audible Alert"
+      ],
+      [
+        "Low Pressure Alarm",
+        "75 bar"
+      ],
+      [
+        "Cylinder Material",
+        "Carbon Composite"
+      ],
+      [
+        "Cylinder Weight",
+        "3.1 KG"
+      ],
+      [
+        "Total Weight",
+        "~12 KG"
+      ],
+      [
+        "Standard",
+        "EN:137 / IS:10245"
+      ],
+      [
+        "Certification",
+        "CE Marked"
+      ],
+      [
+        "Harness",
+        "Adjustable Aluminium Frame"
+      ]
+    ],
+    "certs": [
+      "CE Marked - EN:137",
+      "IS:10245 - BIS Compliant",
+      "Grade E Air - Breathing Quality",
+      "NBC Compliant - Part 4"
+    ],
+    "certNote": "CE certified to EN:137 (open-circuit self-contained breathing apparatus for firefighting). Also compliant with IS:10245. Must be used with Grade E (breathing quality) compressed air only per IS:10245. Accepted by SISI, industrial safety authorities, and insurance underwriters.",
+    "related": [
+      9,
+      1,
+      2
+    ]
+  },
+  {
+    "id": 11,
+    "category": "signage",
+    "categoryLabel": "Signage",
+    "name": "Glow-in-Dark Fire Exit Sign (Pack of 10)",
+    "title": [
+      "GLOW-IN-DARK",
+      "FIRE EXIT",
+      "SIGN ×10"
+    ],
+    "desc": "Photoluminescent fire exit signs with strontium aluminate pigment for 8+ hour glow after power failure. IS:12349 and ISO:3864 compliant. Pack of 10 with mixed directional arrows covers a standard floor. Zero power, zero wiring, zero batteries - charges automatically from ambient light.",
+    "price": "650",
+    "badge": "Value Pack",
+    "cert": false,
+    "img": "./img/Clean-Agent-Fire-Suppression-Systems_pro.webp",
+    "color": "#f0fff0",
+    "bg": "linear-gradient(135deg,#f0fff0,#f5f5f3)",
+    "specs": [
+      "Pack of 10",
+      "Photoluminescent",
+      "8hr Glow",
+      "IS:12349"
+    ],
+    "specGrid": [
+      {
+        "key": "Qty",
+        "val": "Pack of 10"
+      },
+      {
+        "key": "Glow",
+        "val": "8+ Hours"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:12349"
+      },
+      {
+        "key": "Size",
+        "val": "200×100mm"
+      },
+      {
+        "key": "Lifespan",
+        "val": "10+ Years"
+      },
+      {
+        "key": "Fixing",
+        "val": "Adhesive+Screw"
+      }
+    ],
+    "features": [
+      "Strontium aluminate photoluminescent pigment - 8+ hour glow at 180 mcd/m² after 30-minute ambient charge",
+      "IS:12349 and ISO:3864 compliant - mandatory for NOC and building completion certificate",
+      "Zero power required - no electrical connection, no batteries, no wiring cost",
+      "Dual fixing: high-bond 3M self-adhesive backing + pre-drilled screw holes",
+      "UV-resistant hard laminate overlay - 10+ year rated lifespan against fading and cleaning chemicals",
+      "Pack of 10 includes mixed running man left, right, and forward arrow directions",
+      "Rigid 1.5mm PVC substrate - maintains flat profile even in humid environments"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "PLS-EXIT-10PK"
+      ],
+      [
+        "Type",
+        "Photoluminescent (SrAl₂O₄)"
+      ],
+      [
+        "Size",
+        "200 × 100 mm each"
+      ],
+      [
+        "Substrate",
+        "Rigid PVC 1.5mm"
+      ],
+      [
+        "Glow Duration",
+        "8+ hours"
+      ],
+      [
+        "Charge Time",
+        "30 min fluorescent"
+      ],
+      [
+        "Initial Luminance",
+        "180 mcd/m² at 10 min"
+      ],
+      [
+        "Standard",
+        "IS:12349 / ISO:3864"
+      ],
+      [
+        "Fixing",
+        "3M Adhesive + Pre-drilled"
+      ],
+      [
+        "Laminate",
+        "UV Hard Coat"
+      ],
+      [
+        "Operating Temp",
+        "-20°C to +60°C"
+      ],
+      [
+        "Lifespan",
+        "10+ years"
+      ],
+      [
+        "Pack Contents",
+        "10 signs (mixed arrows)"
+      ],
+      [
+        "ODP/GWP",
+        "Zero"
+      ]
+    ],
+    "certs": [
+      "IS:12349 - BIS Compliant",
+      "ISO:3864 - Graphical Safety Signs",
+      "NBC Compliant - Part 4",
+      "Zero ODP/GWP - Eco Friendly"
+    ],
+    "certNote": "Compliant with IS:12349 (photoluminescent safety signs) and ISO:3864 (graphical symbols and safety signs). Mandatory under NBC Part 4 and accepted by all state fire departments for NOC compliance. No electrical hazard - safe for all occupancies.",
+    "related": [
+      7,
+      6,
+      9
+    ]
+  },
+  {
+    "id": 12,
+    "category": "extinguisher",
+    "categoryLabel": "Fire Extinguisher",
+    "name": "Water Mist Extinguisher 9L",
+    "title": [
+      "WATER MIST",
+      "EXTINGUISHER",
+      "9 LITRES"
+    ],
+    "desc": "Superheated water mist technology in a 9L stainless steel cylinder. Rated for Class A, B, and F fires. Electrically safe to 1000V (dielectric tested to 35kV). Zero chemical agent - pure deionised water. The definitive choice for commercial kitchens, hospitals, food facilities, and green buildings.",
+    "price": "4900",
+    "badge": "Eco Choice",
+    "cert": true,
+    "img": "./img/SHP-CO2-XX.webp",
+    "color": "#f0f8ff",
+    "bg": "linear-gradient(135deg,#f0f8ff,#f5f5f3)",
+    "specs": [
+      "9L Capacity",
+      "Class A/B/F",
+      "1000V Safe",
+      "No Chemicals"
+    ],
+    "specGrid": [
+      {
+        "key": "Capacity",
+        "val": "9 Litres"
+      },
+      {
+        "key": "Fire Class",
+        "val": "A / B / F"
+      },
+      {
+        "key": "Electrical",
+        "val": "1000V Safe"
+      },
+      {
+        "key": "Agent",
+        "val": "Deionised Water"
+      },
+      {
+        "key": "Discharge",
+        "val": "60-90 sec"
+      },
+      {
+        "key": "Cylinder",
+        "val": "Stainless Steel"
+      }
+    ],
+    "features": [
+      "Superheated water mist cools fire, displaces oxygen, and creates steam blanket to prevent re-ignition - triple action",
+      "Class F rated - the only acceptable type for commercial kitchen cooking oil and fat fires",
+      "Dielectric tested to 35,000V - rated safe on live electrical equipment up to 1000V AC",
+      "Pure deionised water agent - zero chemical residue, safe in food production, operating theatres, and cleanrooms",
+      "Stainless steel 304 grade cylinder - corrosion-free for kitchen and high-humidity environments",
+      "9L capacity gives 60-90 seconds discharge - longer than standard 6L for sustained deep-seated fire attack",
+      "Zero ODP, zero GWP - the most environmentally responsible extinguisher type available"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "SHP-WM-9L"
+      ],
+      [
+        "Agent",
+        "Deionised Water Mist"
+      ],
+      [
+        "Capacity",
+        "9 Litres"
+      ],
+      [
+        "Fire Class",
+        "Class A, B & F"
+      ],
+      [
+        "Electrical Safety",
+        "1000V AC (35kV tested)"
+      ],
+      [
+        "Operating Pressure",
+        "12-14 bar"
+      ],
+      [
+        "Discharge Time",
+        "60-90 seconds"
+      ],
+      [
+        "Range",
+        "3-5 metres"
+      ],
+      [
+        "Cylinder",
+        "Stainless Steel 304"
+      ],
+      [
+        "Operating Temp",
+        "0°C to +60°C"
+      ],
+      [
+        "Weight (charged)",
+        "~13.5 KG"
+      ],
+      [
+        "Height",
+        "555 mm"
+      ],
+      [
+        "Diameter",
+        "170 mm"
+      ],
+      [
+        "Standard",
+        "IS:15683 / EN:3"
+      ],
+      [
+        "Certification",
+        "BIS / CE Certified"
+      ],
+      [
+        "Colour",
+        "Red + White Band"
+      ]
+    ],
+    "certs": [
+      "BIS Certified - IS:15683",
+      "CE Marked - EN:3",
+      "Class F Rated - Kitchen Fires",
+      "1000V Safe - Dielectric Test"
+    ],
+    "certNote": "Certified to IS:15683 under BIS and CE marked to EN:3. Class F kitchen fire rating is verified by independent test. Dielectric test certified safe to 1000V by accredited laboratory. Mandatory for all professional kitchen fire safety compliance in India.",
+    "related": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": 13,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Fire Rescue Helmet",
+    "title": [
+      "FIRE RESCUE",
+      "HELMET"
+    ],
+    "desc": "Advanced fire rescue helmet with transparent visor and impact protection for firefighters and emergency response teams.",
+    "price": "8500",
+    "badge": "Premium Safety",
+    "cert": true,
+    "img": "./img/helmat/bike-hel.jpeg",
+    "color": "#f7e600",
+    "bg": "linear-gradient(135deg,#fff9c0,#ffe066)",
+    "specs": [
+      "Heat Resistant",
+      "Full Face Visor",
+      "Impact Protection",
+      "Adjustable Strap"
+    ],
+    "specGrid": [
+      {
+        "key": "Protection",
+        "val": "Heat Resistant"
+      },
+      {
+        "key": "Visor",
+        "val": "Full Face"
+      },
+      {
+        "key": "Impact",
+        "val": "High Protection"
+      },
+      {
+        "key": "Strap",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Color",
+        "val": "Yellow/Black"
+      },
+      {
+        "key": "Grade",
+        "val": "Premium Safety"
+      }
+    ],
+    "features": [
+      "Advanced heat-resistant outer shell designed for direct fire rescue operations",
+      "Transparent full-face visor provides 180° unobstructed vision for rescuers",
+      "Multi-layer impact protection absorbs high-force blows and falling debris",
+      "Adjustable ratchet strap system ensures a secure fit for all head sizes",
+      "Integrated chin strap with quick-release buckle for rapid helmet removal",
+      "Reflective strips on outer shell for enhanced visibility in low-light emergencies",
+      "Compatible with communication headsets and SCBA masks"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FRH-13-PRO"
+      ],
+      [
+        "Shell Material",
+        "High-Impact ABS + Fiberglass"
+      ],
+      [
+        "Visor Type",
+        "Full Face Transparent"
+      ],
+      [
+        "Heat Resistance",
+        "Up to 250°C (radiant heat)"
+      ],
+      [
+        "Strap",
+        "Adjustable Ratchet + Chin Strap"
+      ],
+      [
+        "Weight",
+        "Approx. 1.4 kg"
+      ],
+      [
+        "Color",
+        "Yellow / Black"
+      ],
+      [
+        "Use",
+        "Fire Rescue / Emergency Response"
+      ],
+      [
+        "IS Standard",
+        "IS:2925 / EN 443"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 443",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925. Meets EN 443 European standard for helmets used in firefighting and fire rescue services.",
+    "related": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "id": 14,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Industrial Safety Helmet",
+    "title": [
+      "INDUSTRIAL",
+      "SAFETY",
+      "HELMET"
+    ],
+    "desc": "Heavy-duty industrial safety helmet designed for construction and factory environments. ABS plastic shell with adjustable lock system for a secure, comfortable fit all day long.",
+    "price": "450",
+    "badge": "Best Seller",
+    "cert": true,
+    "img": "./img/helmat/blue-hel.jpeg",
+    "color": "#0066ff",
+    "bg": "linear-gradient(135deg,#ccdeff,#0066ff22)",
+    "specs": [
+      "ABS Plastic",
+      "Adjustable Lock",
+      "Light Weight",
+      "Industrial Grade"
+    ],
+    "specGrid": [
+      {
+        "key": "Material",
+        "val": "ABS Plastic"
+      },
+      {
+        "key": "Lock",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Weight",
+        "val": "Light Weight"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Color",
+        "val": "Blue"
+      },
+      {
+        "key": "Use",
+        "val": "Construction"
+      }
+    ],
+    "features": [
+      "High-strength ABS plastic shell provides reliable protection against falling objects",
+      "Adjustable ratchet lock system allows quick and precise sizing for all users",
+      "Lightweight construction reduces neck fatigue during extended work shifts",
+      "Internal suspension system absorbs and distributes impact energy evenly",
+      "Ventilation channels allow airflow to keep the head cool in hot environments",
+      "Compatible with ear defenders, face shields, and other PPE attachments",
+      "Suitable for construction, factories, warehouses, and general industrial use"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "ISH-14-BLU"
+      ],
+      [
+        "Shell Material",
+        "High-Density ABS Plastic"
+      ],
+      [
+        "Suspension",
+        "6-Point Harness"
+      ],
+      [
+        "Adjustment",
+        "Ratchet Lock System"
+      ],
+      [
+        "Weight",
+        "Approx. 350g"
+      ],
+      [
+        "Color",
+        "Blue"
+      ],
+      [
+        "Temperature Range",
+        "-10°C to +50°C"
+      ],
+      [
+        "Use",
+        "Construction / Factory / Industrial"
+      ],
+      [
+        "IS Standard",
+        "IS:2925"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925. Meets EN 397 standard for industrial safety helmets used in construction and manufacturing environments.",
+    "related": [
+      13,
+      17,
+      19
+    ]
+  },
+  {
+    "id": 15,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Auto Darkening Welding Helmet",
+    "title": [
+      "AUTO DARKENING",
+      "WELDING",
+      "HELMET"
+    ],
+    "desc": "Professional welding helmet with auto-darkening lens for arc, MIG, and TIG welding applications. Solar-powered LCD lens shifts from light to dark in milliseconds to protect eyes from harmful arcs.",
+    "price": "3200",
+    "badge": "Professional",
+    "cert": true,
+    "img": "./img/helmat/digital-hel.jpeg",
+    "color": "#1a1a1a",
+    "bg": "linear-gradient(135deg, #2a2a2a, #111)",
+    "specs": [
+      "Auto Darkening",
+      "UV Protection",
+      "Heat Resistant",
+      "Wide Lens"
+    ],
+    "specGrid": [
+      {
+        "key": "Lens",
+        "val": "Auto Darkening"
+      },
+      {
+        "key": "UV Protection",
+        "val": "DIN 4-13"
+      },
+      {
+        "key": "Heat Resistant",
+        "val": "Yes"
+      },
+      {
+        "key": "Lens Width",
+        "val": "Wide"
+      },
+      {
+        "key": "Power",
+        "val": "Solar + Battery"
+      },
+      {
+        "key": "Reaction",
+        "val": "1/25000 sec"
+      }
+    ],
+    "features": [
+      "Auto-darkening LCD lens reacts in 1/25,000 second - faster than the blink of an eye",
+      "Shade range DIN 4-13 covers light grinding, MIG, TIG, arc, and plasma cutting",
+      "Solar-powered with backup battery - no interruption during welding operations",
+      "Wide-view lens (98×43mm) provides a larger field of vision than standard helmets",
+      "UV and IR protection at all shade settings, even in switched-off state (DIN 4)",
+      "Adjustable shade, sensitivity, and delay controls for different welding processes",
+      "Heat-resistant outer shell and comfortable padded headband for long sessions"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "ADW-15-BLK"
+      ],
+      [
+        "Lens Type",
+        "Auto-Darkening LCD"
+      ],
+      [
+        "Lens Size",
+        "98 × 43 mm"
+      ],
+      [
+        "Shade Range",
+        "DIN 4-13 (adjustable)"
+      ],
+      [
+        "Reaction Time",
+        "1/25,000 second"
+      ],
+      [
+        "Power",
+        "Solar + CR2032 Battery"
+      ],
+      [
+        "UV/IR Protection",
+        "DIN 16 constant"
+      ],
+      [
+        "Shell Material",
+        "PA + Fiberglass"
+      ],
+      [
+        "Weight",
+        "Approx. 500g"
+      ],
+      [
+        "IS Standard",
+        "IS:9005 / ANSI Z87.1"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      22,
+      13,
+      16
+    ]
+  },
+  {
+    "id": 16,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Full Cover Face Shield Hood",
+    "title": [
+      "FULL COVER",
+      "FACE SHIELD",
+      "HOOD"
+    ],
+    "desc": "Complete face and neck protection hood for chemical handling and hazardous industrial operations. Anti-fog shield with chemical-resistant material provides full-surround protection in high-risk environments.",
+    "price": "5400",
+    "badge": "Full Protection",
+    "cert": true,
+    "img": "./img/helmat/fullcover-hel.jpeg",
+    "color": "#00aa66",
+    "bg": "linear-gradient(135deg, #b2f0d8, #00aa6622)",
+    "specs": [
+      "Full Face Cover",
+      "Chemical Resistant",
+      "Anti Fog Shield",
+      "Comfort Fit"
+    ],
+    "specGrid": [
+      {
+        "key": "Coverage",
+        "val": "Full Face"
+      },
+      {
+        "key": "Chemical",
+        "val": "Resistant"
+      },
+      {
+        "key": "Shield",
+        "val": "Anti Fog"
+      },
+      {
+        "key": "Fit",
+        "val": "Comfort"
+      },
+      {
+        "key": "Protection",
+        "val": "Face + Neck"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:8521"
+      }
+    ],
+    "features": [
+      "Full face and neck coverage provides 360° protection against chemical splashes and spray",
+      "Chemical-resistant hood material withstands acids, alkalis, and industrial solvents",
+      "Anti-fog coated clear shield maintains visibility in humid and temperature-variable environments",
+      "Adjustable elastic hood fits securely over helmets or alone on the head",
+      "Soft inner edge prevents skin irritation during extended chemical handling operations",
+      "Compatible with respirators, hard hats, and other PPE for complete hazmat protection",
+      "Meets IS:8521 requirements for face and eye protectors in chemical environments"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FCH-16-GRN"
+      ],
+      [
+        "Shield Material",
+        "PET Anti-Fog Coated"
+      ],
+      [
+        "Hood Material",
+        "Chemical-Resistant PE"
+      ],
+      [
+        "Coverage",
+        "Face + Neck + Chin"
+      ],
+      [
+        "Coating",
+        "Anti-Fog"
+      ],
+      [
+        "Fit",
+        "Elastic Adjustable"
+      ],
+      [
+        "Chemical Resistance",
+        "Acids, Alkalis, Solvents"
+      ],
+      [
+        "IS Standard",
+        "IS:8521"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      17,
+      13,
+      15
+    ]
+  },
+  {
+    "id": 17,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Safety Helmet with Face Shield",
+    "title": [
+      "SAFETY HELMET",
+      "WITH FACE",
+      "SHIELD"
+    ],
+    "desc": "Industrial safety helmet with integrated transparent face visor for grinding and cutting operations. Flip-up face shield mounts directly on the helmet for quick transition between tasks.",
+    "price": "1200",
+    "badge": "Industrial Use",
+    "cert": true,
+    "img": "./img/helmat/glass-hel.jpeg",
+    "color": "#ffd400",
+    "bg": "linear-gradient(135deg, #fff5c0, #ffd400aa)",
+    "specs": [
+      "Clear Face Shield",
+      "Impact Resistant",
+      "Helmet Mounted",
+      "Reusable"
+    ],
+    "specGrid": [
+      {
+        "key": "Shield",
+        "val": "Clear Face"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Mount",
+        "val": "Helmet Mounted"
+      },
+      {
+        "key": "Shield",
+        "val": "Reusable"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2925"
+      },
+      {
+        "key": "Operation",
+        "val": "Flip-Up"
+      }
+    ],
+    "features": [
+      "Integrated flip-up face shield mounts on the helmet crown - no separate headgear needed",
+      "Clear polycarbonate visor provides full face protection during grinding, chipping, and cutting",
+      "Hard hat shell meets IS:2925 for industrial head protection against falling objects",
+      "Shield pivots smoothly - flip up when not needed, down in one motion when required",
+      "Reusable polycarbonate shield is scratch-resistant and can be replaced independently",
+      "Ventilated crown design reduces heat build-up during prolonged wear",
+      "Suitable for construction, fabrication, welding prep, and engineering operations"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "SHF-17-YLW"
+      ],
+      [
+        "Helmet Shell",
+        "ABS Plastic"
+      ],
+      [
+        "Visor Material",
+        "Clear Polycarbonate"
+      ],
+      [
+        "Visor Operation",
+        "Flip-Up"
+      ],
+      [
+        "Impact Rating",
+        "EN 166 / IS:2925"
+      ],
+      [
+        "Harness",
+        "Adjustable Ratchet"
+      ],
+      [
+        "Weight",
+        "Approx. 520g"
+      ],
+      [
+        "IS Standard",
+        "IS:2925 + IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      14,
+      18,
+      22
+    ]
+  },
+  {
+    "id": 18,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Ventilated Safety Helmet",
+    "title": [
+      "VENTILATED",
+      "SAFETY",
+      "HELMET"
+    ],
+    "desc": "Ventilated lightweight helmet suitable for long working hours in industrial environments. Multiple ventilation slots provide constant airflow, significantly reducing heat and sweat build-up during extended shifts.",
+    "price": "650",
+    "badge": "Comfort Fit",
+    "cert": true,
+    "img": "./img/helmat/green-hel.jpeg",
+    "color": "#39d353",
+    "bg": "linear-gradient(135deg, #ccffd8, #39d35322)",
+    "specs": [
+      "Ventilation Slots",
+      "ABS Material",
+      "Adjustable Fit",
+      "Sweat Resistant"
+    ],
+    "specGrid": [
+      {
+        "key": "Ventilation",
+        "val": "Slots"
+      },
+      {
+        "key": "Material",
+        "val": "ABS"
+      },
+      {
+        "key": "Fit",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Sweat",
+        "val": "Resistant"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2925"
+      }
+    ],
+    "features": [
+      "Multiple ventilation slots on crown and sides provide continuous airflow to reduce head temperature",
+      "Lightweight ABS shell keeps overall weight minimal without sacrificing impact protection",
+      "Sweat-resistant inner band wicks moisture away, maintaining comfort through long shifts",
+      "Adjustable ratchet harness fits head circumferences from 52 to 63 cm",
+      "Bright green color enhances worker visibility in busy site environments",
+      "Compatible with face shields, ear defenders, and other helmet-mounted accessories",
+      "Meets IS:2925 industrial head protection standards"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "VSH-18-GRN"
+      ],
+      [
+        "Shell Material",
+        "Ventilated ABS"
+      ],
+      [
+        "Ventilation",
+        "8 Slot Crown Vents"
+      ],
+      [
+        "Inner Band",
+        "Sweat-Resistant Foam"
+      ],
+      [
+        "Harness",
+        "Adjustable Ratchet"
+      ],
+      [
+        "Size Range",
+        "52-63 cm"
+      ],
+      [
+        "Weight",
+        "Approx. 340g"
+      ],
+      [
+        "Color",
+        "Green"
+      ],
+      [
+        "IS Standard",
+        "IS:2925"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      14,
+      21,
+      19
+    ]
+  },
+  {
+    "id": 19,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Construction Safety Helmet",
+    "title": [
+      "CONSTRUCTION",
+      "SAFETY",
+      "HELMET"
+    ],
+    "desc": "Durable construction helmet for civil, industrial, and site safety applications. Designed to withstand high-impact loads while remaining lightweight enough for all-day wear on active construction sites.",
+    "price": "500",
+    "badge": "Construction Grade",
+    "cert": true,
+    "img": "./img/helmat/orange-hel.jpeg",
+    "color": "#ff6a00",
+    "bg": "linear-gradient(135deg, #ffe5cc, #ff6a0033)",
+    "specs": [
+      "Impact Resistant",
+      "Heavy Duty",
+      "Light Weight",
+      "Site Safety"
+    ],
+    "specGrid": [
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Build",
+        "val": "Heavy Duty"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Use",
+        "val": "Site Safety"
+      },
+      {
+        "key": "Material",
+        "val": "ABS"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2925"
+      }
+    ],
+    "features": [
+      "Heavy-duty ABS shell rated for high-impact load protection on active construction sites",
+      "Lightweight construction allows extended wear without fatigue for site workers",
+      "Broad brim design shields from sun, rain, and falling small debris",
+      "6-point suspension harness distributes impact force evenly across the head",
+      "Orange color provides excellent visibility for construction site safety compliance",
+      "Chin strap attachment points included for use in heights and windy conditions",
+      "Meets IS:2925 and EN 397 construction site helmet standards"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "CSH-19-ORG"
+      ],
+      [
+        "Shell Material",
+        "ABS Plastic"
+      ],
+      [
+        "Suspension",
+        "6-Point Harness"
+      ],
+      [
+        "Brim",
+        "Full Brim"
+      ],
+      [
+        "Chin Strap",
+        "Attachment Points"
+      ],
+      [
+        "Weight",
+        "Approx. 390g"
+      ],
+      [
+        "Color",
+        "Orange"
+      ],
+      [
+        "IS Standard",
+        "IS:2925 / EN 397"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      14,
+      23,
+      18
+    ]
+  },
+  {
+    "id": 20,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Bump Cap Helmet",
+    "title": [
+      "BUMP CAP",
+      "HELMET"
+    ],
+    "desc": "Soft shell bump cap designed for low-risk head protection in maintenance and warehouse areas. Lightweight and breathable - ideal for areas with low overhead hazards where a full hard hat is not required.",
+    "price": "700",
+    "badge": "Light Duty",
+    "cert": true,
+    "img": "./img/helmat/rubber-hel.jpeg",
+    "color": "#5da9ff",
+    "bg": "linear-gradient(135deg, #d0eaff, #5da9ff33)",
+    "specs": [
+      "Soft Padding",
+      "Breathable",
+      "Light Weight",
+      "Comfort Wear"
+    ],
+    "specGrid": [
+      {
+        "key": "Padding",
+        "val": "Soft"
+      },
+      {
+        "key": "Breathability",
+        "val": "High"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Wear",
+        "val": "Comfort"
+      },
+      {
+        "key": "Use",
+        "val": "Warehouse"
+      },
+      {
+        "key": "Cap Style",
+        "val": "Baseball"
+      }
+    ],
+    "features": [
+      "Soft padded inner shell protects against bumps and scrapes in low-overhead environments",
+      "Baseball cap style design is comfortable, non-intimidating, and easy to wear all day",
+      "Highly breathable fabric construction prevents heat build-up during active maintenance work",
+      "Lightweight at under 200g - workers often forget they are wearing it",
+      "Not a replacement for safety helmets - designed specifically for low-risk bump protection",
+      "Suitable for warehouses, food processing, light manufacturing, and maintenance tasks",
+      "Available in multiple sizes for a precise fit"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "BCP-20-BLU"
+      ],
+      [
+        "Style",
+        "Baseball Cap"
+      ],
+      [
+        "Inner Shell",
+        "ABS Bump Plate"
+      ],
+      [
+        "Outer",
+        "Breathable Polyester"
+      ],
+      [
+        "Padding",
+        "Soft EVA Foam"
+      ],
+      [
+        "Weight",
+        "Approx. 180g"
+      ],
+      [
+        "Sizes",
+        "S/M/L/XL"
+      ],
+      [
+        "Color",
+        "Blue"
+      ],
+      [
+        "Standard",
+        "EN 812"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      14,
+      18,
+      21
+    ]
+  },
+  {
+    "id": 21,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Ventilated Safety Helmet - Purple",
+    "title": [
+      "VENTILATED HELMET",
+      "PURPLE",
+      "COLOR SERIES"
+    ],
+    "desc": "Color-coded ventilated industrial helmet with enhanced airflow and lightweight structure. Purple designation ideal for supervisors, inspectors, or specialized roles requiring site color-coding compliance.",
+    "price": "650",
+    "badge": "Color Series",
+    "cert": true,
+    "img": "./img/helmat/voilet-hel.jpeg",
+    "color": "#7b2cff",
+    "bg": "linear-gradient(135deg, #e8d8ff, #7b2cff22)",
+    "specs": [
+      "Ventilation Design",
+      "ABS Plastic",
+      "Comfort Lock",
+      "Industrial Grade"
+    ],
+    "specGrid": [
+      {
+        "key": "Ventilation",
+        "val": "Design"
+      },
+      {
+        "key": "Material",
+        "val": "ABS Plastic"
+      },
+      {
+        "key": "Lock",
+        "val": "Comfort"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Color",
+        "val": "Purple"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2925"
+      }
+    ],
+    "features": [
+      "Color-coded purple shell ideal for supervisor, inspector, or specialized worker site identification",
+      "Enhanced ventilation design with open crown slots promotes maximum airflow",
+      "Lightweight ABS plastic shell meets industrial head protection impact standards",
+      "Comfort-lock ratchet harness adjusts easily for size and stays locked under load",
+      "Sweat-resistant inner lining maintains comfort throughout full working shifts",
+      "Compatible with all standard helmet accessories - face shields, ear muffs, visors",
+      "Meets IS:2925 head protection standard for industrial environments"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "VSH-21-PRP"
+      ],
+      [
+        "Shell Material",
+        "ABS Plastic"
+      ],
+      [
+        "Ventilation",
+        "Open Crown + Side Slots"
+      ],
+      [
+        "Harness",
+        "Comfort-Lock Ratchet"
+      ],
+      [
+        "Inner Lining",
+        "Sweat-Resistant"
+      ],
+      [
+        "Weight",
+        "Approx. 345g"
+      ],
+      [
+        "Color",
+        "Purple"
+      ],
+      [
+        "IS Standard",
+        "IS:2925"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      18,
+      14,
+      19
+    ]
+  },
+  {
+    "id": 22,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Flip Front Welding Shield",
+    "title": [
+      "FLIP FRONT",
+      "WELDING",
+      "SHIELD"
+    ],
+    "desc": "Flip-front welding face shield with protective viewing window for fabrication and welding work. Flip-up design allows quick transitions between welding and inspection without removing the shield.",
+    "price": "1800",
+    "badge": "Welding Safety",
+    "cert": true,
+    "img": "./img/helmat/weldding-hel.jpeg",
+    "color": "#222222",
+    "bg": "linear-gradient(135deg, #2a2a2a, #444)",
+    "specs": [
+      "Flip Front Glass",
+      "Heat Resistant",
+      "Face Protection",
+      "Durable Build"
+    ],
+    "specGrid": [
+      {
+        "key": "Glass",
+        "val": "Flip Front"
+      },
+      {
+        "key": "Heat Resistant",
+        "val": "Yes"
+      },
+      {
+        "key": "Protection",
+        "val": "Face"
+      },
+      {
+        "key": "Build",
+        "val": "Durable"
+      },
+      {
+        "key": "Lens Shade",
+        "val": "DIN 10"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:9005"
+      }
+    ],
+    "features": [
+      "Flip-front design allows instant transition between welding and inspection without removing shield",
+      "Shade DIN 10 lens provides reliable protection for MIG, MMA, and gas welding operations",
+      "Heat-resistant thermoplastic body withstands spatter and radiant heat from welding arcs",
+      "Full face coverage protects face, chin, and neck from sparks and UV radiation",
+      "Adjustable headband fits over helmets or directly on the head",
+      "Durable hinged mechanism for long-lasting flip action across thousands of cycles",
+      "Replacement lens available separately to extend the life of the shield body"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FFS-22-BLK"
+      ],
+      [
+        "Body Material",
+        "Heat-Resistant Thermoplastic"
+      ],
+      [
+        "Lens Shade",
+        "DIN 10"
+      ],
+      [
+        "Lens Size",
+        "Standard 110 × 90mm"
+      ],
+      [
+        "Mechanism",
+        "Flip-Front Hinge"
+      ],
+      [
+        "Headband",
+        "Adjustable"
+      ],
+      [
+        "Weight",
+        "Approx. 600g"
+      ],
+      [
+        "IS Standard",
+        "IS:9005"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      15,
+      17,
+      13
+    ]
+  },
+  {
+    "id": 23,
+    "category": "head",
+    "categoryLabel": "Head Protection",
+    "name": "Yellow Industrial Helmet",
+    "title": [
+      "YELLOW",
+      "INDUSTRIAL",
+      "HELMET"
+    ],
+    "desc": "Classic industrial safety helmet with chin strap for maximum workplace safety. High-impact ABS construction with adjustable harness - the go-to general-purpose helmet for construction and industrial sites.",
+    "price": "550",
+    "badge": "Industrial Standard",
+    "cert": true,
+    "img": "./img/helmat/yellow-helmat.jpeg",
+    "color": "#ffdd00",
+    "bg": "linear-gradient(135deg, #fffaaa, #ffdd0066)",
+    "specs": [
+      "High Impact ABS",
+      "Adjustable Strap",
+      "Safety Certified",
+      "Light Weight"
+    ],
+    "specGrid": [
+      {
+        "key": "Material",
+        "val": "High Impact ABS"
+      },
+      {
+        "key": "Strap",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Certified",
+        "val": "IS:2925"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Color",
+        "val": "Yellow"
+      },
+      {
+        "key": "Chin Strap",
+        "val": "Included"
+      }
+    ],
+    "features": [
+      "High-impact ABS shell provides reliable protection against falling objects and side impacts",
+      "Adjustable chin strap keeps the helmet secure during work at heights or windy conditions",
+      "Classic yellow color - the most recognized site safety helmet for general workers",
+      "Six-point suspension harness distributes impact energy across the entire head",
+      "Lightweight design reduces neck fatigue over extended shifts",
+      "Wide brim protects from sun, rain, and debris falling from above",
+      "Meets IS:2925 and EN 397 head protection standards for industrial use"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "YIH-23-YLW"
+      ],
+      [
+        "Shell Material",
+        "High-Impact ABS"
+      ],
+      [
+        "Suspension",
+        "6-Point Harness"
+      ],
+      [
+        "Chin Strap",
+        "Adjustable (included)"
+      ],
+      [
+        "Brim",
+        "Full Brim"
+      ],
+      [
+        "Weight",
+        "Approx. 400g"
+      ],
+      [
+        "Color",
+        "Yellow"
+      ],
+      [
+        "IS Standard",
+        "IS:2925 / EN 397"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:2925",
+      "BIS Certified",
+      "EN 397",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:2925 for industrial safety helmets. Meets EN 397 European standard and CE marking requirements for personal protective headwear used in industrial and construction environments.",
+    "related": [
+      14,
+      19,
+      18
+    ]
+  },
+  {
+    "id": 24,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Transparent Safety Glass",
+    "title": [
+      "TRANSPARENT",
+      "SAFETY",
+      "GLASS"
+    ],
+    "desc": "Lightweight transparent safety glasses for industrial and workshop eye protection. Designed for all-day comfort with anti-scratch coating for lasting clarity in demanding environments.",
+    "price": "180",
+    "badge": "Best Seller",
+    "cert": true,
+    "img": "./img/glass/glass-1.jpeg",
+    "color": "#f5f5f5",
+    "bg": "linear-gradient(135deg,#f5f5f5,#e8e8e5)",
+    "specs": [
+      "Anti Scratch",
+      "Clear Vision",
+      "Light Weight",
+      "Industrial Use"
+    ],
+    "specGrid": [
+      {
+        "key": "Category",
+        "val": "Eye PPE"
+      },
+      {
+        "key": "Lens Type",
+        "val": "Transparent"
+      },
+      {
+        "key": "Frame Color",
+        "val": "Clear"
+      },
+      {
+        "key": "Coating",
+        "val": "Anti Scratch"
+      },
+      {
+        "key": "Weight",
+        "val": "Light Weight"
+      },
+      {
+        "key": "Use",
+        "val": "Industrial"
+      }
+    ],
+    "features": [
+      "Anti-scratch coating on both sides for extended clarity and durability",
+      "Ultra-lightweight polycarbonate frame suitable for all-day industrial wear",
+      "Clear transparent lens for maximum light transmission and visual accuracy",
+      "Designed for workshop, manufacturing, and industrial environments",
+      "Adjustable nose bridge for a comfortable, secure fit",
+      "Wrap-around design provides peripheral protection from flying debris",
+      "Compatible with other PPE including helmets and ear protection"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "TSG-24-CLR"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Clear / Transparent"
+      ],
+      [
+        "Frame Material",
+        "Lightweight Nylon"
+      ],
+      [
+        "Coating",
+        "Anti-Scratch (both sides)"
+      ],
+      [
+        "UV Protection",
+        "UV 400"
+      ],
+      [
+        "Weight",
+        "Approx. 28g"
+      ],
+      [
+        "Impact Resistance",
+        "ANSI Z87.1 Level"
+      ],
+      [
+        "Use Environment",
+        "Industrial / Workshop"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "These safety glasses conform to IS:5983 under BIS certification for industrial eye protectors. Meets ANSI Z87.1 impact resistance standards and CE marking requirements for personal protective equipment.",
+    "related": [
+      25,
+      26,
+      31
+    ]
+  },
+  {
+    "id": 25,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Black Frame Safety Glass",
+    "title": [
+      "BLACK FRAME",
+      "SAFETY",
+      "GLASS"
+    ],
+    "desc": "Stylish black frame protective eyewear for factory and engineering environments. UV protection and impact resistance combined with a wide lens design for maximum field of view.",
+    "price": "250",
+    "badge": "Premium",
+    "cert": true,
+    "img": "./img/glass/glass-2.jpeg",
+    "color": "#111111",
+    "bg": "linear-gradient(135deg,#1a1a1a,#2d2d2d)",
+    "specs": [
+      "UV Protection",
+      "Impact Resistant",
+      "Comfort Fit",
+      "Wide Lens"
+    ],
+    "specGrid": [
+      {
+        "key": "Frame Color",
+        "val": "Black"
+      },
+      {
+        "key": "UV Protection",
+        "val": "UV 400"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Fit",
+        "val": "Comfort Fit"
+      },
+      {
+        "key": "Lens",
+        "val": "Wide Lens"
+      },
+      {
+        "key": "Grade",
+        "val": "Premium"
+      }
+    ],
+    "features": [
+      "Premium black nylon frame - stylish yet durable for factory and engineering use",
+      "UV 400 protection shields eyes from harmful ultraviolet radiation",
+      "Impact-resistant polycarbonate wide lens for broad field of view",
+      "Comfort-fit design with ergonomic nose bridge reduces pressure during extended wear",
+      "Lightweight construction reduces fatigue over long shifts",
+      "Scratch-resistant lens coating for lasting optical clarity",
+      "Compatible with face shields and other industrial PPE"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "BFS-25-BLK"
+      ],
+      [
+        "Frame Color",
+        "Black"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Style",
+        "Wide / Panoramic"
+      ],
+      [
+        "UV Protection",
+        "UV 400"
+      ],
+      [
+        "Impact Rating",
+        "High Impact Resistant"
+      ],
+      [
+        "Coating",
+        "Anti-Scratch"
+      ],
+      [
+        "Weight",
+        "Approx. 30g"
+      ],
+      [
+        "Use Environment",
+        "Factory / Engineering"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "Certified under IS:5983 BIS standards for industrial eye protectors. Meets international ANSI Z87.1 and CE marking requirements for premium PPE eyewear.",
+    "related": [
+      24,
+      30,
+      28
+    ]
+  },
+  {
+    "id": 26,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Crystal Clear Safety Spectacles",
+    "title": [
+      "CRYSTAL CLEAR",
+      "SAFETY",
+      "SPECTACLES"
+    ],
+    "desc": "Crystal-clear industrial eye protector designed for all-day comfortable usage. Anti-fog coating with flexible arms and scratch-resistant lens for uninterrupted visibility in demanding conditions.",
+    "price": "220",
+    "badge": "Comfort Fit",
+    "cert": true,
+    "img": "./img/glass/glass-3.jpeg",
+    "color": "#ffffff",
+    "bg": "linear-gradient(135deg,#eaf4ff,#f0f8ff)",
+    "specs": [
+      "Anti Fog",
+      "Flexible Arms",
+      "Light Weight",
+      "Scratch Resistant"
+    ],
+    "specGrid": [
+      {
+        "key": "Coating",
+        "val": "Anti Fog"
+      },
+      {
+        "key": "Arms",
+        "val": "Flexible"
+      },
+      {
+        "key": "Weight",
+        "val": "Light Weight"
+      },
+      {
+        "key": "Lens",
+        "val": "Scratch Resistant"
+      },
+      {
+        "key": "Lens Color",
+        "val": "Crystal Clear"
+      },
+      {
+        "key": "Fit",
+        "val": "All-Day Comfort"
+      }
+    ],
+    "features": [
+      "Anti-fog coating prevents condensation build-up during temperature changes or heavy work",
+      "Flexible arms provide a secure yet comfortable fit for a wide range of head sizes",
+      "Crystal-clear polycarbonate lens delivers superior optical clarity",
+      "Scratch-resistant hard coating extends the usable life of the lens",
+      "Ultra-lightweight design prevents ear and nose fatigue during extended shifts",
+      "Suitable for general industrial, laboratory, and construction environments",
+      "Easy to clean and maintain, compatible with standard lens wipes"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "CCS-26-CLR"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Crystal Clear"
+      ],
+      [
+        "Coating",
+        "Anti-Fog + Scratch Resistant"
+      ],
+      [
+        "Frame",
+        "Flexible Nylon Arms"
+      ],
+      [
+        "Weight",
+        "Approx. 25g"
+      ],
+      [
+        "UV Protection",
+        "UV 400"
+      ],
+      [
+        "Use",
+        "Industrial / Lab / Construction"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983. Meets ANSI Z87.1 and CE requirements for industrial eye protectors.",
+    "related": [
+      24,
+      31,
+      32
+    ]
+  },
+  {
+    "id": 27,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Pink Protective Glass",
+    "title": [
+      "PINK",
+      "PROTECTIVE",
+      "GLASS"
+    ],
+    "desc": "Fashion-style pink protective eyewear with impact-resistant transparent lens. Modern design meets industrial safety standards - UV safe with soft grip arms for comfortable all-day wear.",
+    "price": "280",
+    "badge": "Stylish",
+    "cert": true,
+    "img": "./img/glass/glass-4.jpeg",
+    "color": "#ffb6d9",
+    "bg": "linear-gradient(135deg, #ffe0f0, #ffb6d9)",
+    "specs": [
+      "UV Safe",
+      "Impact Resistant",
+      "Soft Grip",
+      "Modern Design"
+    ],
+    "specGrid": [
+      {
+        "key": "UV Safe",
+        "val": "UV 400"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Grip",
+        "val": "Soft Grip"
+      },
+      {
+        "key": "Design",
+        "val": "Modern"
+      },
+      {
+        "key": "Frame Color",
+        "val": "Pink"
+      },
+      {
+        "key": "Lens",
+        "val": "Transparent"
+      }
+    ],
+    "features": [
+      "Fashion-forward pink frame design without compromising on industrial safety standards",
+      "UV 400 protection shields eyes from harmful ultraviolet rays in outdoor environments",
+      "Impact-resistant polycarbonate lens withstands flying debris and particles",
+      "Soft grip nose piece and arm tips prevent slipping during extended wear",
+      "Lightweight frame suitable for all-day use in factories, labs, and workshops",
+      "Scratch-resistant lens coating for lasting optical clarity",
+      "Meets IS:5983 and international PPE safety standards"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "PPG-27-PNK"
+      ],
+      [
+        "Frame Color",
+        "Pink"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Transparent"
+      ],
+      [
+        "UV Protection",
+        "UV 400"
+      ],
+      [
+        "Impact Rating",
+        "Impact Resistant"
+      ],
+      [
+        "Grip",
+        "Soft Grip Arms"
+      ],
+      [
+        "Weight",
+        "Approx. 27g"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983 for industrial eye protectors. Meets ANSI Z87.1 and CE marking requirements for personal protective eyewear equipment.",
+    "related": [
+      24,
+      26,
+      28
+    ]
+  },
+  {
+    "id": 28,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Side Shield Safety Glass",
+    "title": [
+      "SIDE SHIELD",
+      "SAFETY",
+      "GLASS"
+    ],
+    "desc": "Industrial safety spectacles with side shield protection against dust and particles. Enhanced lateral coverage for environments with flying debris, dust-heavy operations, and grinding work.",
+    "price": "240",
+    "badge": "Industrial Grade",
+    "cert": true,
+    "img": "./img/glass/glass-5.jpeg",
+    "color": "#eef7ff",
+    "bg": "linear-gradient(135deg, #eef7ff, #d0e8ff)",
+    "specs": [
+      "Side Protection",
+      "Clear Lens",
+      "Dust Resistant",
+      "Durable Frame"
+    ],
+    "specGrid": [
+      {
+        "key": "Side Protection",
+        "val": "Yes"
+      },
+      {
+        "key": "Lens",
+        "val": "Clear"
+      },
+      {
+        "key": "Dust Resistant",
+        "val": "Yes"
+      },
+      {
+        "key": "Frame",
+        "val": "Durable"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Coverage",
+        "val": "Extended"
+      }
+    ],
+    "features": [
+      "Integrated side shields provide 180° lateral protection against dust, chips, and splashes",
+      "Clear polycarbonate lens with anti-scratch coating for uncompromised vision",
+      "Durable nylon frame engineered for demanding industrial environments",
+      "Dust-resistant construction prevents fine particles from entering around the lens edges",
+      "Suitable for grinding, cutting, drilling, and other high-debris operations",
+      "Adjustable temple length for a secure and comfortable fit",
+      "Compatible with dust masks and other PPE equipment"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "SSG-28-CLR"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Clear"
+      ],
+      [
+        "Side Shields",
+        "Integrated Fixed"
+      ],
+      [
+        "Coating",
+        "Anti-Scratch"
+      ],
+      [
+        "Frame Material",
+        "Durable Nylon"
+      ],
+      [
+        "Weight",
+        "Approx. 35g"
+      ],
+      [
+        "Use",
+        "Grinding / Cutting / Dusty Environments"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983 for industrial eye protectors. Meets ANSI Z87.1 and CE marking requirements for personal protective eyewear equipment.",
+    "related": [
+      24,
+      25,
+      32
+    ]
+  },
+  {
+    "id": 29,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Welding Protection Goggles",
+    "title": [
+      "WELDING",
+      "PROTECTION",
+      "GOGGLES"
+    ],
+    "desc": "Professional welding goggles designed to protect eyes from sparks, UV radiation, and infrared light. Dark lens with heat-resistant frame and elastic strap for secure fit during welding operations.",
+    "price": "850",
+    "badge": "Welding Safety",
+    "cert": true,
+    "img": "./img/glass/glass-6.jpeg",
+    "color": "#1d3b6d",
+    "bg": "linear-gradient(135deg, #1d3b6d, #0d1f3c)",
+    "specs": [
+      "Dark Lens",
+      "Heat Resistant",
+      "Elastic Strap",
+      "Welding Grade"
+    ],
+    "specGrid": [
+      {
+        "key": "Lens",
+        "val": "Dark Shade 5"
+      },
+      {
+        "key": "Heat Resistant",
+        "val": "Yes"
+      },
+      {
+        "key": "Strap",
+        "val": "Elastic"
+      },
+      {
+        "key": "Grade",
+        "val": "Welding"
+      },
+      {
+        "key": "Protection",
+        "val": "UV + IR"
+      },
+      {
+        "key": "Price",
+        "val": "Rs.850"
+      }
+    ],
+    "features": [
+      "Shade 5 dark lens filters harmful ultraviolet and infrared radiation from welding arcs",
+      "Heat-resistant frame material withstands high-temperature welding environments",
+      "Elastic adjustable strap ensures a secure, snug fit over helmets or alone",
+      "Full-surround sealed frame prevents sparks from reaching the eye area",
+      "Suitable for gas welding, cutting, brazing, and soldering operations",
+      "Indirect ventilation prevents fogging while keeping out sparks",
+      "Meets IS:5983 and ANSI Z87.1 welding protection requirements"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "WPG-29-DRK"
+      ],
+      [
+        "Lens Shade",
+        "Shade 5"
+      ],
+      [
+        "Lens Material",
+        "Toughened Green Glass"
+      ],
+      [
+        "Frame Material",
+        "Heat-Resistant Nylon"
+      ],
+      [
+        "Strap",
+        "Elastic Adjustable"
+      ],
+      [
+        "Ventilation",
+        "Indirect"
+      ],
+      [
+        "UV Protection",
+        "Yes (Shade 5)"
+      ],
+      [
+        "IR Protection",
+        "Yes"
+      ],
+      [
+        "Use",
+        "Gas Welding / Cutting / Brazing"
+      ],
+      [
+        "IS Standard",
+        "IS:5983 / IS:1179"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983 for industrial eye protectors. Meets ANSI Z87.1 and CE marking requirements for personal protective eyewear equipment.",
+    "related": [
+      30,
+      31,
+      32
+    ]
+  },
+  {
+    "id": 30,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Black UV Protection Glass",
+    "title": [
+      "BLACK UV",
+      "PROTECTION",
+      "GLASS"
+    ],
+    "desc": "Dark lens protective eyewear for outdoor industrial and high-light environments. Sport design with UV 400 protection and impact-resistant polycarbonate lens for ultimate outdoor eye safety.",
+    "price": "350",
+    "badge": "UV Shield",
+    "cert": true,
+    "img": "./img/glass/glass-7.jpeg",
+    "color": "#000000",
+    "bg": "linear-gradient(135deg, #111111, #2a2a2a)",
+    "specs": [
+      "UV Protection",
+      "Dark Lens",
+      "Sport Design",
+      "Impact Resistant"
+    ],
+    "specGrid": [
+      {
+        "key": "UV Protection",
+        "val": "UV 400"
+      },
+      {
+        "key": "Lens",
+        "val": "Dark Tinted"
+      },
+      {
+        "key": "Design",
+        "val": "Sport"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Frame",
+        "val": "Black"
+      },
+      {
+        "key": "Use",
+        "val": "Outdoor"
+      }
+    ],
+    "features": [
+      "Dark tinted polycarbonate lens provides UV 400 protection for outdoor industrial use",
+      "Sport-style wrap-around design for maximum peripheral coverage",
+      "Impact-resistant lens material meets high-impact safety standards",
+      "Sleek black frame design suited for both industrial and outdoor environments",
+      "Reduces glare and eye strain in bright sunlight or high-intensity lighting",
+      "Anti-scratch coating ensures lens durability over extended use",
+      "Lightweight and ergonomic - suitable for security, outdoor work, and field operations"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "BUV-30-DRK"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Dark Tinted"
+      ],
+      [
+        "Frame Color",
+        "Black"
+      ],
+      [
+        "UV Protection",
+        "UV 400"
+      ],
+      [
+        "Design",
+        "Sport Wrap-Around"
+      ],
+      [
+        "Impact Rating",
+        "High Impact"
+      ],
+      [
+        "Coating",
+        "Anti-Scratch"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983 for industrial eye protectors. Meets ANSI Z87.1 and CE marking requirements for personal protective eyewear equipment.",
+    "related": [
+      25,
+      29,
+      28
+    ]
+  },
+  {
+    "id": 31,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Transparent Safety Goggles",
+    "title": [
+      "TRANSPARENT",
+      "SAFETY",
+      "GOGGLES"
+    ],
+    "desc": "Full-cover transparent safety goggles for chemical and laboratory protection. Chemical-resistant sealed frame with anti-fog lens and elastic band for complete eye coverage in hazardous environments.",
+    "price": "320",
+    "badge": "Lab Safety",
+    "cert": true,
+    "img": "./img/glass/glass-8.jpeg",
+    "color": "#dfefff",
+    "bg": "linear-gradient(135deg, #dfefff, #c5e0ff)",
+    "specs": [
+      "Chemical Resistant",
+      "Elastic Band",
+      "Anti Fog",
+      "Full Eye Cover"
+    ],
+    "specGrid": [
+      {
+        "key": "Chemical",
+        "val": "Resistant"
+      },
+      {
+        "key": "Band",
+        "val": "Elastic"
+      },
+      {
+        "key": "Coating",
+        "val": "Anti Fog"
+      },
+      {
+        "key": "Coverage",
+        "val": "Full Eye"
+      },
+      {
+        "key": "Use",
+        "val": "Lab / Chemical"
+      },
+      {
+        "key": "Seal",
+        "val": "Full Surround"
+      }
+    ],
+    "features": [
+      "Sealed full-surround frame provides complete protection against chemical splashes",
+      "Anti-fog coated transparent lens maintains clear vision in lab environments",
+      "Chemical-resistant frame material withstands exposure to common lab chemicals",
+      "Elastic adjustable headband for secure fit over prescription glasses",
+      "Suitable for chemical handling, laboratory work, and spray painting",
+      "Indirect ventilation prevents fogging while blocking liquid splash",
+      "Meets IS:5983 requirements for chemical splash protection goggles"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "TSG-31-CLR"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Transparent"
+      ],
+      [
+        "Frame",
+        "Chemical-Resistant Sealed"
+      ],
+      [
+        "Coating",
+        "Anti-Fog"
+      ],
+      [
+        "Strap",
+        "Elastic Adjustable"
+      ],
+      [
+        "Ventilation",
+        "Indirect"
+      ],
+      [
+        "Use",
+        "Laboratory / Chemical Handling"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983 for industrial eye protectors. Meets ANSI Z87.1 and CE marking requirements for personal protective eyewear equipment.",
+    "related": [
+      32,
+      26,
+      29
+    ]
+  },
+  {
+    "id": 32,
+    "category": "eye",
+    "categoryLabel": "Eye Protection",
+    "name": "Ventilated Safety Goggles",
+    "title": [
+      "VENTILATED",
+      "SAFETY",
+      "GOGGLES"
+    ],
+    "desc": "Ventilated industrial safety goggles designed for long-duration comfortable wear. Ventilation holes allow airflow to prevent fogging while providing dust and particle protection in industrial environments.",
+    "price": "360",
+    "badge": "Ventilated",
+    "cert": true,
+    "img": "./img/glass/glass-9.jpeg",
+    "color": "#d8c8ff",
+    "bg": "linear-gradient(135deg, #e8d8ff, #d0bbff)",
+    "specs": [
+      "Ventilation Holes",
+      "Dust Protection",
+      "Flexible Fit",
+      "Comfort Wear"
+    ],
+    "specGrid": [
+      {
+        "key": "Ventilation",
+        "val": "Holes"
+      },
+      {
+        "key": "Protection",
+        "val": "Dust"
+      },
+      {
+        "key": "Fit",
+        "val": "Flexible"
+      },
+      {
+        "key": "Wear",
+        "val": "Comfort"
+      },
+      {
+        "key": "Frame Color",
+        "val": "Purple/Clear"
+      },
+      {
+        "key": "Use",
+        "val": "Industrial"
+      }
+    ],
+    "features": [
+      "Direct ventilation holes allow continuous airflow, preventing lens fogging during physical work",
+      "Flexible PVC frame adapts to different face shapes for a comfortable seal",
+      "Wide-vision transparent polycarbonate lens for maximum visual field",
+      "Dust-resistant construction suitable for construction, woodworking, and grinding",
+      "Elastic adjustable strap for secure fit during active work",
+      "Lightweight and comfortable for extended wear across full work shifts",
+      "Easy to clean - frame and lens can be wiped with standard cleaning solutions"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "VSG-32-VNT"
+      ],
+      [
+        "Lens Material",
+        "Polycarbonate (PC)"
+      ],
+      [
+        "Lens Color",
+        "Transparent"
+      ],
+      [
+        "Frame Material",
+        "Flexible PVC"
+      ],
+      [
+        "Ventilation",
+        "Direct Ventilation Holes"
+      ],
+      [
+        "Strap",
+        "Elastic Adjustable"
+      ],
+      [
+        "Weight",
+        "Approx. 80g"
+      ],
+      [
+        "Use",
+        "Construction / Woodworking / Grinding"
+      ],
+      [
+        "IS Standard",
+        "IS:5983"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:5983",
+      "BIS Certified",
+      "ANSI Z87.1",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:5983 for industrial eye protectors. Meets ANSI Z87.1 and CE marking requirements for personal protective eyewear equipment.",
+    "related": [
+      31,
+      28,
+      24
+    ]
+  },
+  {
+    "id": 33,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "Forestry Safety Helmet",
+    "title": [
+      "FORESTRY",
+      "SAFETY",
+      "HELMET"
+    ],
+    "desc": "Professional forestry safety helmet with integrated mesh face shield and ear protection for industrial cutting and chainsaw operations. All-in-one head, face, and hearing protection solution.",
+    "price": "1850",
+    "badge": "Forestry",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-1.jpeg",
+    "color": "#ff7a00",
+    "bg": "linear-gradient(135deg, #ffe8cc, #ff7a0033)",
+    "specs": [
+      "Mesh Face Shield",
+      "Ear Protection",
+      "Impact Resistant",
+      "Industrial Grade"
+    ],
+    "specGrid": [
+      {
+        "key": "Face Shield",
+        "val": "Mesh"
+      },
+      {
+        "key": "Ear Protection",
+        "val": "Integrated"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Use",
+        "val": "Forestry / Chainsaw"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:2925"
+      }
+    ],
+    "features": [
+      "Integrated steel mesh face shield protects against wood chips, debris, and saw kickback",
+      "Attached ear defenders provide hearing protection for high-noise chainsaw and cutting operations",
+      "High-impact ABS helmet shell meets industrial head protection standards",
+      "Mesh visor allows excellent ventilation and unobstructed peripheral vision in field conditions",
+      "All three protections - head, face, and hearing - combined in a single lightweight unit",
+      "Adjustable ratchet harness fits securely over a wide range of head sizes",
+      "Suitable for forestry, arboriculture, landscaping, and heavy brush cutting work"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FSH-33-ORG"
+      ],
+      [
+        "Shell Material",
+        "ABS Plastic"
+      ],
+      [
+        "Face Shield",
+        "Steel Mesh"
+      ],
+      [
+        "Ear Protection",
+        "Attached Ear Defenders"
+      ],
+      [
+        "Noise Reduction",
+        "SNR 25 dB"
+      ],
+      [
+        "Harness",
+        "Adjustable Ratchet"
+      ],
+      [
+        "Weight",
+        "Approx. 720g"
+      ],
+      [
+        "Color",
+        "Orange"
+      ],
+      [
+        "IS Standard",
+        "IS:2925 / EN 397"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      34,
+      38,
+      40
+    ]
+  },
+  {
+    "id": 34,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "Blue Face Shield",
+    "title": [
+      "BLUE",
+      "FACE",
+      "SHIELD"
+    ],
+    "desc": "Industrial face shield with clear visor and blue headband for full-face safety protection in workshops and factories. Lightweight, adjustable design for all-day comfort on busy production floors.",
+    "price": "620",
+    "badge": "Face Protection",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-2.jpeg",
+    "color": "#1d5dff",
+    "bg": "linear-gradient(135deg, #ccdeff, #1d5dff22)",
+    "specs": [
+      "Clear Visor",
+      "Adjustable Headband",
+      "Impact Resistant",
+      "Light Weight"
+    ],
+    "specGrid": [
+      {
+        "key": "Visor",
+        "val": "Clear"
+      },
+      {
+        "key": "Headband",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Coverage",
+        "val": "Full Face"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:8521"
+      }
+    ],
+    "features": [
+      "Crystal-clear polycarbonate visor provides unobstructed vision during precision workshop tasks",
+      "Blue adjustable headband fits comfortably over a wide range of head sizes",
+      "Lightweight construction reduces neck fatigue during extended manufacturing shifts",
+      "Flip-up visor mechanism allows quick face access without removing the headgear",
+      "Impact-resistant lens protects against grinding sparks, metal chips, and flying debris",
+      "Can be worn over spectacles and safety glasses for dual eye and face protection",
+      "Meets IS:8521 requirements for face and eye protectors in industrial environments"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "BFS-34-BLU"
+      ],
+      [
+        "Visor Material",
+        "Clear Polycarbonate"
+      ],
+      [
+        "Visor Thickness",
+        "2mm"
+      ],
+      [
+        "Headband",
+        "Adjustable Blue Nylon"
+      ],
+      [
+        "Mechanism",
+        "Flip-Up"
+      ],
+      [
+        "Weight",
+        "Approx. 280g"
+      ],
+      [
+        "Coverage",
+        "Full Face"
+      ],
+      [
+        "IS Standard",
+        "IS:8521"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      35,
+      39,
+      40
+    ]
+  },
+  {
+    "id": 35,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "White Industrial Face Shield",
+    "title": [
+      "WHITE INDUSTRIAL",
+      "FACE",
+      "SHIELD"
+    ],
+    "desc": "Heavy-duty industrial face shield designed for chemical, laboratory, and workshop safety applications. Chemical-resistant frame with wide clear visor for complete face coverage in demanding environments.",
+    "price": "650",
+    "badge": "Industrial",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-3.jpeg",
+    "color": "#d9d9d9",
+    "bg": "linear-gradient(135deg, #f5f5f5, #e0e0e0)",
+    "specs": [
+      "Full Face Coverage",
+      "Chemical Resistant",
+      "Adjustable Fit",
+      "Industrial Safety"
+    ],
+    "specGrid": [
+      {
+        "key": "Coverage",
+        "val": "Full Face"
+      },
+      {
+        "key": "Frame",
+        "val": "Chemical Resistant"
+      },
+      {
+        "key": "Fit",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Safety",
+        "val": "Industrial"
+      },
+      {
+        "key": "Visor",
+        "val": "Clear Wide"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:8521"
+      }
+    ],
+    "features": [
+      "Chemical-resistant white frame withstands exposure to acids, alkalis, and industrial solvents",
+      "Wide-area clear polycarbonate visor provides maximum face and chin coverage",
+      "Adjustable headband fits securely for all-day wear in laboratory and chemical plant environments",
+      "Anti-fog treated visor maintains clarity during temperature changes and physical activity",
+      "Compatible with respirators and safety glasses for layered respiratory and eye protection",
+      "Easy-clean surface resists chemical staining and allows quick decontamination",
+      "Suitable for chemical handling, lab work, spray operations, and food processing"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "WIF-35-WHT"
+      ],
+      [
+        "Frame Material",
+        "Chemical-Resistant ABS"
+      ],
+      [
+        "Visor Material",
+        "Clear Polycarbonate"
+      ],
+      [
+        "Coating",
+        "Anti-Fog"
+      ],
+      [
+        "Headband",
+        "Adjustable"
+      ],
+      [
+        "Coverage",
+        "Full Face + Chin"
+      ],
+      [
+        "Weight",
+        "Approx. 310g"
+      ],
+      [
+        "IS Standard",
+        "IS:8521"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      34,
+      38,
+      39
+    ]
+  },
+  {
+    "id": 36,
+    "category": "mask",
+    "categoryLabel": "Face Mask",
+    "name": "3M 8822 FFP2 Respirator Mask",
+    "title": [
+      "3M 8822",
+      "FFP2",
+      "RESPIRATOR"
+    ],
+    "desc": "Professional 3M FFP2 respirator mask with exhalation valve for advanced dust and particle protection.",
+    "price": "145",
+    "badge": "FFP2",
+    "cert": true,
+    "img": "./img/mask/mask-1.jpeg",
+    "color": "#f2f2f2",
+    "bg": "linear-gradient(135deg,#f2f2f2,#dcdcdc)",
+    "specs": [
+      "Exhalation Valve",
+      "FFP2 Protection",
+      "Dust Filtration",
+      "Comfort Fit"
+    ],
+    "specGrid": [
+      {
+        "key": "Valve",
+        "val": "Exhalation"
+      },
+      {
+        "key": "Protection",
+        "val": "FFP2"
+      },
+      {
+        "key": "Filtration",
+        "val": "Dust"
+      },
+      {
+        "key": "Fit",
+        "val": "Comfort"
+      },
+      {
+        "key": "Shape",
+        "val": "Cup Form"
+      },
+      {
+        "key": "Standard",
+        "val": "EN 149"
+      }
+    ],
+    "features": [
+      "FFP2 filtration filters at least 94% of airborne particles",
+      "Exhalation valve reduces heat and moisture build-up",
+      "Cup-shaped design maintains a reliable seal",
+      "3M Cool Flow valve minimises breathing resistance",
+      "Soft inner foam nose clip reduces fogging of glasses",
+      "Suitable for construction dust, metalworking fumes, and woodworking",
+      "Meets EN 149:2001+A1:2009 FFP2 NR D and IS:9473"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M 8822"
+      ],
+      [
+        "Protection Class",
+        "FFP2 NR D"
+      ],
+      [
+        "Filtration Efficiency",
+        "Min. 94%"
+      ],
+      [
+        "Valve",
+        "3M Cool Flow Exhalation Valve"
+      ],
+      [
+        "Shape",
+        "Cup-Form"
+      ],
+      [
+        "Nose Clip",
+        "Soft Foam"
+      ],
+      [
+        "Strap",
+        "Dual Elastic Headband"
+      ],
+      [
+        "Weight",
+        "Approx. 18g"
+      ],
+      [
+        "Standard",
+        "EN 149:2001+A1:2009 / IS:9473"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "NIOSH Approved",
+      "EN 149 FFP2",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:9473. Meets EN 149 FFP2 NR D and NIOSH requirements.",
+    "related": [
+      41,
+      42,
+      43
+    ]
+  },
+  {
+    "id": 37,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "Flip Front Welding Shield",
+    "title": [
+      "FLIP FRONT",
+      "WELDING",
+      "SHIELD"
+    ],
+    "desc": "Industrial welding face shield with flip-front viewing window for safe MIG, MMA, and gas welding operations. Flip mechanism allows instant transition between welding and inspection without removal.",
+    "price": "1350",
+    "badge": "Flip Front",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-4.jpeg",
+    "color": "#111111",
+    "bg": "linear-gradient(135deg, #2a2a2a, #111)",
+    "specs": [
+      "Flip Front Lens",
+      "Heat Resistant",
+      "Industrial Grade",
+      "Comfort Headband"
+    ],
+    "specGrid": [
+      {
+        "key": "Lens",
+        "val": "Flip Front"
+      },
+      {
+        "key": "Heat Resistant",
+        "val": "Yes"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Headband",
+        "val": "Comfort"
+      },
+      {
+        "key": "Shade",
+        "val": "DIN 10"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:9005"
+      }
+    ],
+    "features": [
+      "Flip-front lens mechanism enables instant switch between welding and task inspection",
+      "Shade DIN 10 lens provides certified UV and IR protection for MIG and arc welding",
+      "Heat-resistant thermoplastic body shields against weld spatter and radiant heat",
+      "Comfort-padded headband distributes weight evenly to reduce pressure during long sessions",
+      "Full face coverage protects face, chin, and neck from sparks and UV exposure",
+      "Replacement lenses available separately to extend the working life of the shield body",
+      "Durable flip hinge rated for thousands of open-close cycles without loss of alignment"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FFW-37-BLK"
+      ],
+      [
+        "Body Material",
+        "Heat-Resistant Thermoplastic"
+      ],
+      [
+        "Lens Shade",
+        "DIN 10"
+      ],
+      [
+        "Lens Size",
+        "110 × 90mm"
+      ],
+      [
+        "Mechanism",
+        "Flip-Front Hinge"
+      ],
+      [
+        "Headband",
+        "Padded Adjustable"
+      ],
+      [
+        "Weight",
+        "Approx. 580g"
+      ],
+      [
+        "IS Standard",
+        "IS:9005"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      33,
+      38,
+      35
+    ]
+  },
+  {
+    "id": 38,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "Black Safety Face Shield",
+    "title": [
+      "BLACK SAFETY",
+      "FACE",
+      "SHIELD"
+    ],
+    "desc": "Durable black safety face shield for grinding, industrial, and workshop applications. Clear polycarbonate visor with robust black frame delivers reliable impact protection for everyday industrial use.",
+    "price": "580",
+    "badge": "Safety Shield",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-5.jpeg",
+    "color": "#111111",
+    "bg": "linear-gradient(135deg, #2a2a2a, #3d3d3d)",
+    "specs": [
+      "Clear Protection",
+      "Adjustable Strap",
+      "Impact Resistant",
+      "Light Weight"
+    ],
+    "specGrid": [
+      {
+        "key": "Visor",
+        "val": "Clear"
+      },
+      {
+        "key": "Strap",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Frame",
+        "val": "Black"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:8521"
+      }
+    ],
+    "features": [
+      "Robust black ABS frame provides a professional, durable build for daily industrial use",
+      "Clear polycarbonate visor delivers reliable protection against grinding sparks and flying debris",
+      "Lightweight construction keeps the shield comfortable during extended manufacturing operations",
+      "Adjustable headband strap fits a wide range of head sizes securely",
+      "Flip-up visor allows quick and easy face access between tasks",
+      "Scratch-resistant visor coating extends operational life in abrasive environments",
+      "Compatible with safety glasses, earmuffs, and hard hat mounting brackets"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "BSF-38-BLK"
+      ],
+      [
+        "Frame Material",
+        "ABS - Black"
+      ],
+      [
+        "Visor Material",
+        "Clear Polycarbonate"
+      ],
+      [
+        "Coating",
+        "Scratch-Resistant"
+      ],
+      [
+        "Mechanism",
+        "Flip-Up"
+      ],
+      [
+        "Strap",
+        "Adjustable Elastic"
+      ],
+      [
+        "Weight",
+        "Approx. 265g"
+      ],
+      [
+        "IS Standard",
+        "IS:8521"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      34,
+      39,
+      40
+    ]
+  },
+  {
+    "id": 39,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "Green Face Shield",
+    "title": [
+      "GREEN",
+      "FACE",
+      "SHIELD"
+    ],
+    "desc": "Industrial green face shield with transparent visor for workshop and engineering safety use. Reusable design with comfort-fit headgear for reliable face protection across a variety of industrial tasks.",
+    "price": "590",
+    "badge": "Industrial",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-6.jpeg",
+    "color": "#184d2f",
+    "bg": "linear-gradient(135deg, #b2f0d0, #184d2f33)",
+    "specs": [
+      "Transparent Visor",
+      "Comfort Fit",
+      "Industrial Safety",
+      "Reusable Design"
+    ],
+    "specGrid": [
+      {
+        "key": "Visor",
+        "val": "Transparent"
+      },
+      {
+        "key": "Fit",
+        "val": "Comfort"
+      },
+      {
+        "key": "Safety",
+        "val": "Industrial"
+      },
+      {
+        "key": "Design",
+        "val": "Reusable"
+      },
+      {
+        "key": "Frame",
+        "val": "Green"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:8521"
+      }
+    ],
+    "features": [
+      "Transparent polycarbonate visor provides clear, undistorted vision for precision engineering work",
+      "Green-framed comfort headgear distributes weight evenly for prolonged wearability",
+      "Reusable durable construction - visor and frame maintain performance after cleaning and reuse",
+      "Suitable for workshop, engineering, maintenance, and light chemical splash protection",
+      "Flip-up visor for convenient access without removing the headgear entirely",
+      "Anti-scratch visor coating resists surface damage from daily industrial use",
+      "Meets IS:8521 face and eye protector standards for industrial environments"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "GFS-39-GRN"
+      ],
+      [
+        "Frame Material",
+        "ABS - Green"
+      ],
+      [
+        "Visor Material",
+        "Clear Polycarbonate"
+      ],
+      [
+        "Coating",
+        "Anti-Scratch"
+      ],
+      [
+        "Mechanism",
+        "Flip-Up"
+      ],
+      [
+        "Headband",
+        "Comfort-Fit Adjustable"
+      ],
+      [
+        "Weight",
+        "Approx. 270g"
+      ],
+      [
+        "IS Standard",
+        "IS:8521"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      34,
+      38,
+      40
+    ]
+  },
+  {
+    "id": 40,
+    "category": "face",
+    "categoryLabel": "Face Protection",
+    "name": "Yellow Face Shield",
+    "title": [
+      "YELLOW",
+      "FACE",
+      "SHIELD"
+    ],
+    "desc": "Protective yellow face shield with full-face transparent visor for industrial safety applications. Adjustable headgear and impact-resistant clear lens deliver reliable all-round face protection on busy sites.",
+    "price": "610",
+    "badge": "Full Protection",
+    "cert": true,
+    "img": "./img/glasshel/glasshel-7.jpeg",
+    "color": "#ffd400",
+    "bg": "linear-gradient(135deg, #fffaaa, #ffd40033)",
+    "specs": [
+      "Full Face Coverage",
+      "Adjustable Headgear",
+      "Impact Resistant",
+      "Clear Vision"
+    ],
+    "specGrid": [
+      {
+        "key": "Coverage",
+        "val": "Full Face"
+      },
+      {
+        "key": "Headgear",
+        "val": "Adjustable"
+      },
+      {
+        "key": "Resistance",
+        "val": "Impact"
+      },
+      {
+        "key": "Vision",
+        "val": "Clear"
+      },
+      {
+        "key": "Frame",
+        "val": "Yellow"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:8521"
+      }
+    ],
+    "features": [
+      "Full-face coverage visor protects against grinding sparks, chips, and chemical splash",
+      "Bright yellow frame provides excellent visibility on busy construction and industrial sites",
+      "Impact-resistant polycarbonate clear lens meets IS:8521 industrial face protector standards",
+      "Adjustable headgear ratchet fits head sizes from 52 to 63 cm for a secure fit",
+      "Flip-up mechanism allows workers to quickly inspect work without removing the shield",
+      "Anti-fog and scratch-resistant coating for sustained clarity in active work environments",
+      "Lightweight design suitable for all-day continuous wear on production lines and sites"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "YFS-40-YLW"
+      ],
+      [
+        "Frame Material",
+        "ABS - Yellow"
+      ],
+      [
+        "Visor Material",
+        "Clear Polycarbonate"
+      ],
+      [
+        "Coating",
+        "Anti-Fog + Anti-Scratch"
+      ],
+      [
+        "Mechanism",
+        "Flip-Up"
+      ],
+      [
+        "Headgear",
+        "Adjustable Ratchet"
+      ],
+      [
+        "Size Range",
+        "52-63 cm"
+      ],
+      [
+        "Weight",
+        "Approx. 285g"
+      ],
+      [
+        "IS Standard",
+        "IS:8521"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:8521",
+      "BIS Certified",
+      "EN 166",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:8521 for industrial face and eye protectors. Meets EN 166 European standard and CE marking requirements for personal protective face shields used in industrial, chemical, and workshop environments.",
+    "related": [
+      34,
+      39,
+      38
+    ]
+  },
+  {
+    "id": 41,
+    "category": "mask",
+    "categoryLabel": "Face Mask",
+    "name": "3M 9001 N95 Respirator",
+    "title": [
+      "3M 9001",
+      "N95",
+      "RESPIRATOR"
+    ],
+    "desc": "Lightweight 3M N95 respirator mask designed for industrial safety and airborne particle filtration.",
+    "price": "120",
+    "badge": "N95",
+    "cert": true,
+    "img": "./img/mask/mask-2.jpeg",
+    "color": "#ffffff",
+    "bg": "linear-gradient(135deg,#f9f9f9,#e8e8e8)",
+    "specs": [
+      "N95 Filtration",
+      "Light Weight",
+      "Comfort Elastic",
+      "Industrial Safety"
+    ],
+    "specGrid": [
+      {
+        "key": "Filtration",
+        "val": "N95"
+      },
+      {
+        "key": "Weight",
+        "val": "Light"
+      },
+      {
+        "key": "Straps",
+        "val": "Elastic"
+      },
+      {
+        "key": "Safety",
+        "val": "Industrial"
+      },
+      {
+        "key": "Shape",
+        "val": "Flat Fold"
+      },
+      {
+        "key": "Standard",
+        "val": "NIOSH"
+      }
+    ],
+    "features": [
+      "N95 filtration efficiency - filters 95%+ of airborne non-oil-based particles",
+      "Flat-fold design collapses for compact storage",
+      "Lightweight construction reduces facial pressure and fatigue",
+      "Dual comfort elastic straps for a secure fit",
+      "Adjustable nose clip for a personalised, leak-free seal",
+      "Suitable for fine dust, pollution, and industrial fumes",
+      "NIOSH-approved N95 rating and meets IS:9473"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M 9001"
+      ],
+      [
+        "Protection Class",
+        "N95"
+      ],
+      [
+        "Filtration Efficiency",
+        "Min. 95%"
+      ],
+      [
+        "Valve",
+        "No Valve"
+      ],
+      [
+        "Shape",
+        "Flat Fold"
+      ],
+      [
+        "Nose Clip",
+        "Pre-Shaped Foam"
+      ],
+      [
+        "Straps",
+        "Dual Elastic"
+      ],
+      [
+        "Weight",
+        "Approx. 9g"
+      ],
+      [
+        "Standard",
+        "NIOSH 42 CFR 84 / IS:9473"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "NIOSH N95",
+      "EN 149",
+      "CE Marked"
+    ],
+    "certNote": "NIOSH-approved N95. BIS certified under IS:9473.",
+    "related": [
+      36,
+      42,
+      43
+    ]
+  },
+  {
+    "id": 42,
+    "category": "mask",
+    "categoryLabel": "Face Mask",
+    "name": "3M 8210 Valve Respirator",
+    "title": [
+      "3M 8210",
+      "VALVE",
+      "RESPIRATOR"
+    ],
+    "desc": "Industrial-grade respirator mask with valve system for breathable and reliable particle protection.",
+    "price": "160",
+    "badge": "Valve Type",
+    "cert": true,
+    "img": "./img/mask/mask-3.jpeg",
+    "color": "#fafafa",
+    "bg": "linear-gradient(135deg,#fafafa,#e5e5e5)",
+    "specs": [
+      "Valve System",
+      "Dust Protection",
+      "NIOSH Approved",
+      "Comfort Wear"
+    ],
+    "specGrid": [
+      {
+        "key": "Valve",
+        "val": "Yes"
+      },
+      {
+        "key": "Protection",
+        "val": "Dust"
+      },
+      {
+        "key": "Approval",
+        "val": "NIOSH"
+      },
+      {
+        "key": "Wear",
+        "val": "Comfort"
+      },
+      {
+        "key": "Filtration",
+        "val": "N95"
+      },
+      {
+        "key": "Standard",
+        "val": "42 CFR 84"
+      }
+    ],
+    "features": [
+      "NIOSH-approved N95 filtration with integrated exhalation valve",
+      "Valve system reduces heat and moisture build-up",
+      "Advanced electrostatically charged microfibre filter media",
+      "Contoured cup shape and soft inner liner",
+      "Ideal for long-duration wear in dusty environments",
+      "Dual headbands for a stable, secure fit",
+      "Meets NIOSH 42 CFR 84 N95 and IS:9473"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M 8210"
+      ],
+      [
+        "Protection Class",
+        "N95"
+      ],
+      [
+        "Filtration Efficiency",
+        "Min. 95%"
+      ],
+      [
+        "Valve",
+        "Exhalation Valve"
+      ],
+      [
+        "Filter Media",
+        "Electrostatic Microfibre"
+      ],
+      [
+        "Shape",
+        "Cup-Form"
+      ],
+      [
+        "Straps",
+        "Dual Elastic Headband"
+      ],
+      [
+        "Weight",
+        "Approx. 14g"
+      ],
+      [
+        "Standard",
+        "NIOSH 42 CFR 84 / IS:9473"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "NIOSH N95",
+      "EN 149",
+      "CE Marked"
+    ],
+    "certNote": "NIOSH-approved N95. BIS certified under IS:9473.",
+    "related": [
+      36,
+      41,
+      43
+    ]
+  },
+  {
+    "id": 43,
+    "category": "mask",
+    "categoryLabel": "Face Mask",
+    "name": "3M 9501+ N95 Mask",
+    "title": [
+      "3M 9501+",
+      "N95",
+      "MASK"
+    ],
+    "desc": "Premium 3M 9501+ N95 protective mask with advanced filtration for industrial and personal safety use.",
+    "price": "135",
+    "badge": "Premium",
+    "cert": true,
+    "img": "./img/mask/mask-4.jpeg",
+    "color": "#f8f8f8",
+    "bg": "linear-gradient(135deg,#f8f8f8,#e2e2e2)",
+    "specs": [
+      "N95 Certified",
+      "Advanced Filtration",
+      "Soft Ear Loops",
+      "Breathable Design"
+    ],
+    "specGrid": [
+      {
+        "key": "Certified",
+        "val": "N95"
+      },
+      {
+        "key": "Filtration",
+        "val": "Advanced"
+      },
+      {
+        "key": "Loops",
+        "val": "Soft Ear"
+      },
+      {
+        "key": "Design",
+        "val": "Breathable"
+      },
+      {
+        "key": "Layers",
+        "val": "Multi-Layer"
+      },
+      {
+        "key": "Standard",
+        "val": "GB2626"
+      }
+    ],
+    "features": [
+      "Advanced multi-layer filtration with N95 certification",
+      "Soft, adjustable ear loops for comfortable wear",
+      "Breathable outer layer and soft inner fabric",
+      "Foldable butterfly design for a better facial seal",
+      "Suitable for industrial use and pollution protection",
+      "Integrated nose wire for a customised, leak-free fit",
+      "Meets GB2626 KN95 equivalent and IS:9473"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M 9501+"
+      ],
+      [
+        "Protection Class",
+        "N95 / KN95 equivalent"
+      ],
+      [
+        "Filtration Efficiency",
+        "Min. 95%"
+      ],
+      [
+        "Valve",
+        "No Valve"
+      ],
+      [
+        "Shape",
+        "Foldable Butterfly"
+      ],
+      [
+        "Straps",
+        "Soft Ear Loops"
+      ],
+      [
+        "Nose Wire",
+        "Adjustable Metal"
+      ],
+      [
+        "Weight",
+        "Approx. 10g"
+      ],
+      [
+        "Standard",
+        "GB2626 / IS:9473"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "NIOSH N95",
+      "GB2626",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:9473. Meets GB2626 KN95 equivalent standard.",
+    "related": [
+      36,
+      41,
+      44
+    ]
+  },
+  {
+    "id": 44,
+    "category": "mask",
+    "categoryLabel": "Face Mask",
+    "name": "3M 9042 KN90 Mask",
+    "title": [
+      "3M 9042",
+      "KN90",
+      "MASK"
+    ],
+    "desc": "KN90 protective respirator mask designed for dust, pollution, and industrial particle protection.",
+    "price": "115",
+    "badge": "KN90",
+    "cert": true,
+    "img": "./img/mask/mask-5.jpeg",
+    "color": "#9a9a9a",
+    "bg": "linear-gradient(135deg,#d0d0d0,#9a9a9a44)",
+    "specs": [
+      "KN90 Protection",
+      "Dust Filtration",
+      "Comfort Fit",
+      "Multi Layer Safety"
+    ],
+    "specGrid": [
+      {
+        "key": "Protection",
+        "val": "KN90"
+      },
+      {
+        "key": "Filtration",
+        "val": "Dust"
+      },
+      {
+        "key": "Fit",
+        "val": "Comfort"
+      },
+      {
+        "key": "Safety",
+        "val": "Multi Layer"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Standard",
+        "val": "GB2626"
+      }
+    ],
+    "features": [
+      "KN90 rating filters at least 90% of non-oil-based airborne particles",
+      "Multi-layer filter construction for comprehensive protection",
+      "Lightweight cup-form design maintains shape on the face",
+      "Adjustable nose clip minimises air leakage",
+      "Soft elastic ear loops for comfortable extended wear",
+      "Suitable for construction dust, road pollution, and agricultural dust",
+      "Meets GB2626 KN90 and IS:9473"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M 9042"
+      ],
+      [
+        "Protection Class",
+        "KN90"
+      ],
+      [
+        "Filtration Efficiency",
+        "Min. 90%"
+      ],
+      [
+        "Valve",
+        "No Valve"
+      ],
+      [
+        "Shape",
+        "Cup-Form"
+      ],
+      [
+        "Layers",
+        "3-Layer Filter"
+      ],
+      [
+        "Straps",
+        "Ear Loops"
+      ],
+      [
+        "Nose Clip",
+        "Adjustable Metal"
+      ],
+      [
+        "Standard",
+        "GB2626 / IS:9473"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "GB2626 KN90",
+      "BIS Certified",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:9473. Meets GB2626 KN90 standard.",
+    "related": [
+      43,
+      41,
+      42
+    ]
+  },
+  {
+    "id": 45,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "Full Face Industrial Respirator",
+    "title": [
+      "FULL FACE INDUSTRIAL",
+      "RESPIRATOR"
+    ],
+    "desc": "Professional full-face respirator mask designed for chemical, gas, and industrial particle protection. Provides comprehensive respiratory and eye protection in demanding industrial environments.",
+    "price": "2450",
+    "badge": "Full Face",
+    "cert": true,
+    "img": "./img/facemask/fmask-1.jpeg",
+    "color": "#2f2f2f",
+    "bg": "linear-gradient(135deg, #2a2a2a, #1a1a1a)",
+    "specs": [
+      "Full Face Seal",
+      "Chemical Protection",
+      "Replaceable Filter",
+      "Industrial Grade"
+    ],
+    "specGrid": [
+      {
+        "key": "Coverage",
+        "val": "Full Face"
+      },
+      {
+        "key": "Type",
+        "val": "Chemical Protection"
+      },
+      {
+        "key": "Filter",
+        "val": "Replaceable"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Seal",
+        "val": "Full Face Seal"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:9473"
+      }
+    ],
+    "features": [
+      "Full face seal ensures zero leakage of hazardous chemicals, gases and airborne particles",
+      "Wide-angle panoramic lens for maximum visibility without compromising protection",
+      "Replaceable dual-cartridge filter system compatible with various filter types",
+      "Adjustable head harness with quick-don mechanism for rapid donning and doffing",
+      "Chemical-resistant facepiece material withstands exposure to acids and solvents",
+      "Compatible with external safety goggles and hard hats for full PPE layering",
+      "Suitable for chemical plants, refineries, spray painting, and hazardous waste handling"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "FIF-45-IND"
+      ],
+      [
+        "Type",
+        "Full Face Respirator"
+      ],
+      [
+        "Facepiece",
+        "Chemical-Resistant Silicone"
+      ],
+      [
+        "Lens",
+        "Panoramic Polycarbonate"
+      ],
+      [
+        "Filter System",
+        "Dual Cartridge, Replaceable"
+      ],
+      [
+        "Head Harness",
+        "6-Point Adjustable"
+      ],
+      [
+        "Weight",
+        "Approx. 580g"
+      ],
+      [
+        "IS Standard",
+        "IS:9473"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "BIS Certified",
+      "NIOSH Approved",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:9473 for respiratory protective devices. Meets NIOSH and CE marking requirements for full-face industrial respirators used in chemical handling and hazardous environments.",
+    "related": [
+      46,
+      47,
+      48
+    ]
+  },
+  {
+    "id": 46,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "3M P100 Dual Filter Respirator",
+    "title": [
+      "3M P100 DUAL FILTER",
+      "RESPIRATOR"
+    ],
+    "desc": "Advanced dual-filter respirator with P100 filtration for hazardous particles and industrial environments. NIOSH approved for maximum airborne particle protection.",
+    "price": "1850",
+    "badge": "P100",
+    "cert": true,
+    "img": "./img/facemask/fmask-2.jpeg",
+    "color": "#5d3fd3",
+    "bg": "linear-gradient(135deg, #4a3a8a, #2a1a6a)",
+    "specs": [
+      "P100 Filters",
+      "Dual Cartridge",
+      "NIOSH Approved",
+      "Comfort Fit"
+    ],
+    "specGrid": [
+      {
+        "key": "Filter",
+        "val": "P100"
+      },
+      {
+        "key": "Cartridges",
+        "val": "Dual"
+      },
+      {
+        "key": "Approval",
+        "val": "NIOSH"
+      },
+      {
+        "key": "Fit",
+        "val": "Comfort Fit"
+      },
+      {
+        "key": "Coverage",
+        "val": "Half Face"
+      },
+      {
+        "key": "Standard",
+        "val": "42 CFR 84"
+      }
+    ],
+    "features": [
+      "P100 filters capture 99.97% of airborne particles including oil-based aerosols",
+      "Dual cartridge design provides balanced airflow and superior filtration efficiency",
+      "NIOSH approved 42 CFR 84 for use in hazardous particle environments",
+      "Soft elastomeric facepiece ensures comfortable extended wear without pressure marks",
+      "Easy-to-grip cartridge knobs allow quick filter changes without tools",
+      "Low-profile design fits easily under welding shields and face shields",
+      "Ideal for asbestos handling, grinding, lead dust, paint spray, and mining"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M-P100-DF"
+      ],
+      [
+        "Type",
+        "Half Face, Dual Filter"
+      ],
+      [
+        "Filtration",
+        "P100 - 99.97% efficiency"
+      ],
+      [
+        "Facepiece",
+        "Elastomeric Silicone"
+      ],
+      [
+        "Cartridge",
+        "Dual, Tool-Free Change"
+      ],
+      [
+        "Approval",
+        "NIOSH 42 CFR 84"
+      ],
+      [
+        "Weight",
+        "Approx. 240g"
+      ],
+      [
+        "Standard",
+        "IS:15321 / NIOSH"
+      ]
+    ],
+    "certs": [
+      "NIOSH 42 CFR 84",
+      "CE Marked",
+      "ISI Mark - IS:15321",
+      "BIS Certified"
+    ],
+    "certNote": "NIOSH approved under 42 CFR Part 84 for P100 class particulate filtration. CE marked and BIS certified under IS:15321 for respiratory protective half-face equipment used in industrial and hazardous environments.",
+    "related": [
+      45,
+      47,
+      49
+    ]
+  },
+  {
+    "id": 47,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "3M 6200 Half Face Respirator",
+    "title": [
+      "3M 6200 HALF FACE",
+      "RESPIRATOR"
+    ],
+    "desc": "Reusable half-face respirator designed for dust, fumes, and chemical vapor protection. Lightweight and durable construction for all-day industrial use.",
+    "price": "1350",
+    "badge": "Reusable",
+    "cert": true,
+    "img": "./img/facemask/fmask-3.jpeg",
+    "color": "#2d2d2d",
+    "bg": "linear-gradient(135deg, #2d2d2d, #1a1a1a)",
+    "specs": [
+      "Half Face Design",
+      "Dual Filter Support",
+      "Lightweight",
+      "Durable Material"
+    ],
+    "specGrid": [
+      {
+        "key": "Design",
+        "val": "Half Face"
+      },
+      {
+        "key": "Filters",
+        "val": "Dual Filter Support"
+      },
+      {
+        "key": "Weight",
+        "val": "Lightweight"
+      },
+      {
+        "key": "Build",
+        "val": "Durable"
+      },
+      {
+        "key": "Type",
+        "val": "Reusable"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:15321"
+      }
+    ],
+    "features": [
+      "Reusable half-face design with replaceable cartridge filters for long-term cost efficiency",
+      "Dual filter slots compatible with 3M 6000-series cartridges for versatile protection",
+      "Lightweight thermoplastic elastomer facepiece reduces user fatigue during extended shifts",
+      "Cool Flow™ exhalation valve reduces heat and moisture build-up inside the mask",
+      "Wide selection of compatible cartridges covers organics, acids, ammonia, P100 particles",
+      "Low-maintenance design - easy to clean, disinfect, and reassemble",
+      "Suitable for spray painting, welding fumes, chemical handling, and maintenance work"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M-6200-HF"
+      ],
+      [
+        "Type",
+        "Half Face, Reusable"
+      ],
+      [
+        "Facepiece",
+        "Thermoplastic Elastomer"
+      ],
+      [
+        "Filter Slots",
+        "Dual, 3M 6000-Series"
+      ],
+      [
+        "Exhalation Valve",
+        "Cool Flow™"
+      ],
+      [
+        "Head Straps",
+        "Dual, Adjustable"
+      ],
+      [
+        "Weight",
+        "Approx. 165g"
+      ],
+      [
+        "Standard",
+        "IS:15321 / ANSI Z88.2"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:15321",
+      "BIS Certified",
+      "ANSI Z88.2",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:15321 for half-face respiratory protective equipment. Meets ANSI Z88.2 and CE marking standards for reusable respirators used in chemical vapor, dust, and fume environments.",
+    "related": [
+      46,
+      48,
+      50
+    ]
+  },
+  {
+    "id": 48,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "3M Full Face Safety Respirator",
+    "title": [
+      "3M FULL FACE SAFETY",
+      "RESPIRATOR"
+    ],
+    "desc": "Heavy-duty full-face respirator providing maximum respiratory and eye protection for industrial use. Secure head harness and wide lens for comprehensive safety.",
+    "price": "3200",
+    "badge": "Heavy Duty",
+    "cert": true,
+    "img": "./img/facemask/fmask-4.jpeg",
+    "color": "#1f1f1f",
+    "bg": "linear-gradient(135deg, #1f1f1f, #0a0a0a)",
+    "specs": [
+      "Wide Lens View",
+      "Full Protection",
+      "Secure Head Harness",
+      "Industrial Safety"
+    ],
+    "specGrid": [
+      {
+        "key": "Lens",
+        "val": "Wide View"
+      },
+      {
+        "key": "Protection",
+        "val": "Full Face"
+      },
+      {
+        "key": "Harness",
+        "val": "Secure Head"
+      },
+      {
+        "key": "Grade",
+        "val": "Industrial"
+      },
+      {
+        "key": "Build",
+        "val": "Heavy Duty"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:9473"
+      }
+    ],
+    "features": [
+      "Panoramic wide-angle lens offers unrestricted field of vision for precision tasks",
+      "Secure 6-point head harness distributes weight evenly for comfortable extended wear",
+      "Integrated eye and respiratory protection eliminates need for separate eye protection",
+      "Inner mask with pre-filter reduces inhalation resistance during heavy work",
+      "Heavy-duty silicone facepiece maintains seal integrity under extreme conditions",
+      "Compatible with supplied-air (SCBA) connection for oxygen-deficient environments",
+      "Recommended for confined space entry, fire suppression support, and toxic gas work"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M-FF-3200"
+      ],
+      [
+        "Type",
+        "Full Face Respirator, Heavy Duty"
+      ],
+      [
+        "Facepiece",
+        "Heavy-Duty Silicone"
+      ],
+      [
+        "Lens",
+        "Panoramic, Wide Angle"
+      ],
+      [
+        "Inner Mask",
+        "Pre-Filter Stage"
+      ],
+      [
+        "Head Harness",
+        "6-Point, Secure"
+      ],
+      [
+        "Weight",
+        "Approx. 650g"
+      ],
+      [
+        "Standard",
+        "IS:9473 / NIOSH"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:9473",
+      "NIOSH Approved",
+      "BIS Certified",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:9473 for full respiratory protective equipment. NIOSH approved for use in environments requiring full face and respiratory protection, including chemical, gas, and oxygen-deficient spaces.",
+    "related": [
+      45,
+      47,
+      49
+    ]
+  },
+  {
+    "id": 49,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "3M Dual Cartridge Respirator",
+    "title": [
+      "3M DUAL CARTRIDGE",
+      "RESPIRATOR"
+    ],
+    "desc": "Industrial dual-cartridge respirator mask for chemical handling and hazardous work environments. Professional grade protection with comfortable breathing resistance.",
+    "price": "2150",
+    "badge": "Dual Cartridge",
+    "cert": true,
+    "img": "./img/facemask/fmask-5.jpeg",
+    "color": "#3a2a5f",
+    "bg": "linear-gradient(135deg, #3a2a5f, #1a0a3f)",
+    "specs": [
+      "Dual Filters",
+      "Chemical Resistant",
+      "Comfort Breathing",
+      "Professional Grade"
+    ],
+    "specGrid": [
+      {
+        "key": "Filters",
+        "val": "Dual Cartridge"
+      },
+      {
+        "key": "Protection",
+        "val": "Chemical"
+      },
+      {
+        "key": "Breathing",
+        "val": "Comfort"
+      },
+      {
+        "key": "Grade",
+        "val": "Professional"
+      },
+      {
+        "key": "Seal",
+        "val": "Full Seal"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:15321"
+      }
+    ],
+    "features": [
+      "Dual independent cartridges provide balanced, low-resistance breathing for extended shifts",
+      "Compatible with multiple cartridge types for organic vapors, acid gas, and P100 particles",
+      "Professional-grade silicone facepiece conforms to all facial profiles for leak-free seal",
+      "Colour-coded cartridge ends for easy identification of filter type during quick changes",
+      "Exhalation valve designed for minimal exhalation resistance, reducing fatigue",
+      "Full face-seal check function built into harness for fast pre-use donning verification",
+      "Ideal for chemical laboratories, pharmaceutical plants, and industrial coating operations"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M-DC-49"
+      ],
+      [
+        "Type",
+        "Half Face, Dual Cartridge"
+      ],
+      [
+        "Facepiece",
+        "Professional Silicone"
+      ],
+      [
+        "Cartridges",
+        "Dual, Colour-Coded"
+      ],
+      [
+        "Filter Range",
+        "Organic / Acid Gas / P100"
+      ],
+      [
+        "Exhalation Valve",
+        "Low-Resistance"
+      ],
+      [
+        "Weight",
+        "Approx. 275g"
+      ],
+      [
+        "Standard",
+        "IS:15321 / EN 140"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:15321",
+      "CE Marked",
+      "EN 140",
+      "BIS Certified"
+    ],
+    "certNote": "BIS certified under IS:15321. Meets EN 140 European standard for half masks and CE marking requirements. Certified for use in chemical vapor, acid gas, and fine particle environments in professional industrial settings.",
+    "related": [
+      46,
+      48
+    ]
+  },
+  {
+    "id": 50,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "3M Blue Half Face Respirator",
+    "title": [
+      "3M BLUE HALF FACE",
+      "RESPIRATOR"
+    ],
+    "desc": "Compact blue half-face respirator mask with ergonomic fit for industrial respiratory safety. Soft head straps and reusable design for daily use.",
+    "price": "1250",
+    "badge": "Compact",
+    "cert": true,
+    "img": "./img/facemask/fmask-6.jpeg",
+    "color": "#496d9b",
+    "bg": "linear-gradient(135deg, #3a5f8a, #1a3f6a)",
+    "specs": [
+      "Ergonomic Fit",
+      "Reusable Design",
+      "Dust Protection",
+      "Soft Head Straps"
+    ],
+    "specGrid": [
+      {
+        "key": "Fit",
+        "val": "Ergonomic"
+      },
+      {
+        "key": "Design",
+        "val": "Reusable"
+      },
+      {
+        "key": "Protection",
+        "val": "Dust + Particle"
+      },
+      {
+        "key": "Straps",
+        "val": "Soft Head"
+      },
+      {
+        "key": "Profile",
+        "val": "Low Profile"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:15321"
+      }
+    ],
+    "features": [
+      "Ergonomic low-profile design sits comfortably without obstructing vision or movement",
+      "Soft textile head straps with no-tool size adjustment for fast fitting",
+      "Reusable facepiece with replaceable filters reduces cost per use significantly",
+      "Lightweight compact build ideal for daily use in light-duty industrial environments",
+      "Smooth inner lining prevents skin irritation during hot weather or extended wear",
+      "Dust and coarse particle protection suitable for construction, woodworking, and maintenance",
+      "Compact enough to fit in a standard PPE pouch for easy transport and storage"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M-BHF-50"
+      ],
+      [
+        "Type",
+        "Half Face, Compact"
+      ],
+      [
+        "Facepiece",
+        "Soft Elastomeric"
+      ],
+      [
+        "Filter Slots",
+        "Dual, Standard"
+      ],
+      [
+        "Head Straps",
+        "Soft Textile, Adjustable"
+      ],
+      [
+        "Profile",
+        "Low Profile"
+      ],
+      [
+        "Weight",
+        "Approx. 145g"
+      ],
+      [
+        "Standard",
+        "IS:15321"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:15321",
+      "BIS Certified",
+      "CE Marked",
+      "EN 149"
+    ],
+    "certNote": "BIS certified under IS:15321 for half-face respiratory protection. Meets CE marking and EN 149 standards for reusable, compact half-face respirators used in dust, coarse particle, and light chemical environments.",
+    "related": [
+      47,
+      49
+    ]
+  },
+  {
+    "id": 51,
+    "category": "respirator",
+    "categoryLabel": "Reusable Respirator",
+    "name": "3M Gray Industrial Respirator",
+    "title": [
+      "3M GRAY INDUSTRIAL",
+      "RESPIRATOR"
+    ],
+    "desc": "Premium industrial respirator mask designed for advanced airborne and chemical protection. Advanced seal technology with replaceable filters for professional use.",
+    "price": "1750",
+    "badge": "Industrial",
+    "cert": true,
+    "img": "./img/facemask/fmask-7.jpeg",
+    "color": "#7a7a7a",
+    "bg": "linear-gradient(135deg, #5a5a5a, #2a2a2a)",
+    "specs": [
+      "Advanced Seal",
+      "Replaceable Filters",
+      "Chemical Protection",
+      "Professional Use"
+    ],
+    "specGrid": [
+      {
+        "key": "Seal",
+        "val": "Advanced"
+      },
+      {
+        "key": "Filters",
+        "val": "Replaceable"
+      },
+      {
+        "key": "Protection",
+        "val": "Chemical + Airborne"
+      },
+      {
+        "key": "Grade",
+        "val": "Professional"
+      },
+      {
+        "key": "Use",
+        "val": "Industrial"
+      },
+      {
+        "key": "Standard",
+        "val": "IS:15321"
+      }
+    ],
+    "features": [
+      "Advanced seal geometry creates a superior face-fit reducing leakage to below 2%",
+      "Replaceable multi-purpose filters compatible with airborne particles and chemical vapors",
+      "Heavy-duty grey thermoplastic construction resists industrial chemicals and UV degradation",
+      "Dual exhalation valves ensure fast, efficient CO2 exhale for comfortable breathing",
+      "Wide nose bridge with foam padding reduces eyewear fogging and pressure points",
+      "Suitable for prolonged use in dusty, chemical, and gaseous industrial environments",
+      "Professional grade for pharmaceutical, refinery, and chemical plant use"
+    ],
+    "specTable": [
+      [
+        "Model",
+        "3M-GIR-51"
+      ],
+      [
+        "Type",
+        "Half Face, Industrial"
+      ],
+      [
+        "Facepiece",
+        "Heavy-Duty Thermoplastic"
+      ],
+      [
+        "Seal",
+        "<2% leakage"
+      ],
+      [
+        "Filter Slots",
+        "Dual Replaceable"
+      ],
+      [
+        "Exhalation",
+        "Dual Valve"
+      ],
+      [
+        "Weight",
+        "Approx. 220g"
+      ],
+      [
+        "Standard",
+        "IS:15321 / EN 140"
+      ]
+    ],
+    "certs": [
+      "ISI Mark - IS:15321",
+      "BIS Certified",
+      "EN 140",
+      "CE Marked"
+    ],
+    "certNote": "BIS certified under IS:15321. Meets EN 140 European standard for half-face masks and CE marking requirements. Designed and certified for advanced industrial respiratory protection in chemical, pharmaceutical, and heavy industrial settings.",
+    "related": [
+      49,
+      50,
+      45
+    ]
+  }
+]
