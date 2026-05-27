@@ -1,0 +1,3198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIREBOY — Fire Protection Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600;700&family=Anton&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* ===== VARIABLES ===== */
+:root {
+  --fire: #d4521a;
+  --fire-dark: #b83e0e;
+  --fire-glow: rgba(212, 82, 26, 0.18);
+  --fire-pale: rgba(212, 82, 26, 0.07);
+  --ink: #0e0d0c;
+  --ink2: #1b1a18;
+  --ink3: #262420;
+  --white: #ffffff;
+  --off-white: #f6f4f0;
+  --muted: #7a776f;
+  --border: #e6e3dd;
+  --font-display: 'Anton', sans-serif;
+  --font-head: 'Oswald', sans-serif;
+  --font-body: 'Nunito Sans', sans-serif;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #fff;
+  color: var(--ink);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(44px);
+  transition: opacity 0.8s var(--out), transform 0.8s var(--out);
+  transition-delay: var(--delay, 0s);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-56px);
+  transition: opacity 0.9s var(--out), transform 0.9s var(--out);
+  transition-delay: var(--delay, 0s);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(56px);
+  transition: opacity 0.9s var(--out), transform 0.9s var(--out);
+  transition-delay: var(--delay, 0s);
+}
+
+.reveal-up.visible,
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* ===== TYPOGRAPHY HELPERS ===== */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  color: var(--fire);
+  margin-bottom: 14px;
+}
+
+.section-label::before {
+  content: '';
+  width: 28px;
+  height: 2px;
+  background: var(--fire);
+  flex-shrink: 0;
+}
+
+.section-label.light {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.section-label.light::before {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.section-title {
+  font-family: var(--font-head);
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.08;
+  letter-spacing: 0.5px;
+  margin-bottom: 22px;
+}
+
+.section-title em {
+  font-style: normal;
+  color: var(--fire);
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--fire);
+  color: #fff;
+  padding: 14px 32px;
+  font-family: var(--font-head);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.3s var(--spring), box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.4s var(--ease);
+}
+
+.btn-primary:hover::after {
+  transform: translateX(0);
+}
+
+.btn-primary:hover {
+  background: var(--fire-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px var(--fire-glow);
+}
+
+.btn-primary:hover i {
+  transform: translateX(4px);
+}
+
+.btn-primary i {
+  transition: transform 0.3s var(--spring);
+}
+
+.btn-primary.w-full {
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.82);
+  padding: 14px 26px;
+  font-family: var(--font-head);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  transition: all 0.3s var(--ease);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 14px 26px;
+  font-family: var(--font-head);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  transition: all 0.3s var(--ease);
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* ===== NAVBAR ===== */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.4s var(--ease);
+}
+
+.nav-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  height: 72px;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  transition: box-shadow 0.4s, background 0.4s;
+}
+
+#navbar.scrolled .nav-inner {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 48px;
+  flex-shrink: 0;
+  transition: opacity 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--ink);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0;
+  flex: 1;
+}
+
+.nav-links a {
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #555;
+  padding: 8px 14px;
+  position: relative;
+  transition: color 0.25s;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background: var(--fire);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--out);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--fire);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--fire);
+  color: #fff;
+  padding: 10px 24px;
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  transition: background 0.25s;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.nav-cta:hover {
+  background: var(--fire-dark);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: auto;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  transition: all 0.35s var(--ease);
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-top: 72px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  will-change: transform;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(8, 7, 6, 0.94) 0%, rgba(8, 7, 6, 0.7) 55%, rgba(8, 7, 6, 0.3) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: flex-end;
+  gap: 60px;
+  padding-bottom: 100px;
+  padding-top: 60px;
+}
+
+.hero-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3.5px;
+  color: rgba(255, 255, 255, 0.42);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.label-line {
+  width: 32px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.hero-h1 {
+  font-family: var(--font-head);
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.0;
+  letter-spacing: 1px;
+  margin-bottom: 26px;
+}
+
+.hero-h1 .reveal-up {
+  display: block;
+}
+
+.hero-h1 .accent-word {
+  color: var(--fire);
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 36px;
+  font-weight: 300;
+}
+
+.hero-btns {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 48px;
+  align-self: flex-end;
+  padding-bottom: 4px;
+}
+
+.hstat {
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.hstat:last-child {
+  border-bottom: none;
+}
+
+.hstat-n {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  color: var(--fire);
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+.hstat-l {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  margin-top: 2px;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  animation: fadeSlideUp 0.9s 1.1s var(--out) both;
+}
+
+.hero-scroll-indicator span {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.28);
+  font-weight: 600;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 44px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scaleY(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(0.6);
+  }
+}
+
+/* ===== ABOUT ===== */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+}
+
+.about-img-side {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+.about-img-side>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.8s var(--ease);
+}
+
+.about-img-side:hover>img {
+  transform: scale(1.04);
+}
+
+.about-exp-badge {
+  position: absolute;
+  bottom: 40px;
+  right: -1px;
+  background: var(--fire);
+  color: #fff;
+  padding: 28px 32px;
+  text-align: center;
+  box-shadow: -8px 0 40px rgba(0, 0, 0, 0.2);
+}
+
+.badge-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3.6rem;
+  line-height: 1;
+}
+
+.badge-txt {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+  margin-top: 4px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.about-orange-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--fire);
+}
+
+.about-text-side {
+  padding: 90px 80px 90px 70px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-body {
+  font-size: 0.96rem;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+.about-features {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.afeat {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.afeat i {
+  font-size: 1.3rem;
+  color: var(--fire);
+  width: 44px;
+  height: 44px;
+  background: var(--fire-pale);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s, transform 0.3s var(--spring);
+}
+
+.afeat:hover i {
+  background: var(--fire);
+  color: #fff;
+  transform: rotate(-8deg) scale(1.1);
+}
+
+.afeat span {
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--ink);
+  line-height: 1.55;
+  padding-top: 4px;
+}
+
+.about-checklist {
+  margin-bottom: 28px;
+}
+
+.about-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: #444;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  line-height: 1.55;
+  transition: color 0.2s;
+}
+
+.about-checklist li:last-child {
+  border: none;
+}
+
+.about-checklist li:hover {
+  color: var(--ink);
+}
+
+.about-checklist i {
+  color: var(--fire);
+  font-size: 0.65rem;
+  margin-top: 5px;
+  flex-shrink: 0;
+  background: var(--fire-pale);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hotline {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border: 1px solid var(--border);
+  background: var(--off-white);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.about-hotline:hover {
+  border-color: var(--fire);
+  box-shadow: 0 4px 20px var(--fire-glow);
+}
+
+.about-hotline i {
+  font-size: 1.4rem;
+  color: var(--fire);
+  transition: transform 0.3s var(--spring);
+}
+
+.about-hotline:hover i {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+.about-hotline small {
+  display: block;
+  font-size: 0.68rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: var(--font-head);
+  margin-bottom: 2px;
+}
+
+.about-hotline a {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: var(--ink);
+}
+
+/* ===== SERVICES ===== */
+.services {
+  background: var(--off-white);
+  padding: 100px 0 0;
+}
+
+.services-head {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+
+.services-sub {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.75;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+.services-list {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px 100px;
+}
+
+.svc-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  position: relative;
+  cursor: default;
+  transition: background 0.3s;
+}
+
+.svc-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.svc-item::before {
+  content: attr(data-num);
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: rgba(212, 82, 26, 0.05);
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.4s;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.svc-item:hover::before {
+  color: rgba(212, 82, 26, 0.12);
+}
+
+.svc-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: var(--fire-pale);
+  transition: width 0.5s var(--out);
+  z-index: -1;
+}
+
+.svc-item:hover::after {
+  width: 100%;
+}
+
+.svc-icon {
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--fire);
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s, transform 0.3s var(--spring), border-color 0.3s;
+}
+
+.svc-item:hover .svc-icon {
+  background: var(--fire);
+  color: #fff;
+  border-color: var(--fire);
+  transform: rotate(-6deg) scale(1.05);
+}
+
+.svc-body {
+  flex: 1;
+}
+
+.svc-body h3 {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+  transition: color 0.3s;
+}
+
+.svc-item:hover .svc-body h3 {
+  color: var(--fire);
+}
+
+.svc-body p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.7;
+  max-width: 480px;
+  font-weight: 300;
+}
+
+.svc-meta {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--font-head);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--fire);
+}
+
+.svc-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s, border-color 0.3s, transform 0.3s var(--spring);
+}
+
+.svc-item:hover .svc-arrow {
+  background: var(--fire);
+  color: #fff;
+  border-color: var(--fire);
+  transform: translateX(6px);
+}
+
+/* ===== STATS BAND ===== */
+.stats-band {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.stats-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.stats-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.stats-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 7, 6, 0.86);
+}
+
+.stats-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.stat-block {
+  text-align: center;
+  padding: 48px 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  transition: background 0.3s;
+  cursor: default;
+}
+
+.stat-block:last-child {
+  border-right: none;
+}
+
+.stat-block::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  height: 2px;
+  background: var(--fire);
+  transform: scaleX(0);
+  transition: transform 0.45s var(--out);
+}
+
+.stat-block:hover {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.stat-block:hover::after {
+  transform: scaleX(1);
+}
+
+.stat-block i {
+  display: block;
+  font-size: 1.9rem;
+  color: var(--fire);
+  margin-bottom: 14px;
+  opacity: 0.8;
+  transition: transform 0.4s var(--spring), opacity 0.3s;
+}
+
+.stat-block:hover i {
+  transform: scale(1.2) translateY(-4px);
+  opacity: 1;
+}
+
+.stat-n {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3.4rem;
+  color: var(--fire);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.stat-l {
+  font-family: var(--font-head);
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.38);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* ===== FEATURED ===== */
+.featured {
+  background: var(--ink2);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 60px;
+  padding: 90px 80px 90px 80px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.featured-text {
+  max-width: 580px;
+}
+
+.featured-text .section-label {
+  color: rgba(212, 82, 26, 0.8);
+}
+
+.featured-text .section-label::before {
+  background: rgba(212, 82, 26, 0.6);
+}
+
+.featured-text .section-title {
+  color: #fff;
+}
+
+.featured-text .section-title em {
+  color: var(--fire);
+}
+
+.featured-desc {
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.48);
+  line-height: 1.85;
+  margin-bottom: 28px;
+  font-weight: 300;
+}
+
+.feat-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+
+.feat-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(212, 82, 26, 0.1);
+  border: 1px solid rgba(212, 82, 26, 0.22);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 7px 16px;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.feat-tags span i {
+  color: var(--fire);
+  font-size: 0.65rem;
+}
+
+.feat-tags span:hover {
+  background: rgba(212, 82, 26, 0.2);
+  border-color: var(--fire);
+  color: #fff;
+}
+
+.featured-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.featured-img img {
+  max-width: 360px;
+  max-height: 460px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+  animation: floatImg 3.5s ease-in-out infinite;
+}
+
+@keyframes floatImg {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+/* ===== WHY US ===== */
+.why-us {
+  padding: 100px 0 110px;
+  background: #fff;
+}
+
+.why-head {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+
+.why-grid {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  margin-bottom: 40px;
+}
+
+.why-card {
+  background: #fff;
+  padding: 44px 36px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.35s;
+}
+
+.why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--fire);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s var(--out);
+}
+
+.why-card:hover {
+  background: #fafafa;
+}
+
+.why-card:hover::before {
+  transform: scaleX(1);
+}
+
+.why-num {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: rgba(212, 82, 26, 0.06);
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  line-height: 1;
+  transition: color 0.4s;
+}
+
+.why-card:hover .why-num {
+  color: rgba(212, 82, 26, 0.13);
+}
+
+.why-icon {
+  font-size: 1.7rem;
+  color: var(--fire);
+  display: block;
+  margin-bottom: 20px;
+  width: 58px;
+  height: 58px;
+  background: var(--fire-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s, transform 0.4s var(--spring);
+}
+
+.why-card:hover .why-icon {
+  background: var(--fire);
+  color: #fff;
+  transform: rotate(-8deg) scale(1.08);
+}
+
+.why-card h3 {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  font-size: 0.87rem;
+  color: #666;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.trust-strip {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  background: var(--ink);
+  padding: 28px 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.65);
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.trust-item:hover {
+  color: #fff;
+}
+
+.trust-item i {
+  color: var(--fire);
+  transition: transform 0.3s var(--spring);
+}
+
+.trust-item:hover i {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.trust-sep {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  flex-shrink: 0;
+}
+
+/* ===== PROCESS ===== */
+.process {
+  padding: 100px 0 110px;
+  background: var(--off-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.process::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(212, 82, 26, 0.035);
+  pointer-events: none;
+}
+
+.process-head {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px 70px;
+}
+
+.process-sub {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.75;
+  max-width: 500px;
+  font-weight: 300;
+}
+
+.process-steps {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+  align-items: start;
+  gap: 0;
+  margin-bottom: 50px;
+}
+
+.proc-step {
+  position: relative;
+}
+
+.proc-num {
+  font-family: var(--font-display);
+  font-size: 4.5rem;
+  color: rgba(212, 82, 26, 0.06);
+  line-height: 1;
+  margin-bottom: -16px;
+  margin-left: 8px;
+  transition: color 0.4s;
+}
+
+.proc-step:hover .proc-num {
+  color: rgba(212, 82, 26, 0.15);
+}
+
+.proc-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 30px 24px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s var(--spring), box-shadow 0.4s, border-color 0.3s;
+}
+
+.proc-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--fire);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s var(--out);
+}
+
+.proc-step:hover .proc-card {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+  border-color: rgba(212, 82, 26, 0.2);
+}
+
+.proc-step:hover .proc-card::after {
+  transform: scaleX(1);
+}
+
+.proc-card i {
+  font-size: 1.5rem;
+  color: var(--fire);
+  display: block;
+  margin-bottom: 16px;
+  width: 52px;
+  height: 52px;
+  background: var(--fire-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s, transform 0.4s var(--spring);
+}
+
+.proc-step:hover .proc-card i {
+  background: var(--fire);
+  color: #fff;
+  transform: rotate(-6deg) scale(1.1);
+}
+
+.proc-card h3 {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.proc-card p {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.proc-tag {
+  display: inline-block;
+  background: var(--fire-pale);
+  color: var(--fire);
+  padding: 4px 14px;
+  border-radius: 100px;
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: 1px solid rgba(212, 82, 26, 0.15);
+  transition: background 0.3s;
+}
+
+.proc-step:hover .proc-tag {
+  background: rgba(212, 82, 26, 0.14);
+}
+
+.proc-conn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  padding-top: 78px;
+  font-size: 1.1rem;
+  color: var(--fire);
+  opacity: 0.45;
+  animation: floatArrow 2.5s ease-in-out infinite;
+}
+
+@keyframes floatArrow {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.process-cta-bar {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.process-cta-bar>div {
+  background: var(--ink);
+  padding: 30px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.process-cta-bar strong {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.process-cta-bar span {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+/* ===== TICKER ===== */
+.ticker-wrap {
+  overflow: hidden;
+  background: var(--ink);
+  padding: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: tickerScroll 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-track span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 32px;
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+  transition: color 0.3s;
+  cursor: default;
+}
+
+.ticker-track span:hover {
+  color: var(--fire);
+}
+
+.ticker-track span i {
+  color: var(--fire);
+  font-size: 0.85rem;
+}
+
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+  padding: 100px 0;
+  background: var(--off-white);
+}
+
+.testi-head {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+}
+
+.testi-list {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.tcard {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 36px 32px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s var(--spring), box-shadow 0.4s;
+}
+
+.tcard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 56px rgba(0, 0, 0, 0.08);
+}
+
+.tcard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--fire);
+  transform: scaleX(0);
+  transition: transform 0.45s var(--out);
+}
+
+.tcard:hover::before {
+  transform: scaleX(1);
+}
+
+.tcard-quote-icon {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 3.5rem;
+  color: rgba(212, 82, 26, 0.07);
+  pointer-events: none;
+  transition: color 0.3s;
+}
+
+.tcard:hover .tcard-quote-icon {
+  color: rgba(212, 82, 26, 0.14);
+}
+
+.tcard-stars {
+  font-size: 0.8rem;
+  color: var(--fire);
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.tcard p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.85;
+  margin-bottom: 24px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.tcard-author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.tcard-av {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--fire);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+  transition: transform 0.3s var(--spring);
+}
+
+.tcard:hover .tcard-av {
+  transform: scale(1.08);
+}
+
+.tcard-author strong {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.tcard-author small {
+  font-size: 0.75rem;
+  color: var(--fire);
+  font-family: var(--font-head);
+  font-weight: 500;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.cta-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 7, 6, 0.85);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-family: var(--font-head);
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.cta-content h2 em {
+  font-style: normal;
+  color: var(--fire);
+}
+
+.cta-content p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 40px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.cta-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 0;
+  min-height: 600px;
+}
+
+.contact-left {
+  background: var(--off-white);
+  padding: 90px 70px 90px 80px;
+  border-right: 1px solid var(--border);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 36px;
+}
+
+.cinfo-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  transition: border-color 0.3s, transform 0.35s var(--spring), box-shadow 0.3s;
+}
+
+.cinfo-item:hover {
+  border-color: var(--fire);
+  transform: translateX(6px);
+  box-shadow: 4px 0 20px var(--fire-glow);
+}
+
+.cinfo-ic {
+  font-size: 1.2rem;
+  color: var(--fire);
+  width: 40px;
+  height: 40px;
+  background: var(--fire-pale);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.3s, color 0.3s, transform 0.3s var(--spring);
+}
+
+.cinfo-item:hover .cinfo-ic {
+  background: var(--fire);
+  color: #fff;
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.cinfo-item h4 {
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+
+.cinfo-item p {
+  color: #666;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.contact-form {
+  padding: 90px 80px 90px 70px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-family: var(--font-head);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #777;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  background: var(--off-white);
+  border: 1.5px solid var(--border);
+  color: var(--ink);
+  padding: 13px 16px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  resize: vertical;
+  appearance: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--fire);
+  box-shadow: 0 0 0 3px var(--fire-glow);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--ink2);
+}
+
+.footer-top {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.4fr;
+  gap: 52px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  transition: opacity 0.2s;
+}
+
+.footer-logo:hover {
+  opacity: 0.8;
+}
+
+.footer-logo img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.footer-logo span {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.85rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.35);
+  transition: background 0.25s, color 0.25s, border-color 0.25s, transform 0.3s var(--spring);
+}
+
+.footer-socials a:hover {
+  background: var(--fire);
+  color: #fff;
+  border-color: var(--fire);
+  transform: translateY(-3px);
+}
+
+.footer-col h5 {
+  font-family: var(--font-head);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  margin-bottom: 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--fire);
+  display: inline-block;
+}
+
+.footer-col ul li {
+  margin-bottom: 9px;
+}
+
+.footer-col ul li a {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.86rem;
+  font-weight: 300;
+  transition: color 0.25s, padding-left 0.3s var(--ease);
+}
+
+.footer-col ul li a:hover {
+  color: var(--fire);
+  padding-left: 8px;
+}
+
+.foot-emg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(212, 82, 26, 0.1);
+  border: 1px solid rgba(212, 82, 26, 0.22);
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  transition: background 0.3s;
+}
+
+.foot-emg:hover {
+  background: rgba(212, 82, 26, 0.16);
+}
+
+.foot-emg i {
+  font-size: 1.1rem;
+  color: var(--fire);
+}
+
+.foot-emg small {
+  display: block;
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.foot-emg strong {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--fire);
+  letter-spacing: 1px;
+}
+
+.foot-nl-lbl {
+  font-family: var(--font-head);
+  font-size: 0.73rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 10px;
+}
+
+.foot-nl {
+  display: flex;
+}
+
+.foot-nl input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: none;
+  color: #fff;
+  padding: 11px 14px;
+  font-size: 0.84rem;
+  outline: none;
+  font-family: var(--font-body);
+  transition: border-color 0.3s;
+}
+
+.foot-nl input:focus {
+  border-color: var(--fire);
+}
+
+.foot-nl input::placeholder {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+.foot-nl button {
+  background: var(--fire);
+  border: none;
+  color: #fff;
+  padding: 11px 18px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.25s;
+}
+
+.foot-nl button:hover {
+  background: var(--fire-dark);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 22px 40px;
+  max-width: 1220px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.22);
+  font-size: 0.78rem;
+}
+
+/* ===== SCROLL TOP ===== */
+.scroll-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  background: var(--fire);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s, transform 0.4s var(--spring), background 0.25s;
+  z-index: 999;
+  box-shadow: 0 8px 24px var(--fire-glow);
+}
+
+.scroll-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  transform: translateY(-5px);
+  background: var(--fire-dark);
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(36px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 1100px) {
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .proc-conn {
+    display: none;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 1024px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-img-side {
+    min-height: 450px;
+  }
+
+  .about-text-side {
+    padding: 70px 60px;
+  }
+
+  .stats-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featured {
+    grid-template-columns: 1fr;
+    padding: 70px 60px;
+    text-align: center;
+  }
+
+  .featured-img {
+    justify-content: center;
+  }
+
+  .feat-tags {
+    justify-content: center;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left {
+    padding: 70px 60px;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .contact-form {
+    padding: 70px 60px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .testi-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    padding: 32px;
+    transform: translateX(-100%);
+    transition: transform 0.4s var(--ease);
+    z-index: 999;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 40px 24px 80px;
+  }
+
+  .hero-stats {
+    flex-direction: row;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 0;
+    padding-top: 28px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .hero-h1 {
+    font-size: 3rem;
+  }
+
+  .services-head,
+  .services-list {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trust-sep {
+    display: none;
+  }
+
+  .about-text-side {
+    padding: 50px 28px;
+  }
+
+  .testi-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-left,
+  .contact-form {
+    padding: 50px 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    padding: 50px 28px;
+  }
+
+  .footer-bottom {
+    padding: 20px 28px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured {
+    padding: 60px 28px;
+  }
+
+  .process-head,
+  .why-head {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .process-steps {
+    padding-left: 24px;
+    padding-right: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .process-cta-bar>div {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+  }
+
+  .process-cta-bar {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .testi-head {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .stats-inner {
+    padding: 0 24px;
+  }
+
+  .cta-btns {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 480px) {
+  .stats-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-card {
+    padding: 32px 24px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <img src="./img/fire-logo.png" alt="Fireboy">
+        <span class="logo-text">FIREBOY</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="tel:6668880000" class="nav-cta">
+        <i class="fa-solid fa-phone"></i>
+        <span>Get Quote</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="./img/fire1.jpg" alt="Fire emergency response" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-label reveal-up">
+          <span class="label-line"></span>
+          EST. 1995 · WORLD CLASS FIRE PROTECTION
+        </div>
+        <h1 class="hero-h1">
+          <span class="reveal-up" style="--delay:0.1s">Protecting</span>
+          <span class="reveal-up accent-word" style="--delay:0.2s">Lives &amp;</span>
+          <span class="reveal-up" style="--delay:0.3s">Properties</span>
+        </h1>
+        <p class="hero-desc reveal-up" style="--delay:0.45s">
+          Industry-leading fire protection solutions — suppression systems, hazmat response, prevention training and
+          24/7 emergency dispatch. Certified and ready.
+        </p>
+        <div class="hero-btns reveal-up" style="--delay:0.55s">
+          <a href="#about" class="btn-primary">Discover More</a>
+          <a href="tel:6668880000" class="btn-outline"><i class="fa-solid fa-phone"></i> Emergency Call</a>
+        </div>
+      </div>
+      <div class="hero-stats reveal-up" style="--delay:0.7s">
+        <div class="hstat">
+          <span class="hstat-n" data-target="3800">0</span>
+          <span class="hstat-l">Lives Saved</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="1200">0</span>
+          <span class="hstat-l">Fire Calls</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n" data-target="450">0</span>
+          <span class="hstat-l">Firefighters</span>
+        </div>
+        <div class="hstat">
+          <span class="hstat-n">30+</span>
+          <span class="hstat-l">Years</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-img-side">
+      <img src="./img/Battery-Energy-Storage-Systems-BESS_pro_pro.webp" alt="Team" class="reveal-left" />
+      <div class="about-exp-badge reveal-left" style="--delay:0.2s">
+        <span class="badge-num">30</span>
+        <span class="badge-txt">Years of<br>Excellence</span>
+      </div>
+      <div class="about-orange-block"></div>
+    </div>
+    <div class="about-text-side">
+      <p class="section-label reveal-up">Who We Are</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">Premier Fire &amp;<br><em>Protection</em> Services</h2>
+      <p class="about-body reveal-up" style="--delay:0.2s">
+        Since 1995, Fireboy has been at the forefront of fire safety and emergency response — providing world-class
+        protection to homes, businesses, and industrial facilities. Our NFPA-certified team is equipped with the latest
+        technology and trained to respond to any fire emergency, anywhere, anytime.
+      </p>
+      <div class="about-features reveal-up" style="--delay:0.3s">
+        <div class="afeat">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span>Prevent fires<br>before they start</span>
+        </div>
+        <div class="afeat">
+          <i class="fa-solid fa-truck-fast"></i>
+          <span>Rapid response<br>24/7 readiness</span>
+        </div>
+        <div class="afeat">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>NFPA &amp; ISO<br>certified ops</span>
+        </div>
+      </div>
+      <ul class="about-checklist reveal-up" style="--delay:0.4s">
+        <li><i class="fa-solid fa-check"></i> NFPA-certified firefighters with advanced suppression training.</li>
+        <li><i class="fa-solid fa-check"></i> State-of-the-art fire suppression systems for all property types.</li>
+        <li><i class="fa-solid fa-check"></i> ISO 9001:2015 certified operations ensuring consistent quality.</li>
+      </ul>
+      <div class="about-hotline reveal-up" style="--delay:0.5s">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div>
+          <small>Emergency Hotline — 24/7</small>
+          <a href="tel:6668880000">666 888 0000</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="services-head">
+      <p class="section-label reveal-up">What We Do</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">Our Core <em>Services</em></h2>
+      <p class="services-sub reveal-up" style="--delay:0.2s">Complete fire protection and emergency response for
+        residential, commercial, and industrial sectors.</p>
+    </div>
+    <div class="services-list">
+      <div class="svc-item reveal-up" style="--delay:0ms" data-num="01">
+        <div class="svc-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+        <div class="svc-body">
+          <h3>Fire Suppression</h3>
+          <p>Design, installation, and maintenance of sprinkler systems, gaseous suppression, and foam systems for all
+            property types.</p>
+          <span class="svc-meta">500+ Installs</span>
+        </div>
+        <a href="#contact" class="svc-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-item reveal-up" style="--delay:80ms" data-num="02">
+        <div class="svc-icon"><i class="fa-solid fa-bell"></i></div>
+        <div class="svc-body">
+          <h3>Fire Alarm Systems</h3>
+          <p>Advanced addressable fire detection, alarm, and notification systems with remote monitoring and instant
+            alerting.</p>
+          <span class="svc-meta">24/7 Monitoring</span>
+        </div>
+        <a href="#contact" class="svc-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-item reveal-up" style="--delay:160ms" data-num="03">
+        <div class="svc-icon"><i class="fa-solid fa-person-running"></i></div>
+        <div class="svc-body">
+          <h3>Rescue Operations</h3>
+          <p>Swift life-saving operations in high-risk environments, collapsed structures, confined spaces, and elevated
+            structures.</p>
+          <span class="svc-meta">Elite Teams</span>
+        </div>
+        <a href="#contact" class="svc-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-item reveal-up" style="--delay:240ms" data-num="04">
+        <div class="svc-icon"><i class="fa-solid fa-kit-medical"></i></div>
+        <div class="svc-body">
+          <h3>Medical Response</h3>
+          <p>Certified paramedics providing immediate critical care, triage, and patient stabilisation during fire and
+            emergency incidents.</p>
+          <span class="svc-meta">Certified EMTs</span>
+        </div>
+        <a href="#contact" class="svc-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-item reveal-up" style="--delay:320ms" data-num="05">
+        <div class="svc-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <div class="svc-body">
+          <h3>Prevention Training</h3>
+          <p>Customised fire safety workshops, emergency evacuation drills, and NFPA-compliant training programs for
+            organisations.</p>
+          <span class="svc-meta">10K+ Trained</span>
+        </div>
+        <a href="#contact" class="svc-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="svc-item reveal-up" style="--delay:400ms" data-num="06">
+        <div class="svc-icon"><i class="fa-solid fa-biohazard"></i></div>
+        <div class="svc-body">
+          <h3>Hazmat Operations</h3>
+          <p>Specialised hazardous materials response for chemical spills, industrial accidents, and toxic incidents
+            with full decontamination.</p>
+          <span class="svc-meta">ISO Certified</span>
+        </div>
+        <a href="#contact" class="svc-arrow"><i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="stats-band">
+    <div class="stats-bg">
+      <img src="./img/bg/Burning Forest Wallpaper, Wildfire Background, Nature Fire 4k Wallpaper (1).jpg" alt="" />
+      <div class="stats-overlay"></div>
+    </div>
+    <div class="stats-inner">
+      <div class="stat-block reveal-up" style="--delay:0ms">
+        <i class="fa-solid fa-house-chimney"></i>
+        <span class="stat-n" data-target="3800">0</span>
+        <span class="stat-l">Families Protected</span>
+      </div>
+      <div class="stat-block reveal-up" style="--delay:100ms">
+        <i class="fa-solid fa-fire-extinguisher"></i>
+        <span class="stat-n" data-target="1200">0</span>
+        <span class="stat-l">Emergency Calls</span>
+      </div>
+      <div class="stat-block reveal-up" style="--delay:200ms">
+        <i class="fa-solid fa-helmet-safety"></i>
+        <span class="stat-n" data-target="450">0</span>
+        <span class="stat-l">Certified Fighters</span>
+      </div>
+      <div class="stat-block reveal-up" style="--delay:300ms">
+        <i class="fa-solid fa-trophy"></i>
+        <span class="stat-n" data-target="30">0</span>
+        <span class="stat-l">Years of Excellence</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured">
+    <div class="featured-text">
+      <p class="section-label reveal-up">Flagship Unit</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">Rapid Response<br><em>Emergency Unit</em></h2>
+      <p class="featured-desc reveal-up" style="--delay:0.2s">
+        Our 24/7 Rapid Response Emergency Unit deploys NFPA-certified firefighters and paramedics within 4 minutes of a
+        call. Fully equipped with modern firefighting apparatus, thermal imaging cameras, hydraulic rescue tools, and
+        Class A/B foam systems.
+      </p>
+      <div class="feat-tags reveal-up" style="--delay:0.3s">
+        <span><i class="fa-solid fa-check"></i> NFPA Certified</span>
+        <span><i class="fa-solid fa-check"></i> Under 4-Min Deploy</span>
+        <span><i class="fa-solid fa-check"></i> Thermal Imaging</span>
+        <span><i class="fa-solid fa-check"></i> Hydraulic Rescue Tools</span>
+        <span><i class="fa-solid fa-check"></i> Class A/B Foam</span>
+      </div>
+      <a href="#contact" class="btn-primary reveal-up" style="--delay:0.4s">Get Emergency Support <i
+          class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="featured-img reveal-right">
+      <img src="./img/hero-imgs-back.png" alt="Rapid Response Unit" />
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why-us" class="why-us">
+    <div class="why-head">
+      <p class="section-label reveal-up">Why Fireboy</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">Trusted by Thousands.<br><em>Proven by Results.</em></h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal-up" style="--delay:0ms">
+        <div class="why-num">01</div>
+        <i class="fa-solid fa-stopwatch why-icon"></i>
+        <h3>4-Minute Response</h3>
+        <p>Strategically positioned units reach any incident within 4 minutes — faster than national standards.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:80ms">
+        <div class="why-num">02</div>
+        <i class="fa-solid fa-certificate why-icon"></i>
+        <h3>Fully Certified</h3>
+        <p>NFPA certified, ISO 9001:2015 accredited, and CFBT trained. Every technician holds active certifications.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:160ms">
+        <div class="why-num">03</div>
+        <i class="fa-solid fa-eye why-icon"></i>
+        <h3>24/7 Monitoring</h3>
+        <p>Round-the-clock remote monitoring for all installed systems. Real-time alerts, zero blind spots.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:240ms">
+        <div class="why-num">04</div>
+        <i class="fa-solid fa-screwdriver-wrench why-icon"></i>
+        <h3>End-to-End Solutions</h3>
+        <p>Risk assessments, system design, installation, maintenance, and emergency response — all under one roof.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:320ms">
+        <div class="why-num">05</div>
+        <i class="fa-solid fa-shield-halved why-icon"></i>
+        <h3>Proven Track Record</h3>
+        <p>Over 3,800 lives saved and 1,200+ fire emergencies successfully managed. Results speak for themselves.</p>
+      </div>
+      <div class="why-card reveal-up" style="--delay:400ms">
+        <div class="why-num">06</div>
+        <i class="fa-solid fa-handshake why-icon"></i>
+        <h3>Service Guarantee</h3>
+        <p>Full workmanship warranty and dedicated post-service support on every installation and service.</p>
+      </div>
+    </div>
+    <div class="trust-strip reveal-up">
+      <div class="trust-item"><i class="fa-solid fa-star"></i> 4.9/5 Client Rating</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><i class="fa-solid fa-shield-halved"></i> Zero Compliance Failures</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><i class="fa-solid fa-award"></i> National Safety Award 2023</div>
+      <div class="trust-sep"></div>
+      <div class="trust-item"><i class="fa-solid fa-clock"></i> 98.6% On-Time Response</div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="process">
+    <div class="process-head">
+      <p class="section-label reveal-up">How We Work</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">How We <em>Protect You</em></h2>
+      <p class="process-sub reveal-up" style="--delay:0.2s">From initial assessment to full protection — engineered for
+        speed and reliability.</p>
+    </div>
+    <div class="process-steps">
+      <div class="proc-step reveal-up" style="--delay:0ms">
+        <div class="proc-num">01</div>
+        <div class="proc-card">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h3>Risk Assessment</h3>
+          <p>Certified engineers conduct on-site inspections — identifying hazards, evaluating code compliance, and
+            mapping emergency routes.</p>
+          <div class="proc-tag">Free Assessment</div>
+        </div>
+      </div>
+      <div class="proc-conn reveal-up" style="--delay:80ms"><i class="fa-solid fa-chevron-right"></i></div>
+      <div class="proc-step reveal-up" style="--delay:160ms">
+        <div class="proc-num">02</div>
+        <div class="proc-card">
+          <i class="fa-solid fa-pen-ruler"></i>
+          <h3>Custom Plan Design</h3>
+          <p>We design a tailored protection strategy — selecting the right suppression systems, alarm types, and
+            protocols for your property.</p>
+          <div class="proc-tag">Fully Customised</div>
+        </div>
+      </div>
+      <div class="proc-conn reveal-up" style="--delay:240ms"><i class="fa-solid fa-chevron-right"></i></div>
+      <div class="proc-step reveal-up" style="--delay:320ms">
+        <div class="proc-num">03</div>
+        <div class="proc-card">
+          <i class="fa-solid fa-gear"></i>
+          <h3>Installation &amp; Testing</h3>
+          <p>Certified technicians install your systems to NFPA standards with minimal disruption. Every system
+            rigorously tested before handover.</p>
+          <div class="proc-tag">NFPA Compliant</div>
+        </div>
+      </div>
+      <div class="proc-conn reveal-up" style="--delay:400ms"><i class="fa-solid fa-chevron-right"></i></div>
+      <div class="proc-step reveal-up" style="--delay:480ms">
+        <div class="proc-num">04</div>
+        <div class="proc-card">
+          <i class="fa-solid fa-satellite-dish"></i>
+          <h3>Live Monitoring &amp; Support</h3>
+          <p>24/7 monitoring with instant emergency dispatch integration. Annual maintenance and compliance checks
+            included.</p>
+          <div class="proc-tag">Ongoing Protection</div>
+        </div>
+      </div>
+    </div>
+    <div class="process-cta-bar reveal-up">
+      <div>
+        <strong>Ready to get protected?</strong>
+        <span>Start with a free fire risk assessment today.</span>
+      </div>
+      <a href="#contact" class="btn-primary">Book Free Assessment <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span><i class="fa-solid fa-shield-halved"></i> NFPA Certified</span>
+      <span><i class="fa-solid fa-certificate"></i> ISO 9001:2015</span>
+      <span><i class="fa-solid fa-fire-extinguisher"></i> CFBT Trained</span>
+      <span><i class="fa-solid fa-star"></i> NAFD Member</span>
+      <span><i class="fa-solid fa-building-shield"></i> IFSEC Partner</span>
+      <span><i class="fa-solid fa-medal"></i> NSC Accredited</span>
+      <span><i class="fa-solid fa-flask"></i> NIST Compliant</span>
+      <span><i class="fa-solid fa-globe"></i> CTIF Member</span>
+      <span><i class="fa-solid fa-shield-halved"></i> NFPA Certified</span>
+      <span><i class="fa-solid fa-certificate"></i> ISO 9001:2015</span>
+      <span><i class="fa-solid fa-fire-extinguisher"></i> CFBT Trained</span>
+      <span><i class="fa-solid fa-star"></i> NAFD Member</span>
+      <span><i class="fa-solid fa-building-shield"></i> IFSEC Partner</span>
+      <span><i class="fa-solid fa-medal"></i> NSC Accredited</span>
+      <span><i class="fa-solid fa-flask"></i> NIST Compliant</span>
+      <span><i class="fa-solid fa-globe"></i> CTIF Member</span>
+    </div>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="testi-head">
+      <p class="section-label reveal-up">Client Stories</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">Trusted by <em>Thousands</em></h2>
+    </div>
+    <div class="testi-list">
+      <div class="tcard reveal-up" style="--delay:0ms">
+        <div class="tcard-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"The Fireboy team arrived within minutes and saved our entire family. Their professionalism under pressure
+          was extraordinary. Forever grateful."</p>
+        <div class="tcard-author">
+          <div class="tcard-av">RJ</div>
+          <div><strong>Robert Johnson</strong><small>Homeowner, Texas</small></div>
+        </div>
+        <div class="tcard-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      </div>
+      <div class="tcard reveal-up" style="--delay:100ms">
+        <div class="tcard-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Incredible response time. Their fire suppression team prevented a total loss at our manufacturing facility.
+          Real heroes in every sense of the word."</p>
+        <div class="tcard-author">
+          <div class="tcard-av">SM</div>
+          <div><strong>Sarah Mitchell</strong><small>Plant Manager, Ohio</small></div>
+        </div>
+        <div class="tcard-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      </div>
+      <div class="tcard reveal-up" style="--delay:200ms">
+        <div class="tcard-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Their prevention training programme is the best investment we made. Our entire workforce is now certified in
+          fire safety. The trainers were brilliant."</p>
+        <div class="tcard-author">
+          <div class="tcard-av">DK</div>
+          <div><strong>David Kim</strong><small>Safety Director, California</small></div>
+        </div>
+        <div class="tcard-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="cta-bg">
+      <img src="./img/Double-Headed-Hydrant-Valve_pro.webp" alt="" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="cta-content reveal-up">
+      <p class="section-label light">Get Protected Today</p>
+      <h2>Don't wait for a fire<br>to <em>take action</em></h2>
+      <p>Book your free fire risk assessment and get a custom protection plan within 48 hours.</p>
+      <div class="cta-btns">
+        <a href="#contact" class="btn-primary">Get Free Assessment <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:6668880000" class="btn-outline-light"><i class="fa-solid fa-phone"></i> Call: 666 888 0000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="contact-left">
+      <p class="section-label reveal-up">Reach Out</p>
+      <h2 class="section-title reveal-up" style="--delay:0.1s">Emergency &amp;<br><em>General Contact</em></h2>
+      <div class="contact-info reveal-up" style="--delay:0.2s">
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><i class="fa-solid fa-phone-volume"></i></div>
+          <div>
+            <h4>Emergency Hotline</h4>
+            <p>666 888 0000</p>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <h4>Email Us</h4>
+            <p>info@fireboy.com</p>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h4>Station Location</h4>
+            <p>123 Fire Station Rd, City, State 00000</p>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <h4>Operating Hours</h4>
+            <p>24 Hours / 7 Days a Week</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="contact-form reveal-right" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="John Smith" required />
+        </div>
+        <div class="form-group">
+          <label>Your Email</label>
+          <input type="email" placeholder="john@example.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Service Needed</label>
+        <select>
+          <option value="">Select a service...</option>
+          <option>Fire Suppression System</option>
+          <option>Fire Alarm System</option>
+          <option>Hazmat Operations</option>
+          <option>Prevention Training</option>
+          <option>Emergency Response</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Tell us about your fire safety needs..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary w-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo">
+          <img src="./img/fire-logo.png" alt="Fireboy" />
+          <span>FIREBOY</span>
+        </a>
+        <p>Your trusted partner in fire safety since 1995. NFPA certified, ISO 9001:2015 accredited, and committed to
+          protecting what matters most.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Fire Suppression</a></li>
+          <li><a href="#services">Fire Alarm Systems</a></li>
+          <li><a href="#services">Rescue Operations</a></li>
+          <li><a href="#services">Medical Response</a></li>
+          <li><a href="#services">Prevention Training</a></li>
+          <li><a href="#services">Hazmat Operations</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-emergency">
+        <h5>Emergency</h5>
+        <div class="foot-emg">
+          <i class="fa-solid fa-phone"></i>
+          <div><small>Available 24/7</small><strong>666 888 0000</strong></div>
+        </div>
+        <p class="foot-nl-lbl">Newsletter</p>
+        <div class="foot-nl">
+          <input type="email" placeholder="Your email..." />
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Fireboy Protection Services. All Rights Reserved.</p>
+      <p>NFPA Certified · ISO 9001:2015 · Protecting since 1995</p>
+    </div>
+  </footer>
+
+  <a href="#home" class="scroll-top" id="scrollTop" aria-label="Top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script >/* ===================================================================
+   FIREBOY — script.js
+   =================================================================== */
+
+// ===== NAVBAR SCROLL & BODY PADDING =====
+const navbar = document.getElementById('navbar');
+const scrollTopBtn = document.getElementById('scrollTop');
+
+function adjustBodyPad() {
+  document.body.style.paddingTop = navbar.offsetHeight + 'px';
+}
+adjustBodyPad();
+window.addEventListener('resize', adjustBodyPad);
+
+window.addEventListener('scroll', () => {
+  const sy = window.scrollY;
+  navbar.classList.toggle('scrolled', sy > 50);
+  scrollTopBtn.classList.toggle('visible', sy > 500);
+}, { passive: true });
+
+// ===== HAMBURGER =====
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navLinks.classList.remove('open');
+}));
+
+// ===== SCROLL REVEAL =====
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right').forEach(el => {
+  revealObs.observe(el);
+});
+
+// ===== COUNTER ANIMATION =====
+function animateCounter(el, target) {
+  const duration = 2400;
+  const start = performance.now();
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+  function tick(now) {
+    const elapsed = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    el.textContent = Math.round(easeOut(progress) * target).toLocaleString();
+    if (progress < 1) requestAnimationFrame(tick);
+    else el.textContent = target.toLocaleString() + '+';
+  }
+  requestAnimationFrame(tick);
+}
+
+const counterObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(e.target, parseInt(e.target.dataset.target));
+      counterObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('[data-target]').forEach(el => counterObs.observe(el));
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if (id === '#') return;
+    const target = document.querySelector(id);
+    if (target) {
+      e.preventDefault();
+      const offset = navbar.offsetHeight;
+      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// ===== ACTIVE NAV HIGHLIGHT =====
+const sections = document.querySelectorAll('section[id]');
+const navAnchors = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 130) current = s.id;
+  });
+  navAnchors.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}, { passive: true });
+
+// ===== HERO PARALLAX =====
+const heroBgImg = document.querySelector('.hero-bg img');
+window.addEventListener('scroll', () => {
+  if (heroBgImg && window.scrollY < window.innerHeight * 1.2) {
+    heroBgImg.style.transform = `translateY(${window.scrollY * 0.26}px)`;
+  }
+}, { passive: true });
+
+// ===== SERVICE ITEMS — number highlight on hover =====
+document.querySelectorAll('.svc-item').forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    item.querySelectorAll('*').forEach(child => child.style.position = '');
+  });
+});
+
+// ===== WHY CARDS — Subtle 3D tilt =====
+document.querySelectorAll('.why-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 8;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 8;
+    card.style.transform = `rotateX(${-y * 0.35}deg) rotateY(${x * 0.35}deg) translateY(-4px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+    card.style.transition = 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.35s';
+  });
+  card.addEventListener('mouseenter', () => {
+    card.style.transition = 'transform 0.08s linear, background 0.35s';
+  });
+});
+
+// ===== TESTIMONIAL CARDS — 3D tilt =====
+document.querySelectorAll('.tcard').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 10;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 10;
+    card.style.transform = `translateY(-8px) rotateX(${-y * 0.3}deg) rotateY(${x * 0.3}deg)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+    card.style.transition = 'transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s';
+  });
+  card.addEventListener('mouseenter', () => {
+    card.style.transition = 'transform 0.08s linear, box-shadow 0.4s';
+  });
+});
+
+// ===== PROCESS CTA — Pulse animation on enter =====
+const processCTA = document.querySelector('.process-cta-bar .btn-primary');
+if (processCTA) {
+  const ctaObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        setTimeout(() => {
+          processCTA.animate([
+            { boxShadow: '0 0 0 0 rgba(212,82,26,0.5)' },
+            { boxShadow: '0 0 0 14px rgba(212,82,26,0)' },
+            { boxShadow: '0 0 0 0 rgba(212,82,26,0)' }
+          ], { duration: 700, easing: 'ease-out' });
+        }, 400);
+        ctaObs.unobserve(processCTA);
+      }
+    });
+  }, { threshold: 0.8 });
+  ctaObs.observe(processCTA);
+}
+
+// ===== BRANDS TICKER — Pause on hover =====
+const ticker = document.querySelector('.ticker-track');
+if (ticker) {
+  ticker.addEventListener('mouseenter', () => ticker.style.animationPlayState = 'paused');
+  ticker.addEventListener('mouseleave', () => ticker.style.animationPlayState = 'running');
+}
+
+// ===== CONTACT FORM =====
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const btn = this.querySelector('button[type="submit"]');
+    const original = btn.innerHTML;
+    btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Message Sent!';
+    btn.style.background = '#22c55e';
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = original;
+      btn.style.background = '';
+      btn.disabled = false;
+      this.reset();
+    }, 3000);
+  });
+}
+
+// ===== PROC CARDS — Shimmer on hover =====
+document.querySelectorAll('.proc-card').forEach(card => {
+  const shimmer = document.createElement('div');
+  shimmer.style.cssText = `
+    position:absolute;
+    top:0; bottom:0;
+    width:60px;
+    background:linear-gradient(105deg,transparent 20%,rgba(212,82,26,0.06) 50%,transparent 80%);
+    left:-80%;
+    pointer-events:none;
+  `;
+  card.appendChild(shimmer);
+  card.addEventListener('mouseenter', () => {
+    shimmer.style.transition = 'left 0.5s ease';
+    shimmer.style.left = '140%';
+  });
+  card.addEventListener('mouseleave', () => {
+    shimmer.style.transition = 'none';
+    shimmer.style.left = '-80%';
+  });
+});
+
+// ===== CURSOR GLOW on stats section =====
+const statsSection = document.querySelector('.stats-band');
+if (statsSection) {
+  let glow = null;
+  statsSection.addEventListener('mouseenter', () => {
+    glow = document.createElement('div');
+    glow.style.cssText = `
+      position:fixed; width:280px; height:280px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(212,82,26,0.1) 0%, transparent 70%);
+      pointer-events:none; z-index:1; transform:translate(-50%,-50%);
+      transition: opacity 0.3s;
+    `;
+    document.body.appendChild(glow);
+  });
+  statsSection.addEventListener('mousemove', e => {
+    if (glow) { glow.style.left = e.clientX + 'px'; glow.style.top = e.clientY + 'px'; }
+  });
+  statsSection.addEventListener('mouseleave', () => {
+    if (glow) {
+      glow.style.opacity = '0';
+      setTimeout(() => { if (glow) { glow.remove(); glow = null; } }, 300);
+    }
+  });
+}
+
+// ===== NAV LINKS STAGGER ON LOAD =====
+document.querySelectorAll('.nav-links a').forEach((a, i) => {
+  a.style.animation = `fadeSlideDown 0.5s ${0.1 + i * 0.06}s cubic-bezier(0.16,1,0.3,1) both`;
+});
+
+// ===== inject fadeSlideDown keyframe =====
+const styleEl = document.createElement('style');
+styleEl.textContent = `
+  @keyframes fadeSlideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+`;
+document.head.appendChild(styleEl);
+
+// ===== HERO STATS — Micro pulse on hover =====
+document.querySelectorAll('.hstat-n').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    el.style.transform = 'scale(1.08)';
+    el.style.transition = 'transform 0.3s cubic-bezier(0.34,1.56,0.64,1)';
+  });
+  el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+});
+
+// ===== SERVICE ITEMS — Left bar reveal on hover =====
+document.querySelectorAll('.svc-item').forEach(item => {
+  item.style.position = 'relative';
+});
+
+// ===== ABOUT IMAGE — Parallax on scroll =====
+const aboutImg = document.querySelector('.about-img-side > img');
+if (aboutImg) {
+  const aboutSection = document.querySelector('.about');
+  window.addEventListener('scroll', () => {
+    if (!aboutSection) return;
+    const rect = aboutSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+      aboutImg.style.transform = `scale(1) translateY(${(progress - 0.5) * 24}px)`;
+    }
+  }, { passive: true });
+}
+
+// ===== HERO FLOATING STATS — Stagger count on load =====
+window.addEventListener('load', () => {
+  const heroStats = document.querySelectorAll('.hstat-n[data-target]');
+  if (heroStats.length) {
+    setTimeout(() => {
+      heroStats.forEach(el => animateCounter(el, parseInt(el.dataset.target)));
+    }, 900);
+  }
+});
+</script>
+</body>
+
+</html>

@@ -4,606 +4,706 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fire Boy — Fire Safety Solutions</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet" />
+  <title>FIREBOY — Fire Protection Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./quote.css">
-  <!-- <link rel="stylesheet" href="./theme.css"> -->
 </head>
 
 <body>
 
-  <!-- PAGE LOADER -->
-  <div class="page-loader" id="loader">
-    <div class="loader-logo"><img src="./img/fire-logo.png" alt="" style="height:60px;" /></div>
-  </div>
-
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
-    <a href="./index.html" onclick="closeMobileMenu()">Home</a>
-    <a href="./about.html" onclick="closeMobileMenu()">About</a>
-    <a href="./products.html" onclick="closeMobileMenu()">Products</a>
-    <a href="./contact.html" onclick="closeMobileMenu()">Contact</a>
-  </div>
-
-  <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    
-      <img class="logo-icon" src="./img/fire-logo.png" alt="Fire Boy" />
-    
-    <ul class="nav-links">
-      <li><a href="./index.html" class="active">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./products.html">Products</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-    <a href="#quote" class="nav-cta">Get Quote</a>
-    <button class="nav-hamburger" id="hamburger" onclick="openMobileMenu()">
-      <span></span><span></span><span></span>
-    </button>
+  <!-- ======= NAVBAR ======= -->
+  <nav id="navbar">
+    <div class="nav-main">
+      <div class="nav-inner">
+        <a href="#home" class="logo">
+          <img src="./img/fire-logo.png" alt="Fireboy Logo">
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#categories">Services</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:9876543210" class="nav-cta">
+          <span class="cta-body">
+            <strong>Get Quote</strong>
+          </span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
   </nav>
 
-    <!-- HERO -->
-  <section class="hero" id="home">
-    <!-- Background image layer -->
-    <div class="hero-bg-img"></div>
-    <!-- Dark overlay for readability -->
-    <div class="hero-overlay"></div>
-    <!-- Subtle grid pattern on top -->
-    <div class="hero-grid"></div>
-
-    <div class="hero-content">
-      <!-- <div class="hero-badge"><span></span>India's #1 Fire Safety Supplier</div> -->
-      <h1 class="hero-title">
-        WHERE
-        <span class="accent">FIRE</span><br />
-        <span class="outline">MEETS ITS</span><br />
-        MATCH
-      </h1>
-      <p class="hero-sub">
-        India's most trusted fire safety equipment supplier. From
-        extinguishers to suppression systems — we protect what matters most.
-      </p>
-      <div class="hero-actions">
-        <a href="#products" class="btn-primary">
-          Shop Products
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"
-            stroke-linecap="round">
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </a>
-        <a href="#about" class="btn-ghost">Learn More</a>
-      </div>
+  <!-- ======= HERO ======= -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="./img/fire1.jpg" alt="Fire emergency response" />
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
     </div>
 
-    <div class="overlay-img-hero">
-      <img src="./image-removebg-preview (1).png" alt="" />
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num"><span class="fire-num">25</span>K+</span>
-        <span class="stat-label">Products Sold</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num"><span class="fire-num">98</span>%</span>
-        <span class="stat-label">Client Satisfaction</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num"><span class="fire-num">500</span>+</span>
-        <span class="stat-label">Certified Brands</span>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <!-- <div class="hero-scroll-indicator">
-      <div class="scroll-mouse">
-        <div class="scroll-wheel"></div>
-      </div>
-      <span>Scroll</span>
-    </div> -->
-  </section>
-
-  <!-- TICKER -->
-  <div class="ticker">
-    <div class="ticker-inner">
-      <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">Pan India Delivery<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">AMC Services<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">25+ Years Experience<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">Pan India Delivery<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">AMC Services<div class="ticker-dot"></div>
-      </div>
-      <div class="ticker-item">25+ Years Experience<div class="ticker-dot"></div>
-      </div>
-    </div>
-  </div>
-
-<!-- ══════════════════════════════════════════════════
-   CATEGORIES SECTION
-   Uses your existing CSS variables — no extra imports needed.
-   Link: <link rel="stylesheet" href="categories.css">
-   ══════════════════════════════════════════════════ -->
-
-<section class="categories" id="categories">
-
-  <!-- HEADER -->
-  <div class="categories-header">
-    <div>
-    
-      <h2 class="section-title">SHOP BY <span>CATEGORY</span></h2>
-    </div>
-    <p class="section-sub">
-      Complete fire safety solutions for residential, commercial, and industrial applications.
-    </p>
-  </div>
-
-  <!-- GRID -->
-  <div class="cat-grid">
-
-    <!-- 01 Fire Extinguishers -->
-    <div class="cat-card" onclick="filterProducts('extinguisher')" role="button" tabindex="0">
-      <div class="cat-card-inner">
-        <div class="cat-num">01</div>
-        <div class="cat-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C9 2 7 4 7 7v1H5v14h14V8h-2V7c0-3-2-5-5-5zm0 2c1.7 0 3 1.3 3 3v1H9V7c0-1.7 1.3-3 3-3zM7 10h10v10H7z"/></svg>
-        </div>
-        <div class="cat-name">Fire Extinguishers</div>
-        <div class="cat-desc">ABC, CO₂, Wet Chemical, Foam & Dry Powder for all fire classes</div>
-        <div class="cat-bottom">
-          <div class="cat-count">48 Products</div>
-          <div class="cat-arrow"><a href="./products.html">→</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 02 Fire Hydrant Systems -->
-    <div class="cat-card" onclick="filterProducts('hydrant')" role="button" tabindex="0">
-      <div class="cat-card-inner">
-        <div class="cat-num">02</div>
-        <div class="cat-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 0 1 4 4v2h1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h1V6a4 4 0 0 1 4-4zm2 6V6a2 2 0 0 0-4 0v2h4z"/></svg>
-        </div>
-        <div class="cat-name">Fire Hydrant Systems</div>
-        <div class="cat-desc">Landing valves, hose reels, branch pipes & hydrant accessories</div>
-        <div class="cat-bottom">
-          <div class="cat-count">32 Products</div>
-          <div class="cat-arrow"><a href="./products.html">→</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 03 Fire Detection -->
-    <div class="cat-card" onclick="filterProducts('detection')" role="button" tabindex="0">
-      <div class="cat-card-inner">
-        <div class="cat-num">03</div>
-        <div class="cat-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
-        </div>
-        <div class="cat-name">Fire Detection</div>
-        <div class="cat-desc">Smoke detectors, heat sensors, alarm panels & addressable systems</div>
-        <div class="cat-bottom">
-          <div class="cat-count">56 Products</div>
-          <div class="cat-arrow"><a href="./products.html">→</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 04 Suppression Systems -->
-    <div class="cat-card" onclick="filterProducts('suppression')" role="button" tabindex="0">
-      <div class="cat-card-inner">
-        <div class="cat-num">04</div>
-        <div class="cat-icon">
-          <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21H5.71C7.72 17 11 14.07 17 14v4l4-5-4-5z"/></svg>
-        </div>
-        <div class="cat-name">Suppression Systems</div>
-        <div class="cat-desc">Sprinkler heads, deluge valves, gas suppression & foam systems</div>
-        <div class="cat-bottom">
-          <div class="cat-count">24 Products</div>
-          <div class="cat-arrow"><a href="./products.html">→</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 05 Safety Equipment & PPE -->
-    <div class="cat-card" onclick="filterProducts('ppe')" role="button" tabindex="0">
-      <div class="cat-card-inner">
-        <div class="cat-num">05</div>
-        <div class="cat-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 1C8.676 1 6 3.676 6 7v2H4v14h16V9h-2V7c0-3.324-2.676-6-6-6zm0 2c2.276 0 4 1.724 4 4v2H8V7c0-2.276 1.724-4 4-4z"/></svg>
-        </div>
-        <div class="cat-name">Safety Equipment & PPE</div>
-        <div class="cat-desc">Fire suits, gloves, helmets, boots & breathing apparatus</div>
-        <div class="cat-bottom">
-          <div class="cat-count">76 Products</div>
-          <div class="cat-arrow"><a href="./products.html">→</a></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 06 Fire Safety Signage -->
-    <div class="cat-card" onclick="filterProducts('signage')" role="button" tabindex="0">
-      <div class="cat-card-inner">
-        <div class="cat-num">06</div>
-        <div class="cat-icon">
-          <svg viewBox="0 0 24 24"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
-        </div>
-        <div class="cat-name">Fire Safety Signage</div>
-        <div class="cat-desc">Exit signs, evacuation maps, assembly boards & photoluminescent labels</div>
-        <div class="cat-bottom">
-          <div class="cat-count">38 Products</div>
-          <div class="cat-arrow"><a href="./products.html">→</a></div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- FOOTER -->
-  <div class="cat-footer">` 
-   
-    <a href="#products" class="cat-cta">
-      Browse All Products <span>→</span>
-    </a>
-  </div>
-
-</section>
-
-  <!-- PRODUCTS -->
-  <section class="home-products-section" id="products">
-    <div class="categories-header">
+    <div class="hero-body">
       <div>
-        <h2 class="section-title">OUR FIRE SAFETY <br><span>PRODUCTS</span></h2>
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line"></span>
+          <span>EST. 1995 &middot; WORLD CLASS FIRE PROTECTION</span>
+          <span class="eyebrow-line"></span>
+        </div>
+        <h1 class="hero-h1">
+          <span class="line line-1">Protecting</span>
+          <span class="line line-2">Lives &amp; Properties</span>
+          <span class="line line-3">Since 1995</span>
+        </h1>
       </div>
-      <p class="section-sub sub-1">
-        Browse proven, certified fire safety products for homes and businesses. Click any item for full details and
-        specifications.
-      </p>
+      <div>
+        <p class="hero-p">Industry-leading fire protection solutions — from suppression systems and hazmat response to prevention training and 24/7 emergency dispatch. Certified, trusted, and ready.</p>
+        <div class="hero-actions">
+          <a href="#about" class="btn-fire">Discover More</a>
+          <a href="tel:6668880000" class="btn-ghost"><i class="fa-solid fa-phone"></i> Emergency Call</a>
+        </div>
+      </div>
     </div>
-    <div class="project-grid">
-      <a class="project-card" href="products.html">
-        <img src="./img/fire4.jpg" alt="Fire Extinguisher" />
-        <div class="project-content">
-          <span>SAFETY</span>
-          <h3>Fire Extinguisher - Model </h3>
-          <p>Lightweight ABC dry chemical extinguisher suitable for home and office use. Easy to mount and maintain.</p>
-        </div>
-      </a>
-      <a class="project-card" href="products.html">
-        <img src="./img/fire2.jpg" alt="Smoke Detector" />
-        <div class="project-content">
-          <span>DETECTION</span>
-          <h3>Smart Smoke Detector</h3>
-          <p>Wireless, battery-backed smoke detector with app alerts and integrated carbon monoxide sensing.</p>
-        </div>
-      </a>
-      <a class="project-card" href="products.html">
-        <img src="./img/fire3.jpg" alt="Suppression" />
-        <div class="project-content">
-          <span>SUPPRESSION</span>
-          <h3>Kitchen Suppression Kit</h3>
-          <p>Automatic suppression solution for commercial kitchens, compact, reliable, and easy to service.</p>
-        </div>
-      </a>
+
+    <div class="hero-stat-bar">
+      <div class="hstat"><span class="hstat-n">3800+</span><span class="hstat-l">Lives Saved</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">1200+</span><span class="hstat-l">Fire Calls</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">450+</span><span class="hstat-l">Firefighters</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">30 Yrs</span><span class="hstat-l">Experience</span></div>
     </div>
+    <div class="hero-cut"></div>
   </section>
 
-  <!-- FEATURED BAND -->
-  <div class="featured-band">
-    <div>
-      <h2 class="featured-title">ABC POWDER EXTINGUISHER <span>9KG</span></h2>
-      <p class="featured-desc">
-        Our best-selling multi-purpose dry powder extinguisher. Effective on Class A, B, C fires. ISI marked and BIS
-        certified. Ideal for offices, factories, and warehouses.
-      </p>
-      <div class="featured-features">
-        <div class="feat">ISI / BIS Certified</div>
-        <div class="feat">5-Year Warranty</div>
-        <div class="feat">Free Delivery</div>
-        <div class="feat">Refillable</div>
-      </div>
-      <a href="#" class="btn-dark">View Product →</a>
-    </div>
-    <div class="featured-visual">
-      <svg width="200" height="340" viewBox="0 0 200 340"
-        style="filter:drop-shadow(0 40px 80px rgba(0,0,0,0.4));animation:float 4s ease-in-out infinite;">
-        <rect x="60" y="60" width="80" height="200" rx="40" fill="#CC0000" />
-        <rect x="70" y="80" width="60" height="160" rx="30" fill="#DD1111" />
-        <rect x="85" y="40" width="30" height="30" rx="4" fill="#333" />
-        <rect x="95" y="20" width="10" height="28" fill="#444" />
-        <rect x="85" y="18" width="30" height="6" rx="3" fill="#555" />
-        <path d="M 115 50 Q 140 50 140 65 Q 140 80 125 80" stroke="#333" stroke-width="8" fill="none"
-          stroke-linecap="round" />
-        <path d="M 60 180 Q 30 200 20 240" stroke="#222" stroke-width="10" fill="none" stroke-linecap="round" />
-        <circle cx="20" cy="242" r="8" fill="#333" />
-        <rect x="65" y="140" width="70" height="80" rx="4" fill="white" opacity="0.9" />
-        <rect x="68" y="143" width="64" height="16" fill="#CC0000" />
-        <rect x="68" y="162" width="64" height="4" rx="2" fill="#eee" />
-        <rect x="68" y="170" width="50" height="4" rx="2" fill="#eee" />
-        <rect x="68" y="178" width="58" height="4" rx="2" fill="#eee" />
-        <rect x="68" y="186" width="40" height="4" rx="2" fill="#eee" />
-        <ellipse cx="100" cy="260" rx="40" ry="8" fill="#AA0000" />
-        <circle cx="100" cy="110" r="12" fill="white" stroke="#333" stroke-width="2" />
-        <circle cx="100" cy="110" r="8" fill="#eee" />
-        <line x1="100" y1="110" x2="104" y2="105" stroke="#CC0000" stroke-width="2" />
-      </svg>
-    </div> 
-  </div>
-
-  <!-- BRANDS -->
-  <div class="brands">
-    <div class="brands-scroll" id="brandsScroll">
-      <div class="brand-item">MINIMAX</div>
-      <div class="brand-item">CEASEFIRE</div>
-      <div class="brand-item">SAFEX</div>
-      <div class="brand-item">NEWAGE</div>
-      <div class="brand-item">KANEX</div>
-      <div class="brand-item">AMEREX</div>
-      <div class="brand-item">HOCHIKI</div>
-      <div class="brand-item">SIEMENS</div>
-      <div class="brand-item">MINIMAX</div>
-      <div class="brand-item">CEASEFIRE</div>
-      <div class="brand-item">SAFEX</div>
-      <div class="brand-item">NEWAGE</div>
-      <div class="brand-item">KANEX</div>
-      <div class="brand-item">AMEREX</div>
-      <div class="brand-item">HOCHIKI</div>
-      <div class="brand-item">SIEMENS</div>
-    </div>
-  </div>
-
-  <!-- WHY US -->
-  <section class="why" id="about">
-    <div>
-      <h2 class="featured-title">BUILT ON <span>TRUST & EXPERTISE</span> </h2>
-    </div>
-    <div class="why-grid">
-      <div class="why-visual">
-        <div class="why-image-card">
-          <img src="./img/installation.jpg" alt="Fire safety installation team at work" />
-          <div class="why-image-strip">
-            <img src="./img/consulting.jpg" alt="Fire safety consultation" />
-            <img src="./img/Fire-Hydrants-and-Sprinkler-Systems.webp" alt="Hydrant and sprinkler system" />
+  <!-- ======= ABOUT ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col fade-left">
+          <div class="img-wrap">
+            <img src="./img/Battery-Energy-Storage-Systems-BESS_pro_pro.webp" alt="Firefighters team" />
+            <div class="img-border-accent"></div>
           </div>
-          <div
-            style="position:absolute;bottom:20px;right:20px;background:var(--fire);padding:16px 20px;box-shadow:0 8px 24px rgba(255,106,0,0.4);">
-            <span
-              style="font-family:var(--font-display);font-size:40px;color:white;display:block;line-height:1;">20+</span>
-            <span style="font-size:11px;color:rgba(255,255,255,0.85);letter-spacing:1px;">Years Experience</span>
+          <div class="exp-badge">
+            <span class="exp-n">30</span>
+            <span class="exp-t">Years<br>Experience</span>
           </div>
         </div>
-      </div>
-      <div class="why-features">
-        <div class="why-feat">
-          <div class="why-feat-icon"><svg viewBox="0 0 24 24">
-              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
-            </svg></div>
-          <div>
-            <div class="why-feat-title">IS / BIS Certified Products</div>
-            <div class="why-feat-desc">All products comply with Bureau of Indian Standards. We stock only certified,
-              tested fire safety equipment from authorized manufacturers.</div>
+        <div class="about-text fade-right">
+          <h2 class="section-h2">Premier Fire &amp;<br>Protection Services</h2>
+          <p class="body-txt">Since 1995, Fireboy has been at the forefront of fire safety and emergency response — providing world-class protection to homes, businesses, and industrial facilities. Our NFPA-certified team is equipped with the latest technology and trained to respond to any fire emergency, anywhere, anytime.</p>
+          <div class="feat-row">
+            <div class="feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+              <span>Prevent fires<br>before they start</span>
+            </div>
+            <div class="feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <span>Rapid response<br>24/7 readiness</span>
+            </div>
           </div>
-        </div>
-        <div class="why-feat">
-          <div class="why-feat-icon"><svg viewBox="0 0 24 24">
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12z" />
-              <path d="M6 10h2v6H6zm4-3h2v9h-2zm4 3h2v6h-2z" />
-            </svg></div>
-          <div>
-            <div class="why-feat-title">Pan-India Delivery Network</div>
-            <div class="why-feat-desc">Fast, secure delivery to all states across India. Express delivery available for
-              emergency orders. Full tracking provided.</div>
-          </div>
-        </div>
-        <div class="why-feat">
-          <div class="why-feat-icon"><svg viewBox="0 0 24 24">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
-            </svg></div>
-          <div>
-            <div class="why-feat-title">Expert Technical Consultation</div>
-            <div class="why-feat-desc">Our fire safety engineers help you choose the right solutions. Free site
-              assessment for bulk orders and institutional clients.</div>
-          </div>
-        </div>
-        <div class="why-feat">
-          <div class="why-feat-icon"><svg viewBox="0 0 24 24">
-              <path
-                d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z" />
-            </svg></div>
-          <div>
-            <div class="why-feat-title">Annual Maintenance Contracts</div>
-            <div class="why-feat-desc">Keep your fire safety systems always ready. Our AMC ensures regular inspection,
-              testing, and refilling by certified technicians.</div>
+          <ul class="check-list">
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span>NFPA-certified firefighters with advanced suppression training.</li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span>State-of-the-art fire suppression systems for all property types.</li>
+            <li><span class="chk"><i class="fa-solid fa-check"></i></span>ISO 9001:2015 certified operations ensuring consistent quality.</li>
+          </ul>
+          <div class="emg-inline">
+            <span class="emg-ic"><i class="fa-solid fa-phone-volume"></i></span>
+            <div>
+              <small>Emergency Hotline — Available 24/7</small>
+              <a href="tel:6668880000"><strong>666 888 0000</strong></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <h2 class="featured-title">WHAT THEY SAY <span>ABOUT</span>  US</h2>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-            class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"IGNIS supplied all fire extinguishers and detection systems for our 12-floor commercial
-          complex. Quality was top-notch, delivery was on time, and their engineers guided our team perfectly."</p>
-        <div class="testi-author">
-          <div class="author-avatar">RK</div>
-          <div>
-            <div class="author-name">Rajesh Kumar</div>
-            <div class="author-role">Facility Manager, TCS Chennai</div>
+  <!-- ======= CATEGORIES ======= -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="categories-header fade-up">
+        <div>
+          <h2 class="section-h2">OUR CORE <span class="cat-title-accent">SERVICES</span></h2>
+        </div>
+        <p class="section-sub">
+          Complete fire protection and emergency response operations for residential, commercial, and industrial sectors.
+        </p>
+      </div>
+
+      <div class="cat-grid">
+        <div class="cat-card fade-up" style="--d:0ms" tabindex="0">
+          <div class="cat-card-inner">
+            <div class="cat-num">01</div>
+            <div class="cat-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+            <div class="cat-name">Fire Suppression</div>
+            <div class="cat-desc">Design, installation, and maintenance of sprinkler systems, gaseous suppression, and foam systems for all property types.</div>
+            <div class="cat-bottom">
+              <div class="cat-count">500+ Installs</div>
+              <a href="#contact" class="cat-arrow">→</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up" style="--d:100ms" tabindex="0">
+          <div class="cat-card-inner">
+            <div class="cat-num">02</div>
+            <div class="cat-icon"><i class="fa-solid fa-bell"></i></div>
+            <div class="cat-name">Fire Alarm Systems</div>
+            <div class="cat-desc">Advanced addressable fire detection, alarm, and notification systems with remote monitoring and instant alerting.</div>
+            <div class="cat-bottom">
+              <div class="cat-count">24/7 Monitoring</div>
+              <a href="#contact" class="cat-arrow">→</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up" style="--d:200ms" tabindex="0">
+          <div class="cat-card-inner">
+            <div class="cat-num">03</div>
+            <div class="cat-icon"><i class="fa-solid fa-person-running"></i></div>
+            <div class="cat-name">Rescue Operations</div>
+            <div class="cat-desc">Swift life-saving operations in high-risk environments, collapsed structures, confined spaces, and elevated structures.</div>
+            <div class="cat-bottom">
+              <div class="cat-count">Elite Teams</div>
+              <a href="#contact" class="cat-arrow">→</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up" style="--d:300ms" tabindex="0">
+          <div class="cat-card-inner">
+            <div class="cat-num">04</div>
+            <div class="cat-icon"><i class="fa-solid fa-kit-medical"></i></div>
+            <div class="cat-name">Medical Response</div>
+            <div class="cat-desc">Certified paramedics providing immediate critical care, triage, and patient stabilisation during fire and emergency incidents.</div>
+            <div class="cat-bottom">
+              <div class="cat-count">Certified EMTs</div>
+              <a href="#contact" class="cat-arrow">→</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up" style="--d:400ms" tabindex="0">
+          <div class="cat-card-inner">
+            <div class="cat-num">05</div>
+            <div class="cat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="cat-name">Prevention Training</div>
+            <div class="cat-desc">Customised fire safety workshops, emergency evacuation drills, and NFPA-compliant training programs for organisations.</div>
+            <div class="cat-bottom">
+              <div class="cat-count">10K+ Trained</div>
+              <a href="#contact" class="cat-arrow">→</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat-card fade-up" style="--d:500ms" tabindex="0">
+          <div class="cat-card-inner">
+            <div class="cat-num">06</div>
+            <div class="cat-icon"><i class="fa-solid fa-biohazard"></i></div>
+            <div class="cat-name">Hazmat Operations</div>
+            <div class="cat-desc">Specialised hazardous materials response for chemical spills, industrial accidents, and toxic incidents with full decontamination.</div>
+            <div class="cat-bottom">
+              <div class="cat-count">ISO Certified</div>
+              <a href="#contact" class="cat-arrow">→</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="testi-card">
-        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-            class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"We've been using IGNIS for AMC services across all our warehouses. Their response time is
-          exceptional and the technicians are very knowledgeable. Highly recommended!"</p>
-        <div class="testi-author">
-          <div class="author-avatar">PS</div>
-          <div>
-            <div class="author-name">Priya Sharma</div>
-            <div class="author-role">Operations Head, Amazon Fulfillment</div>
-          </div>
+
+      <div class="cat-footer fade-up">
+        <div class="cat-stat">
+          <div class="cat-stat-num">6</div>
+          <div class="cat-stat-label">Core<br>Services</div>
+        </div>
+        <div class="cat-stat">
+          <div class="cat-stat-num">450+</div>
+          <div class="cat-stat-label">Active<br>Personnel</div>
+        </div>
+        <div class="cat-stat">
+          <div class="cat-stat-num">3800+</div>
+          <div class="cat-stat-label">Lives<br>Saved</div>
+        </div>
+        <a href="#contact" class="btn-fire">Request a Service <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= STATS ======= -->
+  <section class="stats">
+    <div class="stats-bg-img">
+      <img src="./img/bg/Burning Forest Wallpaper, Wildfire Background, Nature Fire 4k Wallpaper (1).jpg" alt="fire bg" />
+      <div class="stats-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up" style="--d:0ms">
+          <div class="stat-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <div class="stat-num" data-target="3800">0</div>
+          <div class="stat-lbl">Families Protected</div>
+        </div>
+        <div class="stat-item fade-up" style="--d:150ms">
+          <div class="stat-icon"><i class="fa-solid fa-fire-extinguisher"></i></div>
+          <div class="stat-num" data-target="1200">0</div>
+          <div class="stat-lbl">Emergency Calls Answered</div>
+        </div>
+        <div class="stat-item fade-up" style="--d:300ms">
+          <div class="stat-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+          <div class="stat-num" data-target="450">0</div>
+          <div class="stat-lbl">Certified Firefighters</div>
+        </div>
+        <div class="stat-item fade-up" style="--d:450ms">
+          <div class="stat-icon"><i class="fa-solid fa-trophy"></i></div>
+          <div class="stat-num" data-target="30">0</div>
+          <div class="stat-lbl">Years of Excellence</div>
         </div>
       </div>
-      <div class="testi-card">
-        <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span
-            class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"Best pricing in the market with zero compromise on quality. The online ordering process
-          is smooth and their customer support team is always available. Great experience overall."</p>
-        <div class="testi-author">
-          <div class="author-avatar">AM</div>
-          <div>
-            <div class="author-name">Arjun Mehta</div>
-            <div class="author-role">Safety Officer, Infosys Campus</div>
+    </div>
+  </section>
+
+  <!-- ======= FEATURED BAND ======= -->
+  <section class="featured-wrap">
+    <div class="container">
+      <div class="featured-band fade-up">
+        <div class="featured-content">
+          <h2 class="featured-title">RAPID RESPONSE<br><span>EMERGENCY UNIT</span></h2>
+          <p class="featured-desc">
+            Our flagship 24/7 Rapid Response Emergency Unit deploys NFPA-certified firefighters and paramedics within 4 minutes of a call. Fully equipped with modern firefighting apparatus, thermal imaging cameras, hydraulic rescue tools, and Class A/B foam systems — prepared for any scenario.
+          </p>
+          <div class="featured-features">
+            <div class="feat-tag"><i class="fa-solid fa-check"></i> NFPA Certified</div>
+            <div class="feat-tag"><i class="fa-solid fa-check"></i> Under 4-Min Deploy</div>
+            <div class="feat-tag"><i class="fa-solid fa-check"></i> Thermal Imaging</div>
+            <div class="feat-tag"><i class="fa-solid fa-check"></i> Hydraulic Rescue Tools</div>
+            <div class="feat-tag"><i class="fa-solid fa-check"></i> Class A/B Foam Systems</div>
+          </div>
+          <a href="#contact" class="btn-fire">Get Emergency Support <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="featured-visual">
+          <img src="./img/hero-imgs-back.png" alt="Rapid Response Unit">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= NEW SECTION 1 — WHY CHOOSE US ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+      <div class="why-head fade-up">
+        <h2 class="section-h2 center">Why Choose <span class="cat-title-accent">Fireboy</span></h2>
+        <p class="why-sub">Trusted by thousands of families, businesses, and industrial operators for unmatched fire protection quality and reliability.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <div class="why-card fade-up" style="--d:0ms">
+          <div class="why-icon-wrap">
+            <i class="fa-solid fa-stopwatch"></i>
+          </div>
+          <h3>4-Minute Response</h3>
+          <p>Our rapid deployment units are strategically positioned to reach any incident within 4 minutes — faster than national standards.</p>
+          <div class="why-accent-bar"></div>
+        </div>
+
+        <div class="why-card fade-up" style="--d:120ms">
+          <div class="why-icon-wrap">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3>Fully Certified</h3>
+          <p>NFPA certified, ISO 9001:2015 accredited, and CFBT trained. Every technician holds active certifications updated annually.</p>
+          <div class="why-accent-bar"></div>
+        </div>
+
+        <div class="why-card fade-up" style="--d:240ms">
+          <div class="why-icon-wrap">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <h3>24/7 Monitoring</h3>
+          <p>Round-the-clock remote monitoring for all installed suppression and alarm systems. Real-time alerts, zero blind spots.</p>
+          <div class="why-accent-bar"></div>
+        </div>
+
+        <div class="why-card fade-up" style="--d:360ms">
+          <div class="why-icon-wrap">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3>End-to-End Solutions</h3>
+          <p>From fire risk assessments and system design, to installation, maintenance, and emergency response — all under one roof.</p>
+          <div class="why-accent-bar"></div>
+        </div>
+
+        <div class="why-card fade-up" style="--d:480ms">
+          <div class="why-icon-wrap">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3>Proven Track Record</h3>
+          <p>Over 3,800 lives saved and 1,200+ fire emergencies successfully managed. Our results speak for themselves.</p>
+          <div class="why-accent-bar"></div>
+        </div>
+
+        <div class="why-card fade-up" style="--d:600ms">
+          <div class="why-icon-wrap">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3>Service Guarantee</h3>
+          <p>We stand behind every installation and service with a full workmanship warranty and dedicated post-service support.</p>
+          <div class="why-accent-bar"></div>
+        </div>
+
+      </div>
+
+      <!-- Trust bar -->
+      <div class="trust-bar fade-up">
+        <div class="trust-item">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          <span>4.9/5 Client Rating</span>
+        </div>
+        <div class="trust-div"></div>
+        <div class="trust-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Zero Compliance Failures</span>
+        </div>
+        <div class="trust-div"></div>
+        <div class="trust-item">
+          <i class="fa-solid fa-award"></i>
+          <span>National Safety Award 2023</span>
+        </div>
+        <div class="trust-div"></div>
+        <div class="trust-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>98.6% On-Time Response</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= NEW SECTION 2 — HOW IT WORKS / PROCESS ======= -->
+  <section id="process" class="process">
+    <div class="process-bg-shape"></div>
+    <div class="container">
+      <div class="process-head fade-up">
+        <h2 class="section-h2 center">How We <span class="cat-title-accent">Protect You</span></h2>
+        <p class="why-sub">A streamlined, proven process from initial assessment to full protection — engineered for speed and reliability.</p>
+      </div>
+
+      <div class="process-track">
+
+        <div class="process-step fade-up" style="--d:0ms">
+          <div class="step-number">01</div>
+          <div class="step-card">
+            <div class="step-icon-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <h3>Risk Assessment</h3>
+            <p>Our certified fire safety engineers conduct a comprehensive on-site inspection — identifying hazards, evaluating code compliance, and mapping emergency exit routes.</p>
+            <div class="step-tag">Free Assessment</div>
+          </div>
+        </div>
+
+        <div class="process-connector fade-up" style="--d:100ms">
+          <div class="connector-line"></div>
+          <div class="connector-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="process-step fade-up" style="--d:200ms">
+          <div class="step-number">02</div>
+          <div class="step-card">
+            <div class="step-icon-box">
+              <i class="fa-solid fa-pen-ruler"></i>
+            </div>
+            <h3>Custom Plan Design</h3>
+            <p>We design a tailored fire protection strategy — selecting the right suppression systems, alarm types, and response protocols specific to your property and risk profile.</p>
+            <div class="step-tag">Fully Customised</div>
+          </div>
+        </div>
+
+        <div class="process-connector fade-up" style="--d:300ms">
+          <div class="connector-line"></div>
+          <div class="connector-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="process-step fade-up" style="--d:400ms">
+          <div class="step-number">03</div>
+          <div class="step-card">
+            <div class="step-icon-box">
+              <i class="fa-solid fa-gear"></i>
+            </div>
+            <h3>Installation &amp; Testing</h3>
+            <p>Certified technicians install your fire protection systems to NFPA standards with minimal disruption. Every system is rigorously tested before handover.</p>
+            <div class="step-tag">NFPA Compliant</div>
+          </div>
+        </div>
+
+        <div class="process-connector fade-up" style="--d:500ms">
+          <div class="connector-line"></div>
+          <div class="connector-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="process-step fade-up" style="--d:600ms">
+          <div class="step-number">04</div>
+          <div class="step-card">
+            <div class="step-icon-box">
+              <i class="fa-solid fa-satellite-dish"></i>
+            </div>
+            <h3>Live Monitoring &amp; Support</h3>
+            <p>Your systems are enrolled in our 24/7 monitoring platform with instant emergency dispatch integration. Annual maintenance and compliance checks included.</p>
+            <div class="step-tag">Ongoing Protection</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="process-cta fade-up">
+        <div class="process-cta-text">
+          <strong>Ready to get protected?</strong>
+          <span>Start with a free, no-obligation fire risk assessment today.</span>
+        </div>
+        <a href="#contact" class="btn-fire">Book Free Assessment <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= BRANDS / CERTIFICATIONS ======= -->
+  <section class="brands-section">
+    <div class="container">
+      <div class="brands-head fade-up">
+        <h2 class="section-h2 center">Certifications &amp; Partnerships</h2>
+      </div>
+    </div>
+    <div class="brands-ticker">
+      <div class="brands-track">
+        <div class="brand-chip"><i class="fa-solid fa-shield-halved"></i> NFPA Certified</div>
+        <div class="brand-chip"><i class="fa-solid fa-certificate"></i> ISO 9001:2015</div>
+        <div class="brand-chip"><i class="fa-solid fa-fire-extinguisher"></i> CFBT Trained</div>
+        <div class="brand-chip"><i class="fa-solid fa-star"></i> NAFD Member</div>
+        <div class="brand-chip"><i class="fa-solid fa-building-shield"></i> IFSEC Partner</div>
+        <div class="brand-chip"><i class="fa-solid fa-medal"></i> NSC Accredited</div>
+        <div class="brand-chip"><i class="fa-solid fa-flask"></i> NIST Compliant</div>
+        <div class="brand-chip"><i class="fa-solid fa-globe"></i> CTIF Member</div>
+        <div class="brand-chip"><i class="fa-solid fa-shield-halved"></i> NFPA Certified</div>
+        <div class="brand-chip"><i class="fa-solid fa-certificate"></i> ISO 9001:2015</div>
+        <div class="brand-chip"><i class="fa-solid fa-fire-extinguisher"></i> CFBT Trained</div>
+        <div class="brand-chip"><i class="fa-solid fa-star"></i> NAFD Member</div>
+        <div class="brand-chip"><i class="fa-solid fa-building-shield"></i> IFSEC Partner</div>
+        <div class="brand-chip"><i class="fa-solid fa-medal"></i> NSC Accredited</div>
+        <div class="brand-chip"><i class="fa-solid fa-flask"></i> NIST Compliant</div>
+        <div class="brand-chip"><i class="fa-solid fa-globe"></i> CTIF Member</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TESTIMONIALS ======= -->
+  <section class="testi">
+    <div class="container">
+      <div class="sec-head fade-up">
+        <h2 class="section-h2 center">Trusted by Thousands</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="tcard fade-up" style="--d:0ms">
+          <div class="tcard-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>"The Fireboy team arrived within minutes and saved our entire family. Their professionalism under pressure was extraordinary. Forever grateful."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar">RJ</div>
+            <div>
+              <strong>Robert Johnson</strong>
+              <small>Homeowner, Texas</small>
+            </div>
+          </div>
+        </div>
+        <div class="tcard fade-up" style="--d:150ms">
+          <div class="tcard-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Incredible response time. Their fire suppression team prevented a total loss at our manufacturing facility. Real heroes in every sense of the word."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar">SM</div>
+            <div>
+              <strong>Sarah Mitchell</strong>
+              <small>Plant Manager, Ohio</small>
+            </div>
+          </div>
+        </div>
+        <div class="tcard fade-up" style="--d:300ms">
+          <div class="tcard-quote"><i class="fa-solid fa-quote-left"></i></div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p>"Their prevention training programme is the best investment we made. Our entire workforce is now certified in fire safety. The trainers were brilliant."</p>
+          <div class="tcard-author">
+            <div class="tcard-avatar">DK</div>
+            <div>
+              <strong>David Kim</strong>
+              <small>Safety Director, California</small>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta-section" id="contact">
-  <div class="cta-line-top"></div>
-
-  <div class="cta-embers">
-    <div class="ember"></div>
-    <div class="ember"></div>
-    <div class="ember"></div>
-    <div class="ember"></div>
-    <div class="ember"></div>
-    <div class="ember"></div>
-    <div class="ember"></div>
-    <div class="ember"></div>
-  </div>
-
-  <div class="cta-glow-orb"></div>
-  
-
-  <div class="cta-inner">
-    
-
-    <h2 class="cta-title">
-      DON'T WAIT
-      <span class="fire-line" data-text="FOR FIRE">FOR FIRE</span>
-      TO STRIKE
-    </h2>
-
-    <div class="cta-divider">
-      <div class="cta-divider-line"></div>
-      <div class="cta-divider-icon">🔥</div>
-      <div class="cta-divider-line"></div>
+  <!-- ======= CTA BANNER ======= -->
+  <section class="cta-band">
+    <div class="cta-bg">
+      <img src="./img/Double-Headed-Hydrant-Valve_pro.webp" alt="" />
+      <div class="cta-overlay"></div>
     </div>
-
-    <p class="cta-sub">Contact our fire safety experts today for a free consultation
-      and site assessment. Protect your people and property.</p>
-
-   
-
-    <div class="cta-actions">
-      <a href="tel:+919876543210" class="btn-primary">
-        📞 Call Now: +91 98765 43210
-      </a>
-      <a href="mailto:info@ignis.in" class="btn-ghost">
-        ✉ Email Us
-      </a>
+    <div class="cta-body fade-up">
+      <span class="eyebrow-tag center light">Get Protected Today</span>
+      <h2>Don't wait for a fire to<br><em>take action</em></h2>
+      <p>Book your free fire risk assessment and get a custom protection plan within 48 hours.</p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn-fire">Get Free Assessment <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:6668880000" class="btn-ghost-light"><i class="fa-solid fa-phone"></i> Call Now: 666 888 0000</a>
+      </div>
     </div>
+  </section>
 
-    
-  </div>
-</section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-main">
-      <div class="footer-brand">
-        <a href="#" class="logo"><img class="logo-icon" src="./img/fire-logo.png" alt="" /></a>
-        <p class="footer-desc">India's premier fire safety equipment supplier. BIS certified, expert-backed, always
-          reliable. Protecting lives and properties since 1998.</p>
-        <div class="footer-socials">
-          <a href="#" class="social-btn">f</a>
-          <a href="#" class="social-btn">in</a>
-          <a href="#" class="social-btn">tw</a>
-          <a href="#" class="social-btn">yt</a>
+  <!-- ======= CONTACT ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="sec-head fade-up">
+        <h2 class="section-h2 center">Emergency &amp; General Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info fade-left">
+          <div class="icard">
+            <span class="ic"><i class="fa-solid fa-phone-volume"></i></span>
+            <div>
+              <h4>Emergency Hotline</h4>
+              <p>666 888 0000</p>
+            </div>
+          </div>
+          <div class="icard">
+            <span class="ic"><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <h4>Email Us</h4>
+              <p>info@fireboy.com</p>
+            </div>
+          </div>
+          <div class="icard">
+            <span class="ic"><i class="fa-solid fa-location-dot"></i></span>
+            <div>
+              <h4>Station Location</h4>
+              <p>123 Fire Station Rd, City, State 00000</p>
+            </div>
+          </div>
+          <div class="icard">
+            <span class="ic"><i class="fa-solid fa-clock"></i></span>
+            <div>
+              <h4>Operating Hours</h4>
+              <p>24 Hours / 7 Days a Week</p>
+            </div>
+          </div>
         </div>
+        <form class="contact-form fade-right" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label>Your Name</label>
+              <input type="text" placeholder="John Smith" required />
+            </div>
+            <div class="form-field">
+              <label>Your Email</label>
+              <input type="email" placeholder="john@example.com" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label>Service Needed</label>
+            <select>
+              <option value="">Select a service...</option>
+              <option>Fire Suppression System</option>
+              <option>Fire Alarm System</option>
+              <option>Hazmat Operations</option>
+              <option>Prevention Training</option>
+              <option>Emergency Response</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="Tell us about your fire safety needs..." required></textarea>
+          </div>
+          <button type="submit" class="btn-fire w-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
       </div>
-      <div class="footer-col">
-        <h4>Products</h4>
-        <ul class="footer-links">
-          <li><a href="#">Fire Extinguishers</a></li>
-          <li><a href="#">Hydrant Systems</a></li>
-          <li><a href="#">Fire Alarms</a></li>
-          <li><a href="#">Smoke Detectors</a></li>
-          <li><a href="#">Sprinkler Systems</a></li>
-          <li><a href="#">Safety Signage</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <ul class="footer-links">
-          <li><a href="#">Annual Maintenance</a></li>
-          <li><a href="#">Site Assessment</a></li>
-          <li><a href="#">Refilling Services</a></li>
-          <li><a href="#">Installation</a></li>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">NOC Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul class="footer-links">
-          <li><a href="#">About IGNIS</a></li>
-          <li><a href="#">Certifications</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Distributor Login</a></li>
-        </ul>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="#home" class="logo footer-logo">
+            <img src="./img/fire-logo.png" alt="Fireboy Logo">
+          </a>
+          <p>Fireboy Protection Services — your trusted partner in fire safety since 1995. NFPA certified, ISO 9001:2015 accredited, and committed to protecting what matters most.</p>
+          <div class="f-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="#categories">Fire Suppression</a></li>
+            <li><a href="#categories">Fire Alarm Systems</a></li>
+            <li><a href="#categories">Rescue Operations</a></li>
+            <li><a href="#categories">Medical Response</a></li>
+            <li><a href="#categories">Prevention Training</a></li>
+            <li><a href="#categories">Hazmat Operations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#categories">Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Emergency</h5>
+          <div class="f-emg">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div><small>Available 24/7</small><strong>666 888 0000</strong></div>
+          </div>
+          <p class="f-news-lbl">Newsletter</p>
+          <div class="f-news">
+            <input type="email" placeholder="Your email..." />
+            <button aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2025 IGNIS Fire Safety Solutions Pvt. Ltd. All rights reserved.</div>
-      <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Sitemap</a>
+      <div class="container f-bot-inner">
+        <p>&copy; 2025 Fireboy Protection Services. All Rights Reserved.</p>
+        <p>NFPA Certified &middot; ISO 9001:2015 &middot; Protecting since 1995</p>
       </div>
     </div>
   </footer>
 
-  <!-- SCROLL TOP -->
-  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <svg viewBox="0 0 24 24">
-      <path d="M7 14l5-5 5 5z" />
-    </svg>
-  </button>
+  <a href="#home" class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
 
-  <script src="./script.js"></script>
-  <script src="./quote.js"></script>
-  <!-- <link rel="stylesheet" href="./floating-widgets.css" />
-  <script src="./floating-widgets.js"></script> -->
+  <script src="script.js"></script>
+  <script src="./quote.js"> </script>
 </body>
 
 </html>

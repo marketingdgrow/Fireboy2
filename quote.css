@@ -212,9 +212,11 @@ footer .social-btn svg {
   z-index: 100000;
   width: 48px;
   height: 48px;
+  
   border: none;
   background: #ff6a00;
   color: #fff;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,6 +269,7 @@ footer .social-btn svg {
   width: 48px;
   height: 48px;
   border: none;
+   border-radius:10px;
   background: #ff6708;
   cursor: pointer;
   display: flex;
@@ -327,7 +330,9 @@ footer .social-btn svg {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
+  border-radius: 10px;
   opacity: 0;
+ 
   transform: translateX(100%);
   transition: opacity 0.28s ease, transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
     filter 0.15s ease;
@@ -358,6 +363,7 @@ footer .social-btn svg {
 .share-social-btn svg {
   width: 20px;
   height: 20px;
+ 
   position: relative;
   z-index: 1;
   flex-shrink: 0;
@@ -386,7 +392,7 @@ footer .social-btn svg {
   content: attr(data-label);
   position: absolute;
   right: 54px;
-  background: #111;
+
   color: #fff;
   font-family: "Oswald", sans-serif;
   font-size: 10px;
@@ -498,6 +504,7 @@ footer .social-btn svg {
 .contact-btn {
   width: 48px;
   height: 48px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -533,11 +540,11 @@ footer .social-btn svg {
 }
 
 /* Tooltip — appears to the RIGHT of the button */
-.contact-btn::after {
+/* .contact-btn::after {
   content: attr(data-label);
   position: absolute;
   left: 54px;
-  background: #111;
+  
   color: #fff;
   font-family: "Oswald", sans-serif;
   font-size: 10px;
@@ -551,7 +558,7 @@ footer .social-btn svg {
   transition: opacity 0.2s ease, transform 0.2s ease;
   clip-path: polygon(0% 0%, calc(100% - 5px) 0%, 100% 100%, 5px 100%);
   z-index: 9999;
-}
+} */
 
 .contact-btn:hover::after {
   opacity: 1;
