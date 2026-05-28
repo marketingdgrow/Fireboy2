@@ -4,355 +4,487 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Fire Boy Fire Safety</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./quote.css" />
+  <title>Contact — Fireboy Protection Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./contact.css">
-  <link rel="stylesheet" href="./premium-theme.css">
-  
- 
+  <link rel="stylesheet" href="./quote.css">
 </head>
 
 <body>
 
-  <!-- LOADER -->
-  <div class="page-loader" id="loader">
-    <div class="loader-logo"><img src="./img/fire-logo.png" alt="" style="height:60px;" /></div>
+<!-- ======= PAGE LOADER ======= -->
+<div class="page-loader" id="loader">
+  <div class="loader-inner">
+    <img src="./img/fire-logo.png" alt="Fireboy" class="loader-logo-img" />
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- ======= NAVBAR ======= -->
+<nav id="navbar">
+  <div class="nav-main">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="./img/fire-logo.png" alt="Fireboy Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="#quote" class="nav-cta">
+        <span class="cta-body"><strong>Get Quote</strong></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ======= HERO ======= -->
+<section class="contact-hero" id="home">
+  <div class="contact-hero-bg">
+    <img src="./img/bg/bg-1.jpg" alt="Contact Fireboy" />
+    <div class="contact-hero-overlay"></div>
+    <div class="contact-hero-grain"></div>
   </div>
 
-  <!-- CURSOR -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
-    <a href="./index.html"    onclick="closeMobileMenu()">Home</a>
-    <a href="./about.html"   onclick="closeMobileMenu()">About</a>
-    <a href="./products.html" onclick="closeMobileMenu()">Products</a>
-    <a href="./contact.html" onclick="closeMobileMenu()">Contact</a>
+  <!-- Animated fire embers -->
+  <div class="embers" aria-hidden="true">
+    <div class="ember"></div><div class="ember"></div><div class="ember"></div>
+    <div class="ember"></div><div class="ember"></div><div class="ember"></div>
+    <div class="ember"></div><div class="ember"></div>
   </div>
 
-  <!-- NAV -->
-  <nav class="navbar" id="navbar">
-    <a href="./index.html" class="logo">
-      <img class="logo-icon" src="./img/fire-logo.png" alt="Fire Boy" />
-    </a>
-    <ul class="nav-links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./products.html">Products</a></li>
-      <li><a href="./contact.html" class="active">Contact</a></li>
-    </ul>
-    <a href="#contact-form" class="nav-cta">Get Quote</a>
-    <button class="nav-hamburger" id="hamburger" onclick="openMobileMenu()">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- ══ HERO ══ -->
-  <section class="hero">
-    <div class="hero-bg-img"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-grid"></div>
-
-    <div class="hero-content reveal">
+  <div class="contact-hero-body">
+    <div class="contact-hero-left">
       
-      <h1 class="hero-title">
-        LET'S <span class="accent">TALK</span><br />
-        <span class="outline">SAFETY</span>
+      <h1 class="contact-hero-h1">
+        <span class="line ch-l1">LET'S TALK</span>
+        <span class="line ch-l2"><span class="accent-orange">SAFETY</span></span>
+      
       </h1>
-      <p class="hero-sub">
-        Got a fire safety challenge? Need a quote, site assessment, or expert advice?
-        Our certified team is ready to protect what matters most.
-      </p>
-      <div class="hero-actions">
-        <a href="#contact-form" class="btn-primary">Send Enquiry →</a>
+      <p class="contact-hero-p">Got a fire safety challenge? Need a quote, site assessment, or expert advice? Our certified team is ready to protect what matters most — respond within 24 hours.</p>
+      <div class="contact-hero-actions">
+        <a href="#contact-form" class="btn-fire">Send Enquiry <i class="fa-solid fa-arrow-right"></i></a>
         <a href="./products.html" class="btn-ghost">View Products</a>
       </div>
     </div>
-  </section>
 
-  <!-- TICKER -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker-inner">
-      <div class="ticker-item">Free Site Assessment<div class="ticker-dot"></div></div>
-      <div class="ticker-item">24hr Response Time<div class="ticker-dot"></div></div>
-      <div class="ticker-item">Pan India Service<div class="ticker-dot"></div></div>
-      <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div></div>
-      <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div></div>
-      <div class="ticker-item">Free Site Assessment<div class="ticker-dot"></div></div>
-      <div class="ticker-item">24hr Response Time<div class="ticker-dot"></div></div>
-      <div class="ticker-item">Pan India Service<div class="ticker-dot"></div></div>
-      <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div></div>
-      <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div></div>
+    <div class="contact-hero-right">
+      <div class="hero-info-stack">
+        
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- ══ CONTACT SECTION ══ -->
-  <section class="contact-section" id="contact-form">
-
-    <div class="cs-header reveal">
-      <h2 class="cs-title">REACH OUT <span>TO US</span></h2>
-      <p class="cs-sub">Fill in the form or use our direct contact methods. A certified fire safety specialist will respond promptly.</p>
-    </div>
-
-    <!-- FORM -->
-    <div class="form-wrapper">
-      <div class="form-col" id="formCol">
-        <div class="form-col-header">
-          <h3>SEND A MESSAGE</h3>
-          <p>Tell us about your requirement and we'll get back within 24 hours.</p>
-        </div>
-        <form id="contactForm" onsubmit="handleSubmit(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label>First Name</label>
-              <input type="text" placeholder="Arjun" required />
-            </div>
-            <div class="form-group">
-              <label>Last Name</label>
-              <input type="text" placeholder="Mehta" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Email Address</label>
-            <input type="email" placeholder="arjun@company.com" required />
-          </div>
-          <div class="form-row">
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="tel" placeholder="+91 98765 43210" />
-            </div>
-            <div class="form-group">
-              <label>Company / Organisation</label>
-              <input type="text" placeholder="Infosys Ltd." />
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Type of Enquiry</label>
-            <div class="select-wrap">
-              <select>
-                <option value="">— Select a category —</option>
-                <option>Fire Extinguishers</option>
-                <option>Fire Hydrant Systems</option>
-                <option>Fire Detection &amp; Alarms</option>
-                <option>Suppression Systems</option>
-                <option>AMC / Maintenance</option>
-                <option>Site Assessment</option>
-                <option>Bulk / Institutional Order</option>
-                <option>Other</option>
-              </select>
-              <span class="select-arrow">↓</span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label>Message</label>
-            <textarea placeholder="Describe your requirement — location, scale, timeline, any specific products…"></textarea>
-          </div>
-          <button type="submit" class="form-submit">
-            <span>Send Message</span>
-            <span class="submit-arrow">→</span>
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <!-- INFO CARDS -->
-    <div class="info-col">
-
-      <div class="info-card" data-num="01">
-        <div class="info-card-top">
-          <div class="info-icon">
-            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
-          </div>
-          <div class="info-num">01</div>
-        </div>
-        <div class="info-label">Call Us</div>
-        <div class="info-title">Sales &amp; Support Hotline</div>
-        <div class="info-val">
-          <a href="tel:+919876543210">+91 98765 43210</a>
-          <a href="tel:+914422334455">+91 44 2233 4455</a>
-        </div>
-        <div class="info-card-arrow">→ Call Now</div>
-      </div>
-
-      <div class="info-card" data-num="02">
-        <div class="info-card-top">
-          <div class="info-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          </div>
-          <div class="info-num">02</div>
-        </div>
-        <div class="info-label">Email Us</div>
-        <div class="info-title">Drop Us a Line</div>
-        <div class="info-val">
-          <a href="mailto:info@fireboy.in">info@fireboy.in</a>
-          <a href="mailto:sales@fireboy.in">sales@fireboy.in</a>
-        </div>
-        <div class="info-card-arrow">→ Write to Us</div>
-      </div>
-
-      <div class="info-card info-card--map" data-num="03">
-        <div class="info-card-top">
-          <div class="info-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          </div>
-          <div class="info-num">03</div>
-        </div>
-        <div class="info-label">Visit Us</div>
-        <div class="info-title">Our Office</div>
-        <div class="info-val">
-          <span>No. 14, GST Road, Chromepet<br />Chennai — 600 044, Tamil Nadu</span>
-        </div>
-        <div class="map-dots"></div>
-        <div class="info-card-arrow">→ Get Directions</div>
-      </div>
-
-      <div class="info-card info-card--hours" data-num="04">
-        <div class="info-card-top">
-          <div class="info-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 5v5.25l4.5 2.67-.75 1.23L11 13V7h1.5z"/></svg>
-          </div>
-          <div class="info-num">04</div>
-        </div>
-        <div class="info-label">Working Hours</div>
-        <div class="info-title">We're Here For You</div>
-        <div class="hours-grid">
-          <div class="hour-row"><span class="hour-day">Mon – Fri</span><span class="hour-time">9:00 AM – 6:30 PM</span></div>
-          <div class="hour-row"><span class="hour-day">Saturday</span><span class="hour-time">9:00 AM – 2:00 PM</span></div>
-          <div class="hour-row"><span class="hour-day">Sunday</span><span class="hour-badge">Closed</span></div>
-          <div class="hour-row"><span class="hour-day">Emergency</span><span class="hour-time emrg">24 / 7</span></div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ══ STATS STRIP ══ -->
-  <div class="stats-strip">
-    <div class="stat-item"><span class="stat-num">25K+</span><span class="stat-label">Products Delivered</span></div>
-    <div class="stat-divider"></div>
-    <div class="stat-item"><span class="stat-num">98%</span><span class="stat-label">Client Satisfaction</span></div>
-    <div class="stat-divider"></div>
-    <div class="stat-item"><span class="stat-num">24hr</span><span class="stat-label">Response Guarantee</span></div>
-    <div class="stat-divider"></div>
-    <div class="stat-item"><span class="stat-num">20+</span><span class="stat-label">Years Experience</span></div>
+<!-- ======= TICKER ======= -->
+<div class="ticker-wrap">
+  <div class="ticker-track">
+    <div class="ticker-item">Free Site Assessment <span class="tdot"></span></div>
+    <div class="ticker-item">24hr Response Time <span class="tdot"></span></div>
+    <div class="ticker-item">Pan India Service <span class="tdot"></span></div>
+    <div class="ticker-item">BIS Certified Products <span class="tdot"></span></div>
+    <div class="ticker-item">Expert Consultation <span class="tdot"></span></div>
+    <div class="ticker-item">NOC Support <span class="tdot"></span></div>
+    <div class="ticker-item">AMC Planning <span class="tdot"></span></div>
+    <div class="ticker-item">NFPA Certified <span class="tdot"></span></div>
+    <!-- duplicate -->
+    <div class="ticker-item">Free Site Assessment <span class="tdot"></span></div>
+    <div class="ticker-item">24hr Response Time <span class="tdot"></span></div>
+    <div class="ticker-item">Pan India Service <span class="tdot"></span></div>
+    <div class="ticker-item">BIS Certified Products <span class="tdot"></span></div>
+    <div class="ticker-item">Expert Consultation <span class="tdot"></span></div>
+    <div class="ticker-item">NOC Support <span class="tdot"></span></div>
+    <div class="ticker-item">AMC Planning <span class="tdot"></span></div>
+    <div class="ticker-item">NFPA Certified <span class="tdot"></span></div>
   </div>
+</div>
 
-  <!-- ══ FOOTER (exact about page style) ══ -->
-  <footer>
-    <div class="footer-main">
-      <div class="footer-brand">
-        <a href="./index.html" class="logo">
-          <img class="logo-icon" src="./img/fire-logo.png" alt="Fire Boy" />
+<!-- ======= CONTACT SECTION ======= -->
+<section class="contact-section" id="contact-form">
+  <div class="container">
+    <div class="contact-header fade-up">
+      <div>
+        <h2 class="section-h2">REACH OUT <span class="cat-title-accent">TO US</span></h2>
+      </div>
+      <p class="section-sub">Fill in the form or use our direct contact methods. A certified fire safety specialist will respond promptly.</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- ── FORM COLUMN ── -->
+      <div class="contact-form-col fade-up" style="--d:0ms">
+        <div class="form-panel">
+          <div class="form-panel-header">
+            <div class="fp-icon"><i class="fa-solid fa-paper-plane"></i></div>
+            <div>
+              <h3>SEND A MESSAGE</h3>
+              <p>Tell us about your requirement and we'll get back within 24 hours.</p>
+            </div>
+          </div>
+
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate>
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Arjun" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Mehta" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="arjun@company.com" required />
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+91 98765 43210" />
+              </div>
+              <div class="form-group">
+                <label>Company / Organisation</label>
+                <input type="text" placeholder="Infosys Ltd." />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Type of Enquiry</label>
+              <div class="select-wrap">
+                <select>
+                  <option value="">— Select a category —</option>
+                  <option>Fire Extinguishers</option>
+                  <option>Fire Hydrant Systems</option>
+                  <option>Fire Detection &amp; Alarms</option>
+                  <option>Suppression Systems</option>
+                  <option>AMC / Maintenance</option>
+                  <option>Site Assessment</option>
+                  <option>Bulk / Institutional Order</option>
+                  <option>Other</option>
+                </select>
+                <span class="select-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Describe your requirement — location, scale, timeline, any specific products…" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="btn-fire form-submit-btn">
+              Send Message <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- ── INFO COLUMN ── -->
+      <div class="contact-info-col fade-up" style="--d:150ms">
+
+        <div class="info-card">
+          <div class="ic-top">
+            <div class="ic-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="ic-label">Call Us
+              <h4 class="ic-title">Sales &amp; Support Hotline</h4>
+            </div>
+          
+            <span class="ic-num">01</span>
+          </div>
+          
+          <div class="ic-vals">
+            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="tel:+914422334455">+91 44 2233 4455</a>
+          </div>
+          <a href="tel:+919876543210" class="ic-cta">Call Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="info-card">
+          <div class="ic-top">
+            <div class="ic-icon"><i class="fa-solid fa-envelope"></i></div>
+             <div class="ic-label">Email Us <h4 class="ic-title">Drop Us a Line</h4></div>
+            <span class="ic-num">02</span>
+          </div>
+         
+          
+          <div class="ic-vals">
+            <a href="mailto:info@fireboy.in">info@fireboy.in</a>
+            <a href="mailto:sales@fireboy.in">sales@fireboy.in</a>
+          </div>
+          <a href="mailto:info@fireboy.in" class="ic-cta">Write to Us <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+        <div class="info-card">
+          <div class="ic-top">
+            <div class="ic-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="ic-label">Visit Us <h4 class="ic-title">Our Office</h4></div>
+            <span class="ic-num">03</span>
+          </div>
+          
+          
+          <div class="ic-vals">
+            <span>No. 14, GST Road, Chromepet<br />Chennai — 600 044, Tamil Nadu</span>
+          </div>
+          <a href="#" class="ic-cta">Get Directions <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="ic-map-dots"></div>
+        </div>
+
+        <div class="info-card info-card--hours">
+          <div class="ic-top">
+            <div class="ic-icon"><i class="fa-solid fa-clock"></i></div>
+              <div class="ic-label">Working Hours <h4 class="ic-title">We're Here For You</h4></div>
+            <span class="ic-num">04</span>
+          </div>
+        
+          
+          <div class="hours-grid">
+            <div class="hour-row">
+              <span class="hour-day">Mon – Fri</span>
+              <span class="hour-time">9:00 AM – 6:30 PM</span>
+            </div>
+            <div class="hour-row">
+              <span class="hour-day">Saturday</span>
+              <span class="hour-time">9:00 AM – 2:00 PM</span>
+            </div>
+            <div class="hour-row">
+              <span class="hour-day">Sunday</span>
+              <span class="hour-badge">Closed</span>
+            </div>
+            <div class="hour-row">
+              <span class="hour-day">Emergency</span>
+              <span class="hour-time emrg">24 / 7</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= STATS SECTION ======= -->
+<section class="stats-contact">
+  <div class="stats-bg-img">
+    <img src="./img/bg/Burning Forest Wallpaper, Wildfire Background, Nature Fire 4k Wallpaper (1).jpg" alt="fire bg" />
+    <div class="stats-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-up" style="--d:0ms">
+        <div class="stat-icon"><i class="fa-solid fa-box-open"></i></div>
+        <div class="stat-num" data-target="25000" data-suffix="K+">0</div>
+        <div class="stat-lbl">Products Delivered</div>
+      </div>
+      <div class="stat-item fade-up" style="--d:150ms">
+        <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+        <div class="stat-num" data-target="98" data-suffix="%">0</div>
+        <div class="stat-lbl">Client Satisfaction</div>
+      </div>
+      <div class="stat-item fade-up" style="--d:300ms">
+        <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="stat-num" data-target="24" data-suffix="hr">0</div>
+        <div class="stat-lbl">Response Guarantee</div>
+      </div>
+      <div class="stat-item fade-up" style="--d:450ms">
+        <div class="stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="stat-num" data-target="20" data-suffix="+">0</div>
+        <div class="stat-lbl">Years Experience</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= MAP SECTION ======= -->
+<section class="map-section">
+  <div class="container">
+    <div class="map-header fade-up">
+      <h2 class="section-h2 center">FIND <span class="cat-title-accent">US</span></h2>
+      <p class="why-sub">No. 14, GST Road, Chromepet, Chennai — 600 044, Tamil Nadu, India</p>
+    </div>
+    <div class="map-embed fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.0!2d80.14!3d12.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU3JzAwLjAiTiA4MMKwMDgnMjQuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+        width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" title="Fireboy office location"></iframe>
+      <div class="map-pin-overlay">
+        <div class="map-pin-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Fireboy Protection Services</strong>
+            <span>No. 14, GST Road, Chromepet<br>Chennai — 600 044</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= CTA BAND ======= -->
+<section class="cta-band">
+  <div class="cta-bg">
+    <img src="./img/Double-Headed-Hydrant-Valve_pro.webp" alt="" />
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="cta-embers" aria-hidden="true">
+    <div class="c-ember"></div><div class="c-ember"></div><div class="c-ember"></div>
+    <div class="c-ember"></div><div class="c-ember"></div><div class="c-ember"></div>
+  </div>
+  <div class="cta-body fade-up">
+    <span class="eyebrow-tag center light">Emergency? We're Available 24/7</span>
+    <h2>CALL US<br><em>RIGHT NOW</em></h2>
+    <p>Don't wait — speak directly to a fire safety specialist for immediate guidance.</p>
+    <div class="cta-actions">
+      <a href="tel:6668880000" class="btn-fire"><i class="fa-solid fa-phone"></i> 666 888 0000</a>
+      <a href="mailto:info@fireboy.in" class="btn-ghost-light">Email Us Instead</a>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="./index.html" class="logo footer-logo">
+          <img src="./img/fire-logo.png" alt="Fireboy Logo">
         </a>
-        <p class="footer-desc">India's premier fire safety equipment supplier. BIS certified, expert-backed, always reliable. Protecting lives and properties since 1998.</p>
-        <div class="footer-socials">
-          <a href="#" class="social-btn">f</a>
-          <a href="#" class="social-btn">in</a>
-          <a href="#" class="social-btn">tw</a>
-          <a href="#" class="social-btn">yt</a>
+        <p>Fireboy Protection Services — your trusted partner in fire safety since 1995. NFPA certified, ISO 9001:2015 accredited, and committed to protecting what matters most.</p>
+        <div class="f-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
       </div>
       <div class="footer-col">
-        <h4>Products</h4>
-        <ul class="footer-links">
-          <li><a href="#">Fire Extinguishers</a></li>
-          <li><a href="#">Hydrant Systems</a></li>
-          <li><a href="#">Fire Alarms</a></li>
-          <li><a href="#">Smoke Detectors</a></li>
-          <li><a href="#">Sprinkler Systems</a></li>
-          <li><a href="#">Safety Signage</a></li>
+        <h5>Our Services</h5>
+        <ul>
+          <li><a href="./index.html#categories">Fire Suppression</a></li>
+          <li><a href="./index.html#categories">Fire Alarm Systems</a></li>
+          <li><a href="./index.html#categories">Rescue Operations</a></li>
+          <li><a href="./index.html#categories">Medical Response</a></li>
+          <li><a href="./index.html#categories">Prevention Training</a></li>
+          <li><a href="./index.html#categories">Hazmat Operations</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Services</h4>
-        <ul class="footer-links">
-          <li><a href="#">Annual Maintenance</a></li>
-          <li><a href="#">Site Assessment</a></li>
-          <li><a href="#">Refilling Services</a></li>
-          <li><a href="#">Installation</a></li>
-          <li><a href="#">Training</a></li>
-          <li><a href="#">NOC Support</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul class="footer-links">
-          <li><a href="./about.html">About Fire Boy</a></li>
-          <li><a href="#">Certifications</a></li>
-          <li><a href="#">Careers</a></li>
-          <li><a href="#">Blog</a></li>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./index.html#categories">Services</a></li>
+          <li><a href="./index.html#why-us">Why Choose Us</a></li>
+          <li><a href="./index.html#process">Our Process</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <li><a href="#">Distributor Login</a></li>
         </ul>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-copy">© 2026 <span>Fire Boy</span> Fire Safety Solutions Pvt. Ltd. All rights reserved.</div>
-      <div class="footer-legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Sitemap</a>
+      <div class="footer-col">
+        <h5>Emergency</h5>
+        <div class="f-emg">
+          <span><i class="fa-solid fa-phone"></i></span>
+          <div><small>Available 24/7</small><strong>666 888 0000</strong></div>
+        </div>
+        <p class="f-news-lbl">Newsletter</p>
+        <div class="f-news">
+          <input type="email" placeholder="Your email..." />
+          <button aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+  <div class="footer-bottom">
+    <div class="container f-bot-inner">
+      <p>&copy; 2025 Fireboy Protection Services. All Rights Reserved.</p>
+      <p>NFPA Certified &middot; ISO 9001:2015 &middot; Protecting since 1995</p>
+    </div>
+  </div>
+</footer>
 
-  <!-- TOAST -->
-  <div class="toast-msg" id="toastMsg">✓ Message sent! We'll respond within 24 hours.</div>
+<a href="#home" class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
 
-  <script>
-    // PAGE LOADER
-    window.addEventListener('load', () => {
-      setTimeout(() => document.getElementById('loader').classList.add('hidden'), 700);
+<!-- TOAST -->
+<div class="toast-msg" id="toastMsg"><i class="fa-solid fa-circle-check"></i> Message sent! We'll respond within 24 hours.</div>
+
+
+
+<script>
+  // PAGE LOADER
+  window.addEventListener('load', () => {
+    setTimeout(() => document.getElementById('loader').classList.add('hidden'), 900);
+  });
+
+  // NAVBAR
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('scrolled', window.scrollY > 60);
+    document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 300);
+  });
+
+  // HAMBURGER
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('open');
+  });
+
+  // SCROLL REVEAL
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const delay = e.target.style.getPropertyValue('--d') || '0ms';
+        setTimeout(() => e.target.classList.add('in'), parseInt(delay));
+      }
     });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up, .fade-left, .fade-right').forEach(el => observer.observe(el));
 
-    // CURSOR
-    const cursor = document.getElementById('cursor');
-    const trail  = document.getElementById('cursorTrail');
-    let tx=0, ty=0, rx=0, ry=0;
-    document.addEventListener('mousemove', e => {
-      tx = e.clientX; ty = e.clientY;
-      cursor.style.left = tx + 'px'; cursor.style.top = ty + 'px';
-    });
-    setInterval(() => {
-      rx += (tx-rx)*.14; ry += (ty-ry)*.14;
-      trail.style.left = rx + 'px'; trail.style.top = ry + 'px';
+  // COUNTER ANIMATION
+  function animateCounter(el) {
+    const target = +el.getAttribute('data-target');
+    const suffix = el.getAttribute('data-suffix') || '';
+    const isLarge = target > 1000;
+    const displayTarget = isLarge ? Math.round(target/1000) : target;
+    const displaySuffix = isLarge ? 'K+' : suffix;
+    const duration = 1800;
+    const step = displayTarget / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= displayTarget) {
+        el.textContent = displayTarget + displaySuffix;
+        clearInterval(timer);
+      } else {
+        el.textContent = Math.floor(current) + displaySuffix;
+      }
     }, 16);
-    document.addEventListener('mousedown', () => cursor.style.transform = 'scale(2.2)');
-    document.addEventListener('mouseup',   () => cursor.style.transform = 'scale(1)');
+  }
 
-    // NAV SCROLL
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  const statObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { animateCounter(e.target); statObs.unobserve(e.target); }
     });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat-num[data-target]').forEach(el => statObs.observe(el));
 
-    // MOBILE MENU
-    function openMobileMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
-    function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
-
-    // FORM SUBMIT
-    function handleSubmit(e) {
-      e.preventDefault();
-      const toast = document.getElementById('toastMsg');
-      toast.classList.add('show');
-      setTimeout(() => toast.classList.remove('show'), 3500);
-      e.target.reset();
-    }
-
-    // REVEAL ON SCROLL
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(el => {
-        if (el.isIntersecting) { el.target.classList.add('visible'); io.unobserve(el.target); }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal, .info-card, .stat-item, .form-col').forEach(el => io.observe(el));
-  </script>
-
-  <link rel="stylesheet" href="./floating-widgets.css" />
-  <script src="./floating-widgets.js"></script>
-  <script src="./quote.js"></script>
+  // FORM SUBMIT
+  function handleSubmit(e) {
+    e.preventDefault();
+    const toast = document.getElementById('toastMsg');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3500);
+    e.target.reset();
+  }
+</script>
+<script src="./quote.js"></script>
 
 </body>
 </html>
