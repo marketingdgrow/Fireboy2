@@ -3,29 +3,41 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title id="page-title">Product - Fire Boy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <title id="page-title">Product — FIREBOY Fire Protection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./product-detail.css" />
   <link rel="stylesheet" href="./quote.css" />
-  <link rel="stylesheet" href="./premium-theme.css" />
-  <!-- <link rel="stylesheet" href="./theme.css" /> -->
 </head>
 <body class="page-product-detail">
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
-  <div class="scroll-bar" id="scrollBar"></div>
 
-  <nav>
-    <a href="./index.html" class="logo"><img src="./img/fire-logo.png" alt="Fire Boy" /></a>
-    <ul class="nav-links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./products.html" class="active">Products</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-    <a href="#quote" class="nav-cta">Get Quote</a>
-  </nav>
+ 
 
+  <!-- ======= NAVBAR ======= -->
+  <nav id="navbar">
+  <div class="nav-main">
+    <div class="nav-inner">
+      <a href="./index.html" class="logo">
+        <img src="./img/fire-logo.png" alt="Fireboy Logo">
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./products.html" class="active">Products</a></li>
+        <li><a href="./contact.html" >Contact</a></li>
+      </ul>
+      <a href="#quote" class="nav-cta">
+        <span class="cta-body"><strong>Get Quote</strong></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+  <!-- ======= BREADCRUMB ======= -->
   <div class="breadcrumb" id="breadcrumb">
     <a href="./index.html">Home</a> /
     <a href="./products.html">Products</a> /
@@ -33,21 +45,30 @@
     <span id="bc-name">Loading...</span>
   </div>
 
+  <!-- ======= LOADER ======= -->
   <div class="loader" id="loader"><div class="loader-ring"></div></div>
 
+  <!-- ======= NOT FOUND ======= -->
   <div class="not-found" id="notFound">
     <h2>Product <span>Not Found</span></h2>
     <p>The product you're looking for doesn't exist or has been removed.</p>
     <a href="./products.html">Back to Products</a>
   </div>
 
+  <!-- ======= MAIN CONTENT ======= -->
   <main id="main-content" hidden>
+
     <section class="product-hero">
+
+      <!-- Image Column -->
       <div class="img-col reveal">
-        <div class="img-main" id="img-main"><img id="prod-img" src="" alt="" /></div>
+        <div class="img-main" id="img-main">
+          <img id="prod-img" src="" alt="" />
+        </div>
         <div class="badge-strip" id="badge-strip"></div>
       </div>
 
+      <!-- Info Column -->
       <div class="info-col">
         <div class="prod-cat reveal" id="prod-cat"></div>
         <h1 class="prod-name reveal" id="prod-name"></h1>
@@ -62,8 +83,12 @@
         </div>
 
         <div class="action-btns reveal">
-          <a class="btn-primary" href="#quote">Enquire Now</a>
-          <a href="./products.html" class="btn-secondary">Back to Products</a>
+          <a class="btn-primary"  href="#quote">
+            <i class="fa-solid fa-envelope"></i> Enquire Now
+          </a>
+          <a href="./products.html" class="btn-secondary">
+            <i class="fa-solid fa-arrow-left"></i> Back to Products
+          </a>
         </div>
 
         <div class="spec-grid reveal" id="spec-grid"></div>
@@ -74,38 +99,86 @@
             <button class="tab-btn" type="button" onclick="switchTab('specs', this)">Full Specs</button>
             <button class="tab-btn" type="button" onclick="switchTab('certs', this)">Certifications</button>
           </div>
-          <div class="tab-content active" id="tab-features"><ul class="feature-list" id="feature-list"></ul></div>
-          <div class="tab-content" id="tab-specs"><table class="spec-table" id="spec-table"></table></div>
+          <div class="tab-content active" id="tab-features">
+            <ul class="feature-list" id="feature-list"></ul>
+          </div>
+          <div class="tab-content" id="tab-specs">
+            <table class="spec-table" id="spec-table"></table>
+          </div>
           <div class="tab-content" id="tab-certs">
             <div class="cert-row" id="cert-row"></div>
             <p id="cert-note" class="cert-note"></p>
           </div>
         </div>
       </div>
+
     </section>
 
+    <!-- Related Products -->
     <section class="detail-section">
       <div class="section-label">You May Also Need</div>
       <h2 class="section-heading reveal">RELATED<br />PRODUCTS</h2>
       <div class="related-grid reveal" id="related-grid"></div>
     </section>
+
   </main>
 
+  <!-- ======= FOOTER ======= -->
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <a href="./index.html" class="logo"><img src="./img/fire-logo.png" alt="Fire Boy" /></a>
-        <p class="footer-desc">India's premier fire safety equipment supplier. BIS certified, expert-backed, always reliable. Protecting lives and properties since 1998.</p>
-        <div class="footer-socials"><a href="#" class="social-btn">f</a><a href="#" class="social-btn">in</a><a href="#" class="social-btn">tw</a><a href="#" class="social-btn">yt</a></div>
+        <a href="./index.html" class="logo">
+          <img src="./img/fire-logo.png" alt="Fireboy Logo" style="width:50px;height:60px;object-fit:contain;" />
+        </a>
+        <p class="footer-desc">Fireboy Protection Services — your trusted partner in fire safety since 1995. NFPA certified, ISO 9001:2015 accredited, and committed to protecting what matters most.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-btn" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
       </div>
-      <div class="footer-col"><h4>Products</h4><ul class="footer-links"><li><a href="./products.html?category=extinguisher">Fire Extinguishers</a></li><li><a href="./products.html?category=hydrant">Hydrant Systems</a></li><li><a href="./products.html?category=detection">Fire Alarms</a></li><li><a href="./products.html?category=detection">Smoke Detectors</a></li><li><a href="./products.html?category=suppression">Sprinkler Systems</a></li></ul></div>
-      <div class="footer-col"><h4>Services</h4><ul class="footer-links"><li><a href="#">Annual Maintenance</a></li><li><a href="#">Site Assessment</a></li><li><a href="#">Refilling Services</a></li><li><a href="#">Installation</a></li><li><a href="#">Training</a></li></ul></div>
-      <div class="footer-col"><h4>Contact</h4><ul class="footer-links"><li><a href="#">+91 98765 43210</a></li><li><a href="#">info@fireboy.in</a></li><li><a href="./about.html">About Fire Boy</a></li><li><a href="#">Certifications</a></li></ul></div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="./products.html?category=extinguisher">Fire Extinguishers</a></li>
+          <li><a href="./products.html?category=hydrant">Hydrant Systems</a></li>
+          <li><a href="./products.html?category=detection">Fire Alarms</a></li>
+          <li><a href="./products.html?category=detection">Smoke Detectors</a></li>
+          <li><a href="./products.html?category=suppression">Sprinkler Systems</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#">Annual Maintenance</a></li>
+          <li><a href="#">Site Assessment</a></li>
+          <li><a href="#">Refilling Services</a></li>
+          <li><a href="#">Installation</a></li>
+          <li><a href="#">Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="tel:6668880000">666 888 0000</a></li>
+          <li><a href="mailto:info@fireboy.in">info@fireboy.in</a></li>
+          <li><a href="./about.html">About Fireboy</a></li>
+          <li><a href="#">Certifications</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-bottom"><div class="footer-copy">© 2026 Fire Boy Fire Safety Solutions. All rights reserved.</div><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2025 Fireboy Protection Services. All Rights Reserved.</div>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
   </footer>
 
   <script src="./product-detail.js"></script>
   <script src="./quote.js"></script>
+
 </body>
 </html>

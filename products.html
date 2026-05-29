@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Products - Fire Boy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="./product.css" />
-    <link rel="stylesheet" href="./quote.css" />
- 
-  </head>
-  <body class="page-products">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — FIREBOY Fire Protection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./product.css" />
+  <link rel="stylesheet" href="./quote.css">
+</head>
+<body class="page-products">
 
-
-
-    
-<!-- ======= PAGE LOADER ======= -->
-<!-- <div class="page-loader" id="loader">
-  <div class="loader-inner">
-    <img src="./img/fire-logo.png" alt="Fireboy" class="loader-logo-img" />
-    <div class="loader-bar"><div class="loader-fill"></div></div>
-  </div>
-</div> -->
-
-<!-- ======= NAVBAR ======= -->
+  <!-- ======= NAVBAR ======= -->
 <nav id="navbar">
   <div class="nav-main">
     <div class="nav-inner">
@@ -46,138 +35,180 @@
   </div>
 </nav>
 
-
-    <!-- ══ HERO ══ -->
-    <section class="hero">
-      <div class="hero-bg-img"></div>
+  <!-- ======= HERO ======= -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="./img/installation.jpg" alt="Fire safety products" />
       <div class="hero-overlay"></div>
-      <div class="hero-grid"></div>
-      <div class="hero-content">
-        
-        <h1 class="hero-title">
-          OUR <span class="accent">FIRE</span><br />
-          <span class="outline">ARSENAL</span>
+      <div class="hero-grain"></div>
+    </div>
+    <div class="hero-body">
+      <div>
+        <h1 class="hero-h1">
+          <span class="line line-1">Our Fire</span>
+          <span class="line line-2">Safety</span>
+          <span class="line line-3">Arsenal</span>
         </h1>
-        <p class="hero-sub">From extinguishers to hydrant systems — every certified product your site needs, backed by 20+ years of fire safety expertise.</p>
-        
       </div>
-    </section>
-
-    <!-- TICKER -->
-    <div class="ticker" aria-hidden="true">
-      <div class="ticker-inner">
-        <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div></div>
-        <div class="ticker-item">Pan India Delivery<div class="ticker-dot"></div></div>
-        <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div></div>
-        <div class="ticker-item">AMC Support<div class="ticker-dot"></div></div>
-        <div class="ticker-item">Site Assessment<div class="ticker-dot"></div></div>
-        <div class="ticker-item">25K+ Products Delivered<div class="ticker-dot"></div></div>
-        <div class="ticker-item">BIS Certified Products<div class="ticker-dot"></div></div>
-        <div class="ticker-item">Pan India Delivery<div class="ticker-dot"></div></div>
-        <div class="ticker-item">Expert Consultation<div class="ticker-dot"></div></div>
-        <div class="ticker-item">AMC Support<div class="ticker-dot"></div></div>
-        <div class="ticker-item">Site Assessment<div class="ticker-dot"></div></div>
-        <div class="ticker-item">25K+ Products Delivered<div class="ticker-dot"></div></div>
+      <div>
+        <p class="hero-p">From extinguishers to hydrant systems — every certified product your site needs, backed by 20+ years of fire safety expertise.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-fire">Browse Products <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="tel:6668880000" class="btn-ghost"><i class="fa-solid fa-phone"></i> Emergency Call</a>
+        </div>
       </div>
     </div>
+    <div class="hero-stat-bar">
+      <div class="hstat"><span class="hstat-n">BIS</span><span class="hstat-l">Certified Products</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">PAN</span><span class="hstat-l">India Delivery</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">AMC</span><span class="hstat-l">Support Available</span></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><span class="hstat-n">25K+</span><span class="hstat-l">Products Delivered</span></div>
+    </div>
+    <div class="hero-cut"></div>
+  </section>
 
-    <!-- ══ PRODUCTS CATALOG ══ -->
-    <section class="products-catalog-section" id="products">
-      <div class="container">
-        <div class="catalog-header">
-          <div>
-            <h2 class="section-title">FEATURED PRODUCTS</h2>
+  <!-- ======= PRODUCTS CATALOG ======= -->
+  <section class="products-catalog-section" id="products">
+    <div class="container">
+
+      <div class="catalog-header fade-up">
+        <div>
+          <h2 class="section-h2">FEATURED <span class="cat-title-accent">PRODUCTS</span></h2>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="searchInput" placeholder="Search fire safety products..." onkeyup="searchProducts()" />
+          <button class="search-btn" onclick="searchProducts()">Search</button>
+        </div>
+      </div>
+
+      <div class="filter-bar fade-up">
+        <button class="filter-btn active" data-filter="all"         onclick="filterProducts('all', this)">All Products</button>
+        <button class="filter-btn" data-filter="head"               onclick="filterProducts('head', this)">Head Protection</button>
+        <button class="filter-btn" data-filter="eye"                onclick="filterProducts('eye', this)">Eye Protection</button>
+        <button class="filter-btn" data-filter="face"               onclick="filterProducts('face', this)">Face Protection</button>
+        <button class="filter-btn" data-filter="mask"               onclick="filterProducts('mask', this)">Face Mask</button>
+        <button class="filter-btn" data-filter="respirator"         onclick="filterProducts('respirator', this)">Reusable Respirators</button>
+        <button class="filter-btn" data-filter="extinguisher"       onclick="filterProducts('extinguisher', this)">Extinguishers</button>
+        <button class="filter-btn" data-filter="hydrant"            onclick="filterProducts('hydrant', this)">Hydrant Systems</button>
+        <button class="filter-btn" data-filter="detection"          onclick="filterProducts('detection', this)">Detection</button>
+        <button class="filter-btn" data-filter="suppression"        onclick="filterProducts('suppression', this)">Suppression</button>
+        <button class="filter-btn" data-filter="ppe"                onclick="filterProducts('ppe', this)">PPE &amp; Safety</button>
+        <button class="filter-btn" data-filter="signage"            onclick="filterProducts('signage', this)">Signage</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- ======= BRANDS TICKER ======= -->
+  <section class="brands-section">
+    <div class="brands-ticker">
+      <div class="brands-track">
+        <div class="brand-chip"><i class="fa-solid fa-shield-halved"></i> NFPA Certified</div>
+        <div class="brand-chip"><i class="fa-solid fa-certificate"></i> ISO 9001:2015</div>
+        <div class="brand-chip"><i class="fa-solid fa-fire-extinguisher"></i> CFBT Trained</div>
+        <div class="brand-chip"><i class="fa-solid fa-star"></i> NAFD Member</div>
+        <div class="brand-chip"><i class="fa-solid fa-building-shield"></i> IFSEC Partner</div>
+        <div class="brand-chip"><i class="fa-solid fa-medal"></i> NSC Accredited</div>
+        <div class="brand-chip"><i class="fa-solid fa-flask"></i> NIST Compliant</div>
+        <div class="brand-chip"><i class="fa-solid fa-globe"></i> CTIF Member</div>
+        <div class="brand-chip"><i class="fa-solid fa-shield-halved"></i> NFPA Certified</div>
+        <div class="brand-chip"><i class="fa-solid fa-certificate"></i> ISO 9001:2015</div>
+        <div class="brand-chip"><i class="fa-solid fa-fire-extinguisher"></i> CFBT Trained</div>
+        <div class="brand-chip"><i class="fa-solid fa-star"></i> NAFD Member</div>
+        <div class="brand-chip"><i class="fa-solid fa-building-shield"></i> IFSEC Partner</div>
+        <div class="brand-chip"><i class="fa-solid fa-medal"></i> NSC Accredited</div>
+        <div class="brand-chip"><i class="fa-solid fa-flask"></i> NIST Compliant</div>
+        <div class="brand-chip"><i class="fa-solid fa-globe"></i> CTIF Member</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA BAND ======= -->
+  <section class="cta-band">
+    <div class="cta-bg">
+      <img src="./img/Double-Headed-Hydrant-Valve_pro.webp" alt="" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="cta-body-inner fade-up">
+      <span class="eyebrow-tag center light">Get Protected Today</span>
+      <h2>Need expert advice on<br><em>the right product?</em></h2>
+      <p>Book a free site assessment and our certified engineers will recommend the best fire safety solution for your needs.</p>
+      <div class="cta-actions">
+        <a href="./contact.html" class="btn-fire">Get Free Assessment <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:6668880000" class="btn-ghost-light"><i class="fa-solid fa-phone"></i> Call: 666 888 0000</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <a href="./index.html" class="logo footer-logo">
+            <img src="./img/fire-logo.png" alt="Fireboy Logo">
+          </a>
+          <p>Fireboy Protection Services — your trusted partner in fire safety since 1995. NFPA certified, ISO 9001:2015 accredited, and committed to protecting what matters most.</p>
+          <div class="f-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
           </div>
-          <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search fire safety products..." onkeyup="searchProducts()" />
-            <button class="search-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35" stroke="white" stroke-width="2"/></svg>
-              Search
-            </button>
+        </div>
+        <div class="footer-col">
+          <h5>Our Services</h5>
+          <ul>
+            <li><a href="./index.html#categories">Fire Suppression</a></li>
+            <li><a href="./index.html#categories">Fire Alarm Systems</a></li>
+            <li><a href="./index.html#categories">Rescue Operations</a></li>
+            <li><a href="./index.html#categories">Medical Response</a></li>
+            <li><a href="./index.html#categories">Prevention Training</a></li>
+            <li><a href="./index.html#categories">Hazmat Operations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./index.html#categories">Services</a></li>
+            <li><a href="./index.html#why-us">Why Choose Us</a></li>
+            <li><a href="./index.html#process">Our Process</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Emergency</h5>
+          <div class="f-emg">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div><small>Available 24/7</small><strong>666 888 0000</strong></div>
+          </div>
+          <p class="f-news-lbl">Newsletter</p>
+          <div class="f-news">
+            <input type="email" placeholder="Your email..." />
+            <button aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
           </div>
         </div>
-
-        <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all"         onclick="filterProducts('all', this)">All Products</button>
-          <button class="filter-btn" data-filter="head"               onclick="filterProducts('head', this)">Head Protection</button>
-          <button class="filter-btn" data-filter="eye"                onclick="filterProducts('eye', this)">Eye Protection</button>
-          <button class="filter-btn" data-filter="face"               onclick="filterProducts('face', this)">Face Protection</button>
-          <button class="filter-btn" data-filter="mask"               onclick="filterProducts('mask', this)">Face Mask</button>
-          <button class="filter-btn" data-filter="respirator"         onclick="filterProducts('respirator', this)">Reusable Respirators</button>
-          <button class="filter-btn" data-filter="extinguisher"       onclick="filterProducts('extinguisher', this)">Extinguishers</button>
-          <button class="filter-btn" data-filter="hydrant"            onclick="filterProducts('hydrant', this)">Hydrant Systems</button>
-          <button class="filter-btn" data-filter="detection"          onclick="filterProducts('detection', this)">Detection</button>
-          <button class="filter-btn" data-filter="suppression"        onclick="filterProducts('suppression', this)">Suppression</button>
-          <button class="filter-btn" data-filter="ppe"                onclick="filterProducts('ppe', this)">PPE & Safety</button>
-          <button class="filter-btn" data-filter="signage"            onclick="filterProducts('signage', this)">Signage</button>
-        </div>
-
-        <div class="products-grid" id="productsGrid"></div>
-      </div>
-    </section>
-
-    <!-- ══ FOOTER ══ -->
-   <footer class="footer">
-  <div class="footer-top">
-    <div class="container footer-grid">
-      <div class="footer-about">
-        <a href="./index.html" class="logo footer-logo">
-          <img src="./img/fire-logo.png" alt="Fireboy Logo">
-        </a>
-        <p>Fireboy Protection Services — your trusted partner in fire safety since 1995. NFPA certified, ISO 9001:2015 accredited, and committed to protecting what matters most.</p>
-        <div class="f-socials">
-          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h5>Our Services</h5>
-        <ul>
-          <li><a href="./index.html#categories">Fire Suppression</a></li>
-          <li><a href="./index.html#categories">Fire Alarm Systems</a></li>
-          <li><a href="./index.html#categories">Rescue Operations</a></li>
-          <li><a href="./index.html#categories">Medical Response</a></li>
-          <li><a href="./index.html#categories">Prevention Training</a></li>
-          <li><a href="./index.html#categories">Hazmat Operations</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Quick Links</h5>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Us</a></li>
-          <li><a href="./index.html#categories">Services</a></li>
-          <li><a href="./index.html#why-us">Why Choose Us</a></li>
-          <li><a href="./index.html#process">Our Process</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>Emergency</h5>
-        <div class="f-emg">
-          <span><i class="fa-solid fa-phone"></i></span>
-          <div><small>Available 24/7</small><strong>666 888 0000</strong></div>
-        </div>
-        <p class="f-news-lbl">Newsletter</p>
-        <div class="f-news">
-          <input type="email" placeholder="Your email..." />
-          <button aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
       </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container f-bot-inner">
-      <p>&copy; 2025 Fireboy Protection Services. All Rights Reserved.</p>
-      <p>NFPA Certified &middot; ISO 9001:2015 &middot; Protecting since 1995</p>
+    <div class="footer-bottom">
+      <div class="container f-bot-inner">
+        <p>&copy; 2025 Fireboy Protection Services. All Rights Reserved.</p>
+        <p>NFPA Certified &middot; ISO 9001:2015 &middot; Protecting since 1995</p>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-    <script src="./product.js"></script>
-    <script src="./quote.js"></script>
-    <!-- <script src="./script.js"></script> -->
-  </body>
+  <a href="#" class="scroll-top" id="scrollTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="./product.js"></script>
+  <script src="./quote.js"></script>
+</body>
 </html>
